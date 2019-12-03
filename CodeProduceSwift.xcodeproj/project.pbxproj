@@ -20,6 +20,7 @@
 		5CBCE1D32394DF2D00ECBD43 /* PublicImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D22394DF2D00ECBD43 /* PublicImport.swift */; };
 		5CBCE1D52396453B00ECBD43 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D42396453B00ECBD43 /* ViewModel.swift */; };
 		5CBCE1D723964F1D00ECBD43 /* MyTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D623964F1D00ECBD43 /* MyTransitionAnimator.swift */; };
+		5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */; };
 		A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676FC9FB7EB1D92C339E086 /* Pods_CodeProduceSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		5CBCE1D22394DF2D00ECBD43 /* PublicImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImport.swift; sourceTree = "<group>"; };
 		5CBCE1D42396453B00ECBD43 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5CBCE1D623964F1D00ECBD43 /* MyTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTransitionAnimator.swift; sourceTree = "<group>"; };
+		5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCFileVM.swift; sourceTree = "<group>"; };
 		80EB26791B5F3F2BD1F74547 /* Pods-CodeProduceSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftTests/Pods-CodeProduceSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93E9DB8627402104BF4A2929 /* Pods-CodeProduceSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftUITests/Pods-CodeProduceSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B61E01834C9DD2A6ECF0E03D /* Pods_CodeProduceSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeProduceSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				5CBCE1CF2394DEFA00ECBD43 /* CreateOCFile.swift */,
+				5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */,
 			);
 			path = CreateFiles;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */,
 				5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */,
 				5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */,
 				5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */,

@@ -715,5 +715,18 @@
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
+        <!--CreateOC File-->
+        <scene sceneID="mbu-7H-1me">
+            <objects>
+                <viewController storyboardIdentifier="createOCFile" id="rNF-VV-LiD" customClass="CreateOCFile" customModule="CodeProduceSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="ZcB-rS-IMV">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="UTt-T6-6oR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="627"/>
+        </scene>
     </scenes>
 </document>

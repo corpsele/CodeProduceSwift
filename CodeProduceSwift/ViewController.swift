@@ -34,6 +34,9 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.title = "代码生成";
+        
 
         // Do any additional setup after loading the view.
         
@@ -67,8 +70,8 @@ class ViewController: NSViewController {
         vm.btnFileAction.values.observeValues({ [weak self] success in
             if success {
                 print("btnFileAction : \(success)" )
-                let vc = CreateOCFile();
-                
+                let vc = self?.storyboard?.instantiateController(withIdentifier: "createOCFile") as! NSViewController
+                self?.presentAsSheet(vc);
             }
         })
     }
