@@ -1,0 +1,6 @@
+framework module Pods_CodeProduceSwiftTests {
+  umbrella header "Pods-CodeProduceSwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
