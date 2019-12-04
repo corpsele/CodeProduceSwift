@@ -29,18 +29,26 @@ class CreateOCFileVM: NSObject {
     
     var (textChangedSignal, textChangedObserver) = Signal<NSTextField, Never>.pipe();
     
+    var (createFileSignal, createFileObserver) = Signal<Void, Never>.pipe();
+    
     let tfText = MutableProperty<String>("")
     
     var textSignal:SignalProducer<((String) -> Void), Never>!
     
+    var strFileName = ""
+    var filePath = ""
+    
     override init() {
+        super.init()
+        
         textChangedSignal.observeValues { (tf) in
             print("vm output = \(tf.stringValue)");
         }
         Property.init(tfText).map{ tf in
             print(tf)
         }
-        tfText.signal.observeValues { (str) in
+        tfText.signal.observeValues {[weak self] (str) in
+            self?.strFileName = str;
             print("property signal = \(str)")
         }
         
@@ -48,6 +56,17 @@ class CreateOCFileVM: NSObject {
             sign.map{ (str) in
                 
             }
+        }
+        
+        createFileSignal.observeValues {[weak self] _ in
+            self?.createVCH(fileName: (self?.strFileName)!)
+            self?.createVCM(fileName: (self?.strFileName)!)
+            let task = Process()
+            task.launchPath = "/usr/bin/env"
+            task.arguments = ["open", (self?.filePath)!]
+            task.launch()
+            task.waitUntilExit()
+            print("task return code \(task.terminationStatus) and reason \(task.terminationReason)")
         }
     }
     
@@ -64,6 +83,7 @@ class CreateOCFileVM: NSObject {
             
                     //设定路径
             let path = "/Users/\(NSUserName())/Downloads/\(AppInfo.appBundleName)/";
+            filePath = path
     //        let path = NSHomeDirectory() + "/\(AppInfo.appBundleName)";
     //        let fileName = "data.txt";
             let url: NSURL = NSURL(fileURLWithPath: path+fileName);
@@ -99,14 +119,16 @@ class CreateOCFileVM: NSObject {
         // MARK: 创建VC .h 文件
         private func createVCH(fileName: String)
         {
-            let url = writeFile(fileName: fileName);
+            let url = writeFile(fileName: fileName+".h");
             let manager = FileManager.default;
                     //定义可变数据变量
                     let data = NSMutableData()
                     //向数据对象中添加文本，并制定文字code
-            data.append("#import <Foundation/Foundation.h>".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+            data.append("#import <Foundation/Foundation.h>\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
 //            let tfName =
-            data.append("@interface ".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+            data.append("@interface \(strFileName): UIViewController\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+            
+            data.append("@end".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
             
             if !manager.fileExists(atPath: url.path!) {
                 manager.createFile(atPath: url.path!, contents: data as Data, attributes: nil);
@@ -115,4 +137,58 @@ class CreateOCFileVM: NSObject {
                     //用data写文件
             data.write(toFile: url.path!, atomically: true)
         }
+    
+    // MARK: 创建VC .m 文件
+            private func createVCM(fileName: String)
+            {
+                let url = writeFile(fileName: fileName+".m");
+                let manager = FileManager.default;
+                        //定义可变数据变量
+                        let data = NSMutableData()
+                        //向数据对象中添加文本，并制定文字code
+                data.append("#import \"\(strFileName).h\"\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+    //            let tfName =
+                data.append("@interface \(strFileName)()\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("@end\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("@implementation \(strFileName)\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("- (id)init\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("{\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  self = [super init];\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("  if(self)\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  {\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  }\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  return self\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("}\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("- (id)initWithFrame:(CGRect)frame\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("{\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  self = [super initWithFrame:frame];\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  if (self) {\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  }\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  return self;\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("}\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("- (void)viewDidLoad {\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  [super viewDidLoad];\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("}\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                    data.append("- (void)viewWillAppear:(BOOL)animated\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("{\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  [super viewWillAppear:animated];\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("}\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                
+                
+                data.append("@end".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                if !manager.fileExists(atPath: url.path!) {
+                    manager.createFile(atPath: url.path!, contents: data as Data, attributes: nil);
+                }
+                
+                        //用data写文件
+                data.write(toFile: url.path!, atomically: true)
+            }
 }

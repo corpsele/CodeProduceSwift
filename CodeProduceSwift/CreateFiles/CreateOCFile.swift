@@ -39,6 +39,8 @@ class CreateOCFile: NSViewController {
         vm.textChangedObserver.send(value: tfName)
         
         vm.tfText.value = tfName.stringValue
+        
+        vm.createFileObserver.send(value: ())
     }
     
     let vm = CreateOCFileVM();
