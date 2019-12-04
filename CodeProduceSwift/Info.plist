@@ -53,5 +53,7 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>访问文件目录</string>
 </dict>
 </plist>

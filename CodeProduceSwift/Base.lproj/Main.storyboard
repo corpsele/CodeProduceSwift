@@ -722,9 +722,60 @@
                     <view key="view" id="ZcB-rS-IMV">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="17P-m4-hij">
+                                <rect key="frame" x="9" y="275" width="77" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="v1o-xf-2Wt"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="创建OC文件" id="1pt-dK-cc4">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xDf-nQ-Ibd">
+                                <rect key="frame" x="5" y="213" width="112" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="iTF-tT-qgA"/>
+                                    <constraint firstAttribute="width" constant="100" id="oK9-XF-C5I"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="创建MVVM" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ofx-Lt-JgV">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="btnCreateMVVMAction:" target="rNF-VV-LiD" id="n0K-Fk-dka"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" tag="191912" translatesAutoresizingMaskIntoConstraints="NO" id="e0l-4b-SIe">
+                                <rect key="frame" x="11" y="246" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AsJ-Ue-Ybm"/>
+                                    <constraint firstAttribute="height" constant="21" id="c0t-l4-d2T"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="输入类名" drawsBackground="YES" id="19J-cb-mQN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xDf-nQ-Ibd" firstAttribute="leading" secondItem="ZcB-rS-IMV" secondAttribute="leading" constant="11" id="Dga-L5-vLf"/>
+                            <constraint firstItem="17P-m4-hij" firstAttribute="top" secondItem="ZcB-rS-IMV" secondAttribute="top" constant="9" id="DvQ-00-SBB"/>
+                            <constraint firstItem="xDf-nQ-Ibd" firstAttribute="top" secondItem="e0l-4b-SIe" secondAttribute="bottom" constant="5" id="Geg-HJ-PcZ"/>
+                            <constraint firstItem="17P-m4-hij" firstAttribute="leading" secondItem="ZcB-rS-IMV" secondAttribute="leading" constant="11" id="XCl-5Y-5gP"/>
+                            <constraint firstItem="e0l-4b-SIe" firstAttribute="leading" secondItem="ZcB-rS-IMV" secondAttribute="leading" constant="11" id="gdQ-D5-grJ"/>
+                            <constraint firstItem="e0l-4b-SIe" firstAttribute="top" secondItem="17P-m4-hij" secondAttribute="bottom" constant="8" id="hjh-4z-Es4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tTextField" destination="17P-m4-hij" id="SAV-HJ-7fo"/>
+                    </connections>
                 </viewController>
                 <customObject id="UTt-T6-6oR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="WxR-Pc-Ppb"/>
             </objects>
             <point key="canvasLocation" x="-71" y="627"/>
         </scene>
