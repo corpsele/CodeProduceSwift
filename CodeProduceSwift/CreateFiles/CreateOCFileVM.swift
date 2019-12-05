@@ -61,6 +61,8 @@ class CreateOCFileVM: NSObject {
         createFileSignal.observeValues {[weak self] _ in
             self?.createVCH(fileName: (self?.strFileName)!)
             self?.createVCM(fileName: (self?.strFileName)!)
+            self?.createVMH(fileName: (self?.strFileName)!)
+            self?.createVMM(fileName: (self?.strFileName)!)
             let task = Process()
             task.launchPath = "/usr/bin/env"
             task.arguments = ["open", (self?.filePath)!]
@@ -119,14 +121,14 @@ class CreateOCFileVM: NSObject {
         // MARK: 创建VC .h 文件
         private func createVCH(fileName: String)
         {
-            let url = writeFile(fileName: fileName+".h");
+            let url = writeFile(fileName: fileName+"VC.h");
             let manager = FileManager.default;
                     //定义可变数据变量
                     let data = NSMutableData()
                     //向数据对象中添加文本，并制定文字code
             data.append("#import <Foundation/Foundation.h>\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
 //            let tfName =
-            data.append("@interface \(strFileName): UIViewController\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+            data.append("@interface \(strFileName)VC: UIViewController\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
             
             data.append("@end".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
             
@@ -138,21 +140,45 @@ class CreateOCFileVM: NSObject {
             data.write(toFile: url.path!, atomically: true)
         }
     
-    // MARK: 创建VC .m 文件
-            private func createVCM(fileName: String)
+    // MARK: 创建VM .h
+    private func createVMH(fileName: String)
             {
-                let url = writeFile(fileName: fileName+".m");
+                let url = writeFile(fileName: fileName+"VM.h");
                 let manager = FileManager.default;
                         //定义可变数据变量
                         let data = NSMutableData()
                         //向数据对象中添加文本，并制定文字code
-                data.append("#import \"\(strFileName).h\"\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("#import <Foundation/Foundation.h>\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
     //            let tfName =
-                data.append("@interface \(strFileName)()\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("@interface \(strFileName)VM: NSObject\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("@end".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                if !manager.fileExists(atPath: url.path!) {
+                    manager.createFile(atPath: url.path!, contents: data as Data, attributes: nil);
+                }
+                
+                        //用data写文件
+                data.write(toFile: url.path!, atomically: true)
+            }
+    
+    // MARK: 创建VC .m 文件
+            private func createVCM(fileName: String)
+            {
+                let url = writeFile(fileName: fileName+"VC.m");
+                let manager = FileManager.default;
+                        //定义可变数据变量
+                        let data = NSMutableData()
+                        //向数据对象中添加文本，并制定文字code
+                data.append("#import \"\(strFileName)VC.h\"\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("#import \"\(strFileName)VM.h\"\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+    //            let tfName =
+                data.append("@interface \(strFileName)VC()\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("@property (nonatomic, strong) \(strFileName)VM *vm;\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 
                 data.append("@end\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 
-                data.append("@implementation \(strFileName)\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("@implementation \(strFileName)VC\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 
                 data.append("- (id)init\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 data.append("{\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
@@ -160,8 +186,9 @@ class CreateOCFileVM: NSObject {
                 
                 data.append("  if(self)\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 data.append("  {\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("    vm = [\(strFileName)VM new];\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 data.append("  }\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
-                data.append("  return self\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  return self;\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 data.append("}\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 
                 data.append("- (id)initWithFrame:(CGRect)frame\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
@@ -179,6 +206,45 @@ class CreateOCFileVM: NSObject {
                 data.append("{\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 data.append("  [super viewWillAppear:animated];\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 data.append("}\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                
+                
+                data.append("@end".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                if !manager.fileExists(atPath: url.path!) {
+                    manager.createFile(atPath: url.path!, contents: data as Data, attributes: nil);
+                }
+                
+                        //用data写文件
+                data.write(toFile: url.path!, atomically: true)
+            }
+    
+    // MARK: 创建VM .m 文件
+            private func createVMM(fileName: String)
+            {
+                let url = writeFile(fileName: fileName+"VM.m");
+                let manager = FileManager.default;
+                        //定义可变数据变量
+                        let data = NSMutableData()
+                        //向数据对象中添加文本，并制定文字code
+                
+    //            let tfName =
+                data.append("@interface \(strFileName)VM()\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("@end\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("@implementation \(strFileName)VM\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("- (id)init\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("{\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  self = [super init];\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("  if(self)\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  {\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  }\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  return self;\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("}\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
                 
                 
                 
