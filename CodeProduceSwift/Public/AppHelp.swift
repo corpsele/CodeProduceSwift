@@ -15,3 +15,18 @@ struct  AppInfo {
     static let buildVersion : String = Bundle.main.infoDictionary! ["CFBundleVersion"] as! String //Bulid 版本号
 
 }
+
+struct Alert {
+    static func show(title: String, window: NSWindow, block: @escaping ()->()){
+        
+        let alert = NSAlert();
+        alert.messageText = title;
+        alert.addButton(withTitle: "OK")
+        alert.alertStyle = .informational
+        alert.beginSheetModal(for: window) { (res) in
+            block();
+        }
+//        let res = alert.runModal()
+        
+    }
+}

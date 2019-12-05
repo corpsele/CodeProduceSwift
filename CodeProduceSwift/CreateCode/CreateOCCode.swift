@@ -7,12 +7,49 @@
 //
 
 import Cocoa
+import ReactiveSwift
+import ReactiveCocoa
+import RxSwift
 
 class CreateOCCode: NSViewController {
+    
+    @IBOutlet weak var tvMain: NSTextView!
+    @IBOutlet weak var btnPopThing: NSPopUpButton!
+    @IBOutlet weak var btnPopArg: NSPopUpButton!
+    @IBOutlet weak var btnDo: NSButton!
+    
+    let vm = CreateOCCodeVM();
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        
+        let btnClose = view.viewWithTag(12333) as! NSButton;
+        vm.btnClose.value = btnClose;
+        btnClose.reactive.pressed = CocoaAction<NSButton>(vm.btnCloseAction) { [weak self] sender in
+            self?.dismiss(self)
+        }
+        
+        vm.btnDo.value = btnDo
+        btnDo.reactive.pressed = CocoaAction<NSButton>(vm.btnDoAction) { [weak self] sender in
+            
+        }
+        
+        btnPopThing.reactive.selectedIndexes.observeValues {[weak self] (index) in
+            self?.vm.selectType.value = SelectType(rawValue: index)!
+        }
+        
+        btnPopArg.reactive.selectedIndexes.observeValues {[weak self] (index) in
+            self?.vm.selectArgType.value = SelectArgType(rawValue: index)!
+        }
+        
+        vm.btnPopThing.value = btnPopThing
+        
+        vm.btnPopArg.value = btnPopArg
+    
+        
     }
+    
+    
     
 }

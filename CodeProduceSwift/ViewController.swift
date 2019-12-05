@@ -75,6 +75,9 @@ class ViewController: NSViewController {
             sender in
             print("tag = \(sender.tag)");
         }
+        btnCode?.reactive.pressed = CocoaAction<NSButton>(vm.btnCodeAction){ sender in
+            
+        }
         //观察登录是否成功
         vm.btnFileAction.values.observeValues({ [weak self] success in
             if success {
@@ -83,6 +86,11 @@ class ViewController: NSViewController {
                 self?.presentAsSheet(vc);
             }
         })
+        
+        vm.btnCodeAction.values.observeValues {[weak self] (flag) in
+            let vc = self?.storyboard?.instantiateController(withIdentifier: "createOCCode") as! NSViewController
+            self?.presentAsSheet(vc);
+        }
     }
     
     // MARK: layout

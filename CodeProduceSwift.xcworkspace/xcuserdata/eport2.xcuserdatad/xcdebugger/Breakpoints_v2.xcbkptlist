@@ -210,8 +210,8 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "layout()"
             landmarkType = "7">
          </BreakpointContent>
@@ -226,8 +226,8 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "layout()"
             landmarkType = "7">
          </BreakpointContent>
@@ -242,8 +242,8 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "layout()"
             landmarkType = "7">
          </BreakpointContent>
@@ -310,6 +310,182 @@
             endingLineNumber = "64"
             landmarkName = "init()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E909C5E3-3515-4E8D-9E06-666D4359E016"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/CreateCode/CreateOCCodeVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "doThings()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A99D0A2-F1B8-4BAE-A902-8286C9BF1C63"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "doThings()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3A99D0A2-F1B8-4BAE-A902-8286C9BF1C63 - e85d66a11dab4704"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Swift.Bool) -&gt; () in CodeProduceSwift.ViewController.(doThings in _7E4EA05A30E3412E6797BE752EDBEB7F)() -&gt; ()"
+                  moduleName = "CodeProduceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  uuid = "3A99D0A2-F1B8-4BAE-A902-8286C9BF1C63 - e85d66a11dab4704"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Swift.Bool) -&gt; () in CodeProduceSwift.ViewController.(doThings in _7E4EA05A30E3412E6797BE752EDBEB7F)() -&gt; ()"
+                  moduleName = "CodeProduceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "919">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90F36839-1629-408F-BAA1-383F4A7EB653"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/CreateCode/CreateOCCodeVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "doThings()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "180CB9DE-03A0-405E-B160-25EAB0C2290F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/CreateCode/CreateOCCode.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B40B5E8C-2B68-4423-8105-8FC8DD67423D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/CreateCode/CreateOCCodeVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "doThings()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CB9686B-ACC1-4776-9497-413E13DC9B25"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/Public/AppHelp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "show(title:window:block:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70D46131-329C-4BEE-9778-495C95E18997"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/CreateCode/CreateOCCodeVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "doThings()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "70D46131-329C-4BEE-9778-495C95E18997 - 83bc46216b608271"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (ReactiveSwift.Signal&lt;(), Swift.Never&gt;.Event) -&gt; () in CodeProduceSwift.CreateOCCodeVM.doThings() -&gt; ()"
+                  moduleName = "CodeProduceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/CreateCode/CreateOCCodeVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "451">
+               </Location>
+               <Location
+                  uuid = "70D46131-329C-4BEE-9778-495C95E18997 - 60081f991abf95c8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 (ReactiveSwift.Signal&lt;(), Swift.Never&gt;.Event) -&gt; () in CodeProduceSwift.CreateOCCodeVM.doThings() -&gt; ()"
+                  moduleName = "CodeProduceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/CreateCode/CreateOCCodeVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

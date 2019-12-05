@@ -18,6 +18,13 @@ class ViewModel: NSObject {
            observer.sendCompleted()
        }
     }
+    
+    var btnCodeAction = Action<Void, Bool, Never> { (input: Void) -> SignalProducer< Bool , Never> in
+       return SignalProducer{ (observer, disposable) in
+           observer.send(value: true)
+           observer.sendCompleted()
+       }
+    }
 
     override init(){
         super.init();
