@@ -147,14 +147,55 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <popUpButton verticalHuggingPriority="750" tag="332110" translatesAutoresizingMaskIntoConstraints="NO" id="CGY-sd-gB5">
+                                <rect key="frame" x="9" y="189" width="125" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4h5-sk-2Hv"/>
+                                    <constraint firstAttribute="width" constant="120" id="YuW-cf-ILd"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="dDg-gK-FfK" id="dsP-Ng-Cs1">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="s6a-o8-WNn">
+                                        <items>
+                                            <menuItem title="Default" state="on" id="dDg-gK-FfK"/>
+                                            <menuItem title="UIViewController" id="Tt6-IU-fYA"/>
+                                            <menuItem title="NSObject" id="3Nu-tw-6cb"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </popUpButton>
+                            <button verticalHuggingPriority="750" tag="332111" translatesAutoresizingMaskIntoConstraints="NO" id="qHi-T6-gPQ">
+                                <rect key="frame" x="6" y="157" width="80" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="IlE-3M-W4r"/>
+                                    <constraint firstAttribute="height" constant="21" id="v0h-x7-kAM"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="创建类" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cZM-0M-QPE">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="xDf-nQ-Ibd" firstAttribute="leading" secondItem="ZcB-rS-IMV" secondAttribute="leading" constant="11" id="Dga-L5-vLf"/>
                             <constraint firstItem="17P-m4-hij" firstAttribute="top" secondItem="ZcB-rS-IMV" secondAttribute="top" constant="9" id="DvQ-00-SBB"/>
                             <constraint firstItem="xDf-nQ-Ibd" firstAttribute="top" secondItem="e0l-4b-SIe" secondAttribute="bottom" constant="5" id="Geg-HJ-PcZ"/>
+                            <constraint firstItem="CGY-sd-gB5" firstAttribute="top" secondItem="xDf-nQ-Ibd" secondAttribute="bottom" constant="7" id="I3x-on-FbA"/>
+                            <constraint firstItem="qHi-T6-gPQ" firstAttribute="leading" secondItem="ZcB-rS-IMV" secondAttribute="leading" constant="12" id="Wdh-9i-yCW"/>
                             <constraint firstItem="17P-m4-hij" firstAttribute="leading" secondItem="ZcB-rS-IMV" secondAttribute="leading" constant="11" id="XCl-5Y-5gP"/>
+                            <constraint firstItem="CGY-sd-gB5" firstAttribute="leading" secondItem="ZcB-rS-IMV" secondAttribute="leading" constant="11" id="ayG-jh-RZc"/>
                             <constraint firstItem="e0l-4b-SIe" firstAttribute="leading" secondItem="ZcB-rS-IMV" secondAttribute="leading" constant="11" id="gdQ-D5-grJ"/>
                             <constraint firstItem="e0l-4b-SIe" firstAttribute="top" secondItem="17P-m4-hij" secondAttribute="bottom" constant="8" id="hjh-4z-Es4"/>
+                            <constraint firstItem="qHi-T6-gPQ" firstAttribute="top" secondItem="CGY-sd-gB5" secondAttribute="bottom" constant="7" id="sZh-Yv-JLG"/>
                         </constraints>
                     </view>
                     <connections>

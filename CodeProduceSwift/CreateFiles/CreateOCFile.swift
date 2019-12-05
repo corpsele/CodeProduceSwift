@@ -68,6 +68,23 @@ class CreateOCFile: NSViewController {
             self?.strFileName = str
             print(str);
         }
+        
+        let btnCreateStruct = view.viewWithTag(332111) as! NSButton;
+        btnCreateStruct.reactive.pressed = CocoaAction<NSButton>(vm.btnCreateFileAction) {[weak self] sender in
+            print(sender.tag)
+            let tfName = self?.view.viewWithTag(191912) as! NSTextField;
+            self?.vm.tfText.value = tfName.stringValue;
+            return btnCreateStruct
+        }
+        
+        let btnPopup = view.viewWithTag(332110) as! NSPopUpButton;
+        btnPopup.reactive.selectedItems.observeValues { (item) in
+            print("item = \(item.title)")
+        }
+        btnPopup.reactive.selectedIndexes.observeValues {[weak self] (index) in
+            self?.vm.selectIndex.value = index;
+            print("index = \(index)");
+        }
     }
     
     private func initViews()

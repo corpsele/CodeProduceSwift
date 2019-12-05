@@ -13,17 +13,25 @@ import ReactiveSwift
 import ReactiveCocoa
 
 class CreateOCFileVM: NSObject {
-    var btnCloseAction = Action<Void, Bool, Never> { (input: Void) -> SignalProducer< Bool , Never> in
+    var btnCloseAction = Action<Void, Bool, Never> { (input: Void) -> SignalProducer<Bool , Never> in
        return SignalProducer{ (observer, disposable) in
            observer.send(value: true)
            observer.sendCompleted()
        }
     }
     
-    var textAction = Action<(String), Bool, Never> { (input: (String)) -> SignalProducer< Bool , Never> in
+    var textAction = Action<(String), Bool, Never> { (input: (String)) -> SignalProducer<Bool , Never> in
        return SignalProducer{ (observer, disposable) in
            observer.send(value: true)
            observer.sendCompleted()
+       }
+    }
+    
+    var btnCreateFileAction = Action<(NSButton), Void, Never> { (input: (NSButton)) -> SignalProducer<Void , Never> in
+       return SignalProducer{ (observer, disposable) in
+           observer.send(value: ())
+           observer.sendCompleted()
+        
        }
     }
     
@@ -33,16 +41,20 @@ class CreateOCFileVM: NSObject {
     
     let tfText = MutableProperty<String>("")
     
+    let selectIndex = MutableProperty<Int>(0)
+    
     var textSignal:SignalProducer<((String) -> Void), Never>!
     
     var strFileName = ""
     var filePath = ""
+    var itemIndex = 0;
     
     override init() {
         super.init()
         
-        textChangedSignal.observeValues { (tf) in
+        textChangedSignal.observeValues {[weak self] (tf) in
             print("vm output = \(tf.stringValue)");
+            
         }
         Property.init(tfText).map{ tf in
             print(tf)
@@ -52,13 +64,38 @@ class CreateOCFileVM: NSObject {
             print("property signal = \(str)")
         }
         
+        selectIndex.signal.observeValues {[weak self] (index) in
+            self?.itemIndex = index;
+
+        }
+        
         textSignal.map{ (sign) in
             sign.map{ (str) in
                 
             }
         }
         
+        btnCreateFileAction.events.signal.observeValues {[weak self] event in
+            print(event.description)
+            print("strFileName = \(self?.strFileName)")
+            if self?.strFileName.isEmpty ?? true {
+                return
+            }
+            self?.create1H()
+            self?.create1M()
+            let task = Process()
+            task.launchPath = "/usr/bin/env"
+            task.arguments = ["open", (self?.filePath)!]
+            task.launch()
+            task.waitUntilExit()
+            print("task return code \(task.terminationStatus) and reason \(task.terminationReason)")
+        }
+        
+        
         createFileSignal.observeValues {[weak self] _ in
+            if self?.strFileName.isEmpty ?? true {
+                return
+            }
             self?.createVCH(fileName: (self?.strFileName)!)
             self?.createVCM(fileName: (self?.strFileName)!)
             self?.createVMH(fileName: (self?.strFileName)!)
@@ -117,6 +154,82 @@ class CreateOCFileVM: NSObject {
     //                }
             
         }
+    
+            // MARK: 创建 .h 文件
+            private func create1H()
+            {
+                var str = "NSObject"
+                switch selectIndex.value {
+                case 0:
+                    str = "NSObject"
+                    break
+                case 1:
+                    str = "UIViewController"
+                    break
+                case 2:
+                    str = "NSObject"
+                    break
+                default:
+                    break
+                }
+                
+                let url = writeFile(fileName: strFileName+".h");
+                let manager = FileManager.default;
+                        //定义可变数据变量
+                        let data = NSMutableData()
+                        //向数据对象中添加文本，并制定文字code
+                data.append("#import <Foundation/Foundation.h>\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+    //            let tfName =
+                data.append("@interface \(strFileName): \(str)\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("@end".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                if !manager.fileExists(atPath: url.path!) {
+                    manager.createFile(atPath: url.path!, contents: data as Data, attributes: nil);
+                }
+                
+                        //用data写文件
+                data.write(toFile: url.path!, atomically: true)
+            }
+
+    
+    // MARK: 创建 .m 文件
+            private func create1M()
+            {
+                let url = writeFile(fileName: strFileName+".m");
+                let manager = FileManager.default;
+                        //定义可变数据变量
+                        let data = NSMutableData()
+                        //向数据对象中添加文本，并制定文字code
+                data.append("#import \"\(strFileName).h\"\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("@interface \(strFileName)()\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                
+                data.append("@end\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("@implementation \(strFileName)\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("- (id)init\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("{\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  self = [super init];\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("  if(self)\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  {\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                data.append("  }\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("  return self;\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                data.append("}\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                
+                data.append("@end".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                
+                if !manager.fileExists(atPath: url.path!) {
+                    manager.createFile(atPath: url.path!, contents: data as Data, attributes: nil);
+                }
+                
+                        //用data写文件
+                data.write(toFile: url.path!, atomically: true)
+            }
         
         // MARK: 创建VC .h 文件
         private func createVCH(fileName: String)

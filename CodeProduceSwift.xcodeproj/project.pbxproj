@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		116DC7189D0D9E3E398199D1 /* Pods_CodeProduceSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61E01834C9DD2A6ECF0E03D /* Pods_CodeProduceSwiftTests.framework */; };
 		23DD780344D8F3899F371C51 /* Pods_CodeProduceSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0841DD09819CC06D564CC90 /* Pods_CodeProduceSwiftUITests.framework */; };
+		5C660B682398ABEE0089B667 /* CreateOCCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C660B672398ABEE0089B667 /* CreateOCCode.swift */; };
+		5C660B6A2398AC020089B667 /* CreateOCCodeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C660B692398AC020089B667 /* CreateOCCodeVM.swift */; };
 		5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */; };
 		5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A22394DDD000ECBD43 /* ViewController.swift */; };
 		5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A42394DDD000ECBD43 /* Document.swift */; };
@@ -47,6 +49,8 @@
 		2883AF0312511A12FE25AE09 /* Pods-CodeProduceSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftTests/Pods-CodeProduceSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		5179009A5908F3A2565E6FE5 /* Pods-CodeProduceSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftUITests/Pods-CodeProduceSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		554E85ADA7F31E343C08C6B8 /* Pods-CodeProduceSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwift.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwift/Pods-CodeProduceSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		5C660B672398ABEE0089B667 /* CreateOCCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCCode.swift; sourceTree = "<group>"; };
+		5C660B692398AC020089B667 /* CreateOCCodeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCCodeVM.swift; sourceTree = "<group>"; };
 		5CBCE19D2394DDD000ECBD43 /* CodeProduceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeProduceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBCE1A22394DDD000ECBD43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5C660B662398ABB40089B667 /* CreateCode */ = {
+			isa = PBXGroup;
+			children = (
+				5C660B672398ABEE0089B667 /* CreateOCCode.swift */,
+				5C660B692398AC020089B667 /* CreateOCCodeVM.swift */,
+			);
+			path = CreateCode;
+			sourceTree = "<group>";
+		};
 		5CBCE1942394DDD000ECBD43 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +153,7 @@
 		5CBCE19F2394DDD000ECBD43 /* CodeProduceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5C660B662398ABB40089B667 /* CreateCode */,
 				5CBCE1D12394DF1400ECBD43 /* Public */,
 				5CBCE1CE2394DED100ECBD43 /* CreateFiles */,
 				5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */,
@@ -422,7 +436,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */,
+				5C660B6A2398AC020089B667 /* CreateOCCodeVM.swift in Sources */,
 				5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */,
+				5C660B682398ABEE0089B667 /* CreateOCCode.swift in Sources */,
 				5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */,
 				5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */,
 				5CBCE1DB23973DB900ECBD43 /* AppHelp.swift in Sources */,

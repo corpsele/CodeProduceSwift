@@ -13,7 +13,7 @@ class Document: NSDocument {
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
-        
+        self.displayName = "代码生成";
     }
 
     override class var autosavesInPlace: Bool {

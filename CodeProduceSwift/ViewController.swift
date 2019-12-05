@@ -49,6 +49,8 @@ class ViewController: NSViewController {
         createViews();
         
         doThings();
+        
+        NSApplication.shared.windows.first?.title = "代码生成"
     }
 
     override var representedObject: Any? {
