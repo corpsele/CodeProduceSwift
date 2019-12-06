@@ -322,6 +322,7 @@
                         <outlet property="btnDo" destination="G1k-fC-BF4" id="rqy-D0-dG3"/>
                         <outlet property="btnPopArg" destination="4J9-vS-CI9" id="hvA-S2-Dw3"/>
                         <outlet property="btnPopThing" destination="Y55-0Q-fON" id="OiJ-z2-hPG"/>
+                        <outlet property="btnPopThingLayout" destination="QCp-JS-zCN" id="EkA-KU-6pv"/>
                         <outlet property="tvMain" destination="TEB-De-4iv" id="nIS-11-h60"/>
                     </connections>
                 </viewController>

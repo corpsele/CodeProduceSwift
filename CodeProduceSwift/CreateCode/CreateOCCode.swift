@@ -17,6 +17,7 @@ class CreateOCCode: NSViewController {
     @IBOutlet weak var btnPopThing: NSPopUpButton!
     @IBOutlet weak var btnPopArg: NSPopUpButton!
     @IBOutlet weak var btnDo: NSButton!
+    @IBOutlet weak var btnPopThingLayout: NSLayoutConstraint!
     
     let vm = CreateOCCodeVM();
 
@@ -37,6 +38,7 @@ class CreateOCCode: NSViewController {
         
         btnPopThing.reactive.selectedIndexes.observeValues {[weak self] (index) in
             self?.vm.selectType.value = SelectType(rawValue: index)!
+            self?.view.needsLayout = true
         }
         
         btnPopArg.reactive.selectedIndexes.observeValues {[weak self] (index) in
@@ -46,9 +48,24 @@ class CreateOCCode: NSViewController {
         vm.btnPopThing.value = btnPopThing
         
         vm.btnPopArg.value = btnPopArg
+        
+        vm.tvMain.value = tvMain
     
         
     }
+    
+    override func viewWillLayout() {
+        super.viewWillLayout()
+        
+        if let pop = btnPopThing {
+            let str = pop.selectedItem?.title.nsString;
+            let size = pop.frame.size
+            let rect = str?.boundingRect(with: size, options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedString.Key.font: NSFont.systemFont(ofSize: 15.0)] , context: nil)
+            btnPopThingLayout.constant = (rect?.size.width)! + 30
+        }
+    }
+    
+    
     
     
     
