@@ -25,7 +25,7 @@ class Document: NSDocument {
         let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Document Window Controller")) as! NSWindowController
         self.addWindowController(windowController)
-        windowController.window?.title = "代码生成";
+        windowController.window?.title = AppInfo.appDisplayName;
     }
 
     override func data(ofType typeName: String) throws -> Data {

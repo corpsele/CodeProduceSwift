@@ -264,19 +264,19 @@
                                     <menu key="menu" id="DO5-x3-08i">
                                         <items>
                                             <menuItem title="Default" state="on" id="zFj-c3-rHE"/>
-                                            <menuItem title="按钮圆角" id="FtR-EN-VLL"/>
-                                            <menuItem title="十六进制颜色宏" id="P0C-aU-wb1"/>
+                                            <menuItem title="Corner" id="FtR-EN-VLL"/>
+                                            <menuItem title="Hex" id="P0C-aU-wb1"/>
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G1k-fC-BF4">
-                                <rect key="frame" x="381" y="244" width="67" height="32"/>
+                                <rect key="frame" x="356" y="244" width="92" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="YZh-O2-Qhe"/>
-                                    <constraint firstAttribute="width" constant="55" id="mmO-xe-WfZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="mmO-xe-WfZ"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="生成" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jUL-bK-IFE">
+                                <buttonCell key="cell" type="push" title="Generate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jUL-bK-IFE">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>

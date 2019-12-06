@@ -50,7 +50,9 @@ class ViewController: NSViewController {
         
         doThings();
         
-        NSApplication.shared.windows.first?.title = "代码生成"
+        NSApplication.shared.windows.first?.title = AppInfo.appDisplayName
+        
+        print(AppInfo.appDisplayName)
     }
 
     override var representedObject: Any? {

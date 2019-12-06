@@ -15,21 +15,21 @@ import ReactiveCocoa
 class CreateOCFileVM: NSObject {
     var btnCloseAction = Action<Void, Bool, Never> { (input: Void) -> SignalProducer<Bool , Never> in
        return SignalProducer{ (observer, disposable) in
-           observer.send(value: true)
+//           observer.send(value: true)
            observer.sendCompleted()
        }
     }
     
     var textAction = Action<(String), Bool, Never> { (input: (String)) -> SignalProducer<Bool , Never> in
        return SignalProducer{ (observer, disposable) in
-           observer.send(value: true)
+//           observer.send(value: true)
            observer.sendCompleted()
        }
     }
     
     var btnCreateFileAction = Action<(NSButton), Void, Never> { (input: (NSButton)) -> SignalProducer<Void , Never> in
        return SignalProducer{ (observer, disposable) in
-           observer.send(value: ())
+//           observer.send(value: ())
            observer.sendCompleted()
         
        }
@@ -79,6 +79,9 @@ class CreateOCFileVM: NSObject {
             print(event.description)
             print("strFileName = \(self?.strFileName)")
             if self?.strFileName.isEmpty ?? true {
+                Alert.show(title: "请输入", window: (NSApp.windows.last)!) {
+                    
+                }
                 return
             }
             self?.create1H()
@@ -94,6 +97,9 @@ class CreateOCFileVM: NSObject {
         
         createFileSignal.observeValues {[weak self] _ in
             if self?.strFileName.isEmpty ?? true {
+                Alert.show(title: "请输入", window: (NSApp.windows.last)!) {
+                    
+                }
                 return
             }
             self?.createVCH(fileName: (self?.strFileName)!)
