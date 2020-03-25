@@ -37,6 +37,12 @@ class ViewController: NSViewController {
         view.backgroundColor = NSColor.lightGray;
         return view
     }();
+    
+    lazy var btnCrypt: NSButton? = {
+       let btn = NSButton()
+        btn.title = "Crypt"
+        return btn
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +74,7 @@ class ViewController: NSViewController {
         view.addSubview(btnFile!);
         view.addSubview(btnCode!);
         view.addSubview(viewLine!);
+        view.addSubview(btnCrypt!);
     }
     
     // MARK: 处理逻辑
@@ -80,18 +87,31 @@ class ViewController: NSViewController {
         btnCode?.reactive.pressed = CocoaAction<NSButton>(vm.btnCodeAction){ sender in
             
         }
+        btnCrypt?.reactive.pressed = CocoaAction<NSButton>(vm.btnCryptAction){ sender in
+            
+        }
         //观察登录是否成功
         vm.btnFileAction.values.observeValues({ [weak self] success in
             if success {
                 print("btnFileAction : \(success)" )
                 let vc = self?.storyboard?.instantiateController(withIdentifier: "createOCFile") as! NSViewController
                 self?.presentAsSheet(vc);
+                
             }
         })
         
         vm.btnCodeAction.values.observeValues {[weak self] (flag) in
             let vc = self?.storyboard?.instantiateController(withIdentifier: "createOCCode") as! NSViewController
             self?.presentAsSheet(vc);
+        }
+        
+        vm.btnCryptAction.values.observeValues {[weak self] (flag) in
+            let vc = self?.storyboard?.instantiateController(withIdentifier: "aesCryptVC") as! NSViewController
+            vc.view.snp.makeConstraints { (make) in
+                make.height.equalTo(500)
+            }
+            self?.presentAsSheet(vc)
+//            self?.presentAsModalWindow(vc)
         }
     }
     
@@ -122,6 +142,15 @@ class ViewController: NSViewController {
 //                make.width.equalTo(150.0);
                 make.bottom.equalTo(view).offset(-60.0);
             };
+        }
+        
+        if let btn = btnCrypt {
+            btn.snp.makeConstraints { (make) in
+                make.left.equalToSuperview()
+                make.top.equalToSuperview()
+                make.width.equalTo(50)
+                make.height.equalTo(50)
+            }
         }
 
     }
