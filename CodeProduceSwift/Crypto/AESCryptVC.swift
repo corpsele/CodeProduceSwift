@@ -37,6 +37,14 @@ class AESCryptVC: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let textV = newTV.documentView as? NSTextView {
+            textV.isAutomaticQuoteSubstitutionEnabled = false
+        }
+        
+        if let textV = sourceTV.documentView as? NSTextView {
+            textV.isAutomaticQuoteSubstitutionEnabled = false
+        }
+        
 //        btnEncrypt.reactive.pressed?.execute { [weak self] in
 //            let textView = self?.sourceTV.documentView as? NSTextView
 //            let result = self?.crypt(str: textView?.string ?? "", type: CryptType.CryptType_EN)
