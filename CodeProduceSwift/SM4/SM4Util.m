@@ -72,10 +72,10 @@ typedef unsigned char Uchar;
     sm4_context ctx;
     sm4_setkey_dec(&ctx,key);
     sm4_crypt_ecb(&ctx,0,inputCharSize,input,output);
-    int kgPos = 0;
+//    int kgPos = 0;
     for(int i=0;i<inputCharSize;i++){
         if (output[i] == 32) {
-            kgPos = i;
+//            kgPos = i;
             output[i] = '\0';
         }
     }

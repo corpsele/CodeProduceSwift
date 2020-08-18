@@ -63,9 +63,10 @@ class AESCryptVC: NSViewController {
         if let textV = sourceTV.documentView as? NSTextView {
             vm.signalString = textV.reactive.continuousStringValues
         }
-        btnDecrypt.reactive.pressed = CocoaAction<NSButton>(vm.btnDecryptAction) { [weak self] (sender) in
+        btnDecrypt.reactive.pressed = CocoaAction<NSButton>(vm.btnDecryptAction)
+//        { [weak self] (sender) in
 //            self?.newTV.documentView?.insertText(self?.vm.outputText ?? "")
-        }
+//        }
         
         vm.getOutputText = { [weak self] in
             self?.newTV.documentView?.insertText(self?.vm.outputText ?? "")

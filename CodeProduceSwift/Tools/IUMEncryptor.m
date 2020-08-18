@@ -55,7 +55,7 @@ typedef unsigned char Uchar;
         vplainText = [decodedData bytes];
     }
     
-    CCCryptorStatus ccStatus;
+//    CCCryptorStatus ccStatus;
     uint8_t *bufferPtr = NULL;
     size_t bufferPtrSize = 0;
     size_t movedBytes = 0;
@@ -66,17 +66,28 @@ typedef unsigned char Uchar;
     const void *vkey = (const void *) [key UTF8String];
     Byte  iv[] = {0x12, 0x34, 0x56, 0x78, 0x90, 0xAB, 0xCD, 0xEF};
     
-    ccStatus = CCCrypt(operation,
-                       kCCAlgorithmDES,
-                       kCCOptionPKCS7Padding,
-                       vkey,
-                       kCCKeySizeDES,
-                       iv,
-                       vplainText,
-                       plainTextBufferSize,
-                       (void *)bufferPtr,
-                       bufferPtrSize,
-                       &movedBytes);
+//    ccStatus = CCCrypt(operation,
+//                       kCCAlgorithmDES,
+//                       kCCOptionPKCS7Padding,
+//                       vkey,
+//                       kCCKeySizeDES,
+//                       iv,
+//                       vplainText,
+//                       plainTextBufferSize,
+//                       (void *)bufferPtr,
+//                       bufferPtrSize,
+//                       &movedBytes);
+    CCCrypt(operation,
+    kCCAlgorithmDES,
+    kCCOptionPKCS7Padding,
+    vkey,
+    kCCKeySizeDES,
+    iv,
+    vplainText,
+    plainTextBufferSize,
+    (void *)bufferPtr,
+    bufferPtrSize,
+    &movedBytes);
         
     NSData *data = [NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes];
     

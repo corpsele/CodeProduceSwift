@@ -12,7 +12,8 @@ import ReactiveCocoa
 
 class ViewController: NSViewController {
     
-    let vm = ViewModel();
+    private var vm: ViewModel!
+    
     
     // MARK: 文件按钮
     lazy var btnFile: NSButton? = {
@@ -49,6 +50,7 @@ class ViewController: NSViewController {
         
 //        self.title = "代码生成";
         
+        vm = ViewModel()
 
         // Do any additional setup after loading the view.
         
@@ -80,37 +82,43 @@ class ViewController: NSViewController {
     // MARK: 处理逻辑
     private func doThings(){
 
-        btnFile?.reactive.pressed = CocoaAction<NSButton>(vm.btnFileAction){
-            sender in
-            print("tag = \(sender.tag)");
-        }
-        btnCode?.reactive.pressed = CocoaAction<NSButton>(vm.btnCodeAction){ sender in
-            
-        }
-        btnCrypt?.reactive.pressed = CocoaAction<NSButton>(vm.btnCryptAction){ sender in
-            
-        }
+//        if let action = vm.btnFileAction {
+            btnFile?.reactive.pressed = CocoaAction<NSButton>(vm.btnFileAction){
+                sender in
+                print("tag = \(sender.tag)");
+            }
+//        }
+//        if let action = vm.btnCodeAction {
+            btnCode?.reactive.pressed = CocoaAction<NSButton>(vm.btnCodeAction){ sender in
+                
+            }
+//        }
+//        if let action = vm.btnCryptAction {
+            btnCrypt?.reactive.pressed = CocoaAction<NSButton>(vm.btnCryptAction){ sender in
+                
+            }
+//        }
         //观察登录是否成功
-        vm.btnFileAction.values.observeValues({ [weak self] success in
+        vm.btnFileAction.values.observeValues({ [unowned self] success in
             if success {
                 print("btnFileAction : \(success)" )
-                let vc = self?.storyboard?.instantiateController(withIdentifier: "createOCFile") as! NSViewController
-                self?.presentAsSheet(vc);
+                let vc = self.storyboard?.instantiateController(withIdentifier: "createOCFile") as! NSViewController
+                self.presentAsSheet(vc);
                 
             }
         })
         
-        vm.btnCodeAction.values.observeValues {[weak self] (flag) in
-            let vc = self?.storyboard?.instantiateController(withIdentifier: "createOCCode") as! NSViewController
-            self?.presentAsSheet(vc);
+        vm.btnCodeAction.values.observeValues {[unowned self] (flag) in
+            let vc = self.storyboard?.instantiateController(withIdentifier: "createOCCode") as! NSViewController
+            self.presentAsSheet(vc);
         }
         
-        vm.btnCryptAction.values.observeValues {[weak self] (flag) in
-            let vc = self?.storyboard?.instantiateController(withIdentifier: "aesCryptVC") as! NSViewController
+        vm.btnCryptAction.values.observeValues {[unowned self] (flag) in
+            let vc = self.storyboard?.instantiateController(withIdentifier: "aesCryptVC") as! NSViewController
             vc.view.snp.makeConstraints { (make) in
                 make.height.equalTo(500)
             }
-            self?.presentAsSheet(vc)
+            self.presentAsSheet(vc)
 //            self?.presentAsModalWindow(vc)
         }
     }
