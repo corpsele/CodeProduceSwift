@@ -11,6 +11,14 @@
 		23DD780344D8F3899F371C51 /* Pods_CodeProduceSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0841DD09819CC06D564CC90 /* Pods_CodeProduceSwiftUITests.framework */; };
 		5C660B682398ABEE0089B667 /* CreateOCCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C660B672398ABEE0089B667 /* CreateOCCode.swift */; };
 		5C660B6A2398AC020089B667 /* CreateOCCodeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C660B692398AC020089B667 /* CreateOCCodeVM.swift */; };
+		5C703C5324EB7F2A00ABBC6F /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C4C24EB7F2A00ABBC6F /* sm4.c */; };
+		5C703C5424EB7F2A00ABBC6F /* hex2str.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C4D24EB7F2A00ABBC6F /* hex2str.c */; };
+		5C703C5524EB7F2A00ABBC6F /* SM4Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C4F24EB7F2A00ABBC6F /* SM4Util.m */; };
+		5C703C5624EB7F2A00ABBC6F /* libSM3Util.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C703C5224EB7F2A00ABBC6F /* libSM3Util.a */; };
+		5C703C5C24EB809A00ABBC6F /* SM4Code.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C5824EB809A00ABBC6F /* SM4Code.c */; };
+		5C703C5D24EB809A00ABBC6F /* IUMEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C5B24EB809A00ABBC6F /* IUMEncryptor.m */; };
+		5C703C6424EB826600ABBC6F /* AESCryptVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C6024EB826500ABBC6F /* AESCryptVM.swift */; };
+		5C703C6624EB826600ABBC6F /* AESCryptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C6224EB826500ABBC6F /* AESCryptVC.swift */; };
 		5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */; };
 		5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A22394DDD000ECBD43 /* ViewController.swift */; };
 		5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A42394DDD000ECBD43 /* Document.swift */; };
@@ -24,9 +32,6 @@
 		5CBCE1D723964F1D00ECBD43 /* MyTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D623964F1D00ECBD43 /* MyTransitionAnimator.swift */; };
 		5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */; };
 		5CBCE1DB23973DB900ECBD43 /* AppHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1DA23973DB900ECBD43 /* AppHelp.swift */; };
-		5CF07D08242892C700688E99 /* IUMEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF07D07242892C700688E99 /* IUMEncryptor.m */; };
-		5CF07D0A2428936100688E99 /* AESCryptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF07D092428936100688E99 /* AESCryptVC.swift */; };
-		5CF07D0C2428B21900688E99 /* AESCryptVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF07D0B2428B21900688E99 /* AESCryptVM.swift */; };
 		5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF07D0F242A0AC900688E99 /* CPSApplication.swift */; };
 		A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676FC9FB7EB1D92C339E086 /* Pods_CodeProduceSwift.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +60,21 @@
 		554E85ADA7F31E343C08C6B8 /* Pods-CodeProduceSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwift.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwift/Pods-CodeProduceSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		5C660B672398ABEE0089B667 /* CreateOCCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCCode.swift; sourceTree = "<group>"; };
 		5C660B692398AC020089B667 /* CreateOCCodeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCCodeVM.swift; sourceTree = "<group>"; };
+		5C703C4A24EB7F2A00ABBC6F /* hex2str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hex2str.h; sourceTree = "<group>"; };
+		5C703C4B24EB7F2A00ABBC6F /* SM4Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM4Util.h; sourceTree = "<group>"; };
+		5C703C4C24EB7F2A00ABBC6F /* sm4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sm4.c; sourceTree = "<group>"; };
+		5C703C4D24EB7F2A00ABBC6F /* hex2str.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hex2str.c; sourceTree = "<group>"; };
+		5C703C4E24EB7F2A00ABBC6F /* sm4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sm4.h; sourceTree = "<group>"; };
+		5C703C4F24EB7F2A00ABBC6F /* SM4Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SM4Util.m; sourceTree = "<group>"; };
+		5C703C5124EB7F2A00ABBC6F /* SM3Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM3Util.h; sourceTree = "<group>"; };
+		5C703C5224EB7F2A00ABBC6F /* libSM3Util.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSM3Util.a; sourceTree = "<group>"; };
+		5C703C5824EB809A00ABBC6F /* SM4Code.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SM4Code.c; sourceTree = "<group>"; };
+		5C703C5924EB809A00ABBC6F /* IUMEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUMEncryptor.h; sourceTree = "<group>"; };
+		5C703C5A24EB809A00ABBC6F /* SM4Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM4Code.h; sourceTree = "<group>"; };
+		5C703C5B24EB809A00ABBC6F /* IUMEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUMEncryptor.m; sourceTree = "<group>"; };
+		5C703C6024EB826500ABBC6F /* AESCryptVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESCryptVM.swift; sourceTree = "<group>"; };
+		5C703C6224EB826500ABBC6F /* AESCryptVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESCryptVC.swift; sourceTree = "<group>"; };
+		5C703C6324EB826500ABBC6F /* CodeProduceSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CodeProduceSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		5CBCE19D2394DDD000ECBD43 /* CodeProduceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeProduceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBCE1A22394DDD000ECBD43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,11 +95,6 @@
 		5CBCE1D623964F1D00ECBD43 /* MyTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTransitionAnimator.swift; sourceTree = "<group>"; };
 		5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCFileVM.swift; sourceTree = "<group>"; };
 		5CBCE1DA23973DB900ECBD43 /* AppHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelp.swift; sourceTree = "<group>"; };
-		5CF07D05242892C700688E99 /* CodeProduceSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeProduceSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		5CF07D06242892C700688E99 /* IUMEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUMEncryptor.h; sourceTree = "<group>"; };
-		5CF07D07242892C700688E99 /* IUMEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUMEncryptor.m; sourceTree = "<group>"; };
-		5CF07D092428936100688E99 /* AESCryptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESCryptVC.swift; sourceTree = "<group>"; };
-		5CF07D0B2428B21900688E99 /* AESCryptVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESCryptVM.swift; sourceTree = "<group>"; };
 		5CF07D0F242A0AC900688E99 /* CPSApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSApplication.swift; sourceTree = "<group>"; };
 		80EB26791B5F3F2BD1F74547 /* Pods-CodeProduceSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftTests/Pods-CodeProduceSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93E9DB8627402104BF4A2929 /* Pods-CodeProduceSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftUITests/Pods-CodeProduceSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */,
+				5C703C5624EB7F2A00ABBC6F /* libSM3Util.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +154,49 @@
 			path = CreateCode;
 			sourceTree = "<group>";
 		};
+		5C703C4924EB7F2A00ABBC6F /* SM4 */ = {
+			isa = PBXGroup;
+			children = (
+				5C703C4A24EB7F2A00ABBC6F /* hex2str.h */,
+				5C703C4B24EB7F2A00ABBC6F /* SM4Util.h */,
+				5C703C4C24EB7F2A00ABBC6F /* sm4.c */,
+				5C703C4D24EB7F2A00ABBC6F /* hex2str.c */,
+				5C703C4E24EB7F2A00ABBC6F /* sm4.h */,
+				5C703C4F24EB7F2A00ABBC6F /* SM4Util.m */,
+			);
+			path = SM4;
+			sourceTree = "<group>";
+		};
+		5C703C5024EB7F2A00ABBC6F /* SM3Util */ = {
+			isa = PBXGroup;
+			children = (
+				5C703C5124EB7F2A00ABBC6F /* SM3Util.h */,
+				5C703C5224EB7F2A00ABBC6F /* libSM3Util.a */,
+			);
+			path = SM3Util;
+			sourceTree = "<group>";
+		};
+		5C703C5724EB809A00ABBC6F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5C703C5824EB809A00ABBC6F /* SM4Code.c */,
+				5C703C5924EB809A00ABBC6F /* IUMEncryptor.h */,
+				5C703C5A24EB809A00ABBC6F /* SM4Code.h */,
+				5C703C5B24EB809A00ABBC6F /* IUMEncryptor.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5C703C5E24EB826500ABBC6F /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				5C703C6024EB826500ABBC6F /* AESCryptVM.swift */,
+				5C703C6224EB826500ABBC6F /* AESCryptVC.swift */,
+				5C703C6324EB826500ABBC6F /* CodeProduceSwift-Bridging-Header.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
 		5CBCE1942394DDD000ECBD43 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +223,10 @@
 		5CBCE19F2394DDD000ECBD43 /* CodeProduceSwift */ = {
 			isa = PBXGroup;
 			children = (
-				5CF07D04242892AA00688E99 /* Crypto */,
+				5C703C5E24EB826500ABBC6F /* Crypto */,
+				5C703C5724EB809A00ABBC6F /* Tools */,
+				5C703C5024EB7F2A00ABBC6F /* SM3Util */,
+				5C703C4924EB7F2A00ABBC6F /* SM4 */,
 				5C660B662398ABB40089B667 /* CreateCode */,
 				5CBCE1D12394DF1400ECBD43 /* Public */,
 				5CBCE1CE2394DED100ECBD43 /* CreateFiles */,
@@ -215,18 +277,6 @@
 				5CBCE1DA23973DB900ECBD43 /* AppHelp.swift */,
 			);
 			path = Public;
-			sourceTree = "<group>";
-		};
-		5CF07D04242892AA00688E99 /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				5CF07D06242892C700688E99 /* IUMEncryptor.h */,
-				5CF07D07242892C700688E99 /* IUMEncryptor.m */,
-				5CF07D05242892C700688E99 /* CodeProduceSwift-Bridging-Header.h */,
-				5CF07D092428936100688E99 /* AESCryptVC.swift */,
-				5CF07D0B2428B21900688E99 /* AESCryptVM.swift */,
-			);
-			path = Crypto;
 			sourceTree = "<group>";
 		};
 		D936E4B3C52CDFD36240E697 /* Frameworks */ = {
@@ -466,15 +516,19 @@
 				5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */,
 				5C660B682398ABEE0089B667 /* CreateOCCode.swift in Sources */,
 				5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */,
-				5CF07D0A2428936100688E99 /* AESCryptVC.swift in Sources */,
+				5C703C5524EB7F2A00ABBC6F /* SM4Util.m in Sources */,
 				5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */,
 				5CBCE1DB23973DB900ECBD43 /* AppHelp.swift in Sources */,
 				5CBCE1D32394DF2D00ECBD43 /* PublicImport.swift in Sources */,
+				5C703C5324EB7F2A00ABBC6F /* sm4.c in Sources */,
+				5C703C5C24EB809A00ABBC6F /* SM4Code.c in Sources */,
+				5C703C5424EB7F2A00ABBC6F /* hex2str.c in Sources */,
+				5C703C5D24EB809A00ABBC6F /* IUMEncryptor.m in Sources */,
+				5C703C6624EB826600ABBC6F /* AESCryptVC.swift in Sources */,
 				5CBCE1D52396453B00ECBD43 /* ViewModel.swift in Sources */,
 				5CBCE1D02394DEFA00ECBD43 /* CreateOCFile.swift in Sources */,
-				5CF07D08242892C700688E99 /* IUMEncryptor.m in Sources */,
 				5CBCE1D723964F1D00ECBD43 /* MyTransitionAnimator.swift in Sources */,
-				5CF07D0C2428B21900688E99 /* AESCryptVM.swift in Sources */,
+				5C703C6424EB826600ABBC6F /* AESCryptVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +703,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CodeProduceSwift/SM3Util",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eport.CodeProduceSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -672,6 +730,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CodeProduceSwift/SM3Util",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eport.CodeProduceSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
