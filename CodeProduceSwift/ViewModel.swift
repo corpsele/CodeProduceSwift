@@ -12,6 +12,13 @@ import ReactiveSwift
 
 class ViewModel: NSObject {
     
+    var btnWindowAction = Action<Void, Bool, Never> { (input: Void) -> SignalProducer<Bool, Never> in
+        return SignalProducer{ (observer, disposeble) in
+            observer.send(value: true)
+            observer.sendCompleted()
+        }
+    }
+    
     var btnFileAction = Action<Void, Bool, Never> { (input: Void) -> SignalProducer< Bool , Never> in
        return SignalProducer{ (observer, disposable) in
            observer.send(value: true)

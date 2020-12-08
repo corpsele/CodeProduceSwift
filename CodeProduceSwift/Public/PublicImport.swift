@@ -10,10 +10,11 @@ import Cocoa
 
 import SwiftUI
 import SwifterSwift
-import RxSwift
-import ReactiveSwift
-import ReactiveCocoa
-import SnapKit
+@_exported import RxSwift
+@_exported import ReactiveSwift
+@_exported import ReactiveCocoa
+@_exported import SnapKit
+@_exported import ReactiveKit
 import SQLite3
 import MMKV
 import Alamofire

@@ -625,8 +625,19 @@ extension Signal {
 	///                returns a new optional value.
 	///
 	/// - returns: A signal that will send new values, that are non `nil` after the transformation.
+	public func compactMap<U>(_ transform: @escaping (Value) -> U?) -> Signal<U, Error> {
+		return flatMapEvent(Signal.Event.compactMap(transform))
+	}
+
+	/// Applies `transform` to values from `signal` and forwards values with non `nil` results unwrapped.
+	/// - parameters:
+	///   - transform: A closure that accepts a value from the `value` event and
+	///                returns a new optional value.
+	///
+	/// - returns: A signal that will send new values, that are non `nil` after the transformation.
+	@available(*, deprecated, renamed: "compactMap")
 	public func filterMap<U>(_ transform: @escaping (Value) -> U?) -> Signal<U, Error> {
-		return flatMapEvent(Signal.Event.filterMap(transform))
+		return flatMapEvent(Signal.Event.compactMap(transform))
 	}
 }
 
@@ -1313,6 +1324,34 @@ extension Signal {
 	public func scan<U>(into initialResult: U, _ nextPartialResult: @escaping (inout U, Value) -> Void) -> Signal<U, Error> {
 		return flatMapEvent(Signal.Event.scan(into: initialResult, nextPartialResult))
 	}
+
+	/// Accumulate all values from `self` as `State`, and send the value as `U`.
+	///
+	/// - parameters:
+	///   - initialState: The state to use as the initial accumulating state.
+	///   - next: A closure that combines the accumulating state and the latest value
+	///           from `self`. The result would be "next state" and "output" where
+	///           "output" would be forwarded and "next state" would be used in the
+	///           next call of `next`.
+	///
+	/// - returns: A producer that sends the output that is computed from the accumuation.
+	public func scanMap<State, U>(_ initialState: State, _ next: @escaping (State, Value) -> (State, U)) -> Signal<U, Error> {
+		return flatMapEvent(Signal.Event.scanMap(initialState, next))
+	}
+
+	/// Accumulate all values from `self` as `State`, and send the value as `U`.
+	///
+	/// - parameters:
+	///   - initialState: The state to use as the initial accumulating state.
+	///   - next: A closure that combines the accumulating state and the latest value
+	///           from `self`. The result would be "next state" and "output" where
+	///           "output" would be forwarded and "next state" would be used in the
+	///           next call of `next`.
+	///
+	/// - returns: A producer that sends the output that is computed from the accumuation.
+	public func scanMap<State, U>(into initialState: State, _ next: @escaping (inout State, Value) -> U) -> Signal<U, Error> {
+		return flatMapEvent(Signal.Event.scanMap(into: initialState, next))
+	}
 }
 
 extension Signal where Value: Equatable {
@@ -1669,7 +1708,7 @@ extension Signal {
 					return true
 				}
 
-				_haveAllSentInitial = values.reduce(true) { $0 && !($1 is Placeholder) }
+				_haveAllSentInitial = values.allSatisfy { !($0 is Placeholder) }
 				return _haveAllSentInitial
 			}
 		}
@@ -2171,6 +2210,16 @@ extension Signal where Value == Bool {
 	public static func all<BooleansCollection: Collection>(_ booleans: BooleansCollection) -> Signal<Value, Error> where BooleansCollection.Element == Signal<Value, Error> {
 		return combineLatest(booleans).map { $0.reduce(true) { $0 && $1 } }
 	}
+    
+    /// Create a signal that computes a logical AND between the latest values of `booleans`.
+    ///
+    /// - parameters:
+    ///   - booleans: Boolean signals to be combined.
+    ///
+    /// - returns: A signal that emits the logical AND results.
+    public static func all(_ booleans: Signal<Value, Error>...) -> Signal<Value, Error> {
+        return .all(booleans)
+    }
 
 	/// Create a signal that computes a logical OR between the latest values of `self`
 	/// and `signal`.
@@ -2191,7 +2240,17 @@ extension Signal where Value == Bool {
 	/// - returns: A signal that emits the logical OR results.
 	public static func any<BooleansCollection: Collection>(_ booleans: BooleansCollection) -> Signal<Value, Error> where BooleansCollection.Element == Signal<Value, Error> {
 		return combineLatest(booleans).map { $0.reduce(false) { $0 || $1 } }
-	}
+    }
+    
+    /// Create a signal that computes a logical OR between the latest values of `booleans`.
+    ///
+    /// - parameters:
+    ///   - booleans: Boolean signals to be combined.
+    ///
+    /// - returns: A signal that emits the logical OR results.
+    public static func any(_ booleans: Signal<Value, Error>...) -> Signal<Value, Error> {
+        return .any(booleans)
+    }
 }
 
 extension Signal {

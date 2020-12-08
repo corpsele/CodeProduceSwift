@@ -14,6 +14,12 @@ class ViewController: NSViewController {
     
     private var vm: ViewModel!
     
+    lazy var btnWindow: NSButton? = {
+       let btn = NSButton()
+        btn.title = "Show Modal"
+        btn.font = NSFont.boldSystemFont(ofSize: 15.0)
+        return btn
+    }()
     
     // MARK: 文件按钮
     lazy var btnFile: NSButton? = {
@@ -77,6 +83,7 @@ class ViewController: NSViewController {
         view.addSubview(btnCode!);
         view.addSubview(viewLine!);
         view.addSubview(btnCrypt!);
+        view.addSubview(btnWindow!)
     }
     
     // MARK: 处理逻辑
@@ -98,6 +105,18 @@ class ViewController: NSViewController {
                 
             }
 //        }
+        
+        btnWindow?.reactive.pressed = CocoaAction<NSButton>(vm.btnWindowAction){ sender in
+            
+        }
+        
+        vm.btnWindowAction.values.observeValues({ [unowned self] success in
+            if success {
+                print("btnWindowAction")
+                NSApp.runModal(for: modalWindow!)
+            }
+        })
+        
         //观察登录是否成功
         vm.btnFileAction.values.observeValues({ [unowned self] success in
             if success {
@@ -160,8 +179,20 @@ class ViewController: NSViewController {
                 make.height.equalTo(50)
             }
         }
+        
+        if let btn = btnWindow {
+            btn.snp.makeConstraints { (make) in
+                make.right.top.equalToSuperview()
+                make.width.height.equalTo(50.0)
+            }
+        }
 
     }
+    
+    lazy var modalWindow: ModalWindow? = {
+       let window = ModalWindow()
+        return window
+    }()
     
     override func viewWillLayout() {
         super.viewWillLayout();

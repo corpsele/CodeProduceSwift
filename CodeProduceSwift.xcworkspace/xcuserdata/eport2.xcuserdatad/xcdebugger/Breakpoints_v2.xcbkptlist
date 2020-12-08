@@ -72,7 +72,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "1680E3F7-AA4F-47E8-B9BA-0663FF3680ED - e4ed276e4cabfa6a"
+                  uuid = "1680E3F7-AA4F-47E8-B9BA-0663FF3680ED - fae45083328afeba"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -87,7 +87,7 @@
                   offsetFromSymbolStart = "20">
                </Location>
                <Location
-                  uuid = "1680E3F7-AA4F-47E8-B9BA-0663FF3680ED - 2152105456851790"
+                  uuid = "1680E3F7-AA4F-47E8-B9BA-0663FF3680ED - 3f5b67b928a4138e"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -136,7 +136,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "96DF59CD-3E60-46FF-AF79-E1B6E91C2B94 - eb8ad2b0437d2edf"
+                  uuid = "96DF59CD-3E60-46FF-AF79-E1B6E91C2B94 - 59cb81caa4ea8bf9"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -151,7 +151,7 @@
                   offsetFromSymbolStart = "1192">
                </Location>
                <Location
-                  uuid = "96DF59CD-3E60-46FF-AF79-E1B6E91C2B94 - 480195deee065f02"
+                  uuid = "96DF59CD-3E60-46FF-AF79-E1B6E91C2B94 - fa40c6a40991fa05"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -194,8 +194,8 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "doThings()"
             landmarkType = "7">
          </BreakpointContent>
@@ -210,8 +210,8 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "doThings()"
             landmarkType = "7">
          </BreakpointContent>
@@ -226,8 +226,8 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "layout()"
             landmarkType = "7">
          </BreakpointContent>
@@ -322,13 +322,13 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "doThings()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3A99D0A2-F1B8-4BAE-A902-8286C9BF1C63 - e85d66a11dab4704"
+                  uuid = "3A99D0A2-F1B8-4BAE-A902-8286C9BF1C63 - d0616e03272b8801"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -343,7 +343,7 @@
                   offsetFromSymbolStart = "113">
                </Location>
                <Location
-                  uuid = "3A99D0A2-F1B8-4BAE-A902-8286C9BF1C63 - e85d66a11dab4704"
+                  uuid = "3A99D0A2-F1B8-4BAE-A902-8286C9BF1C63 - d0616e03272b8801"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -408,7 +408,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "70D46131-329C-4BEE-9778-495C95E18997 - 83bc46216b608271"
+                  uuid = "70D46131-329C-4BEE-9778-495C95E18997 - 39d4bd99f7317fb"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -423,7 +423,7 @@
                   offsetFromSymbolStart = "451">
                </Location>
                <Location
-                  uuid = "70D46131-329C-4BEE-9778-495C95E18997 - 60081f991abf95c8"
+                  uuid = "70D46131-329C-4BEE-9778-495C95E18997 - e0291261eeac0080"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -456,7 +456,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "256EC8F5-A897-443A-93CE-835EA2DEF840 - c136a0d6b1a9bf3d"
+                  uuid = "256EC8F5-A897-443A-93CE-835EA2DEF840 - b0165d62bec82cfd"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -471,7 +471,7 @@
                   offsetFromSymbolStart = "1566">
                </Location>
                <Location
-                  uuid = "256EC8F5-A897-443A-93CE-835EA2DEF840 - c136a0d6b1a9bf3d"
+                  uuid = "256EC8F5-A897-443A-93CE-835EA2DEF840 - b0165d62bec82cfd"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -536,7 +536,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "2E71D00B-B21E-4BE1-9789-F5DDA932C1DD - 4c5594d1db232665"
+                  uuid = "2E71D00B-B21E-4BE1-9789-F5DDA932C1DD - bf115533395fa25b"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -551,7 +551,7 @@
                   offsetFromSymbolStart = "891">
                </Location>
                <Location
-                  uuid = "2E71D00B-B21E-4BE1-9789-F5DDA932C1DD - 79ece9c6178157a8"
+                  uuid = "2E71D00B-B21E-4BE1-9789-F5DDA932C1DD - 8aa82824f5fdd396"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -584,7 +584,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "B33ECB61-E3BC-4F35-AED6-911CD8F7ECB3 - 2a0343cd6d60a54c"
+                  uuid = "B33ECB61-E3BC-4F35-AED6-911CD8F7ECB3 - 506d5930c9c7fec8"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -599,7 +599,7 @@
                   offsetFromSymbolStart = "262">
                </Location>
                <Location
-                  uuid = "B33ECB61-E3BC-4F35-AED6-911CD8F7ECB3 - 222f219f21f0ca82"
+                  uuid = "B33ECB61-E3BC-4F35-AED6-911CD8F7ECB3 - 58413b6285579140"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -690,8 +690,8 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "doThings()"
             landmarkType = "7">
          </BreakpointContent>
@@ -706,8 +706,8 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "doThings()"
             landmarkType = "7">
          </BreakpointContent>
@@ -722,13 +722,13 @@
             filePath = "CodeProduceSwift/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "doThings()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A3BEB916-269D-4DD2-A139-D8E585137C10 - c633cd4c308dd7b"
+                  uuid = "A3BEB916-269D-4DD2-A139-D8E585137C10 - 345f3476f9881105"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -743,7 +743,7 @@
                   offsetFromSymbolStart = "275">
                </Location>
                <Location
-                  uuid = "A3BEB916-269D-4DD2-A139-D8E585137C10 - 23d799ace745b95b"
+                  uuid = "A3BEB916-269D-4DD2-A139-D8E585137C10 - 1beb910eddc576e3"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -758,6 +758,86 @@
                   offsetFromSymbolStart = "32">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70D0234F-ADA0-4BFC-BBE7-C4EF06725E1E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/ModalWindow/ModalWindow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "imgClock"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F10D8E6D-08FB-4FFF-B59B-429224F362B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/ModalWindow/ModalWindow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "ModalWindow"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32642E50-BE9C-4D49-A077-8A7101AD64D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/ModalWindow/ModalWindow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "ModalWindow"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59BCF3C3-77FB-4168-9837-A537C559B40C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/ModalWindow/ModalWindow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "initViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "738E90A0-C385-4FCC-9DD4-508529A9A976"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/ModalWindow/ModalWindow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "restoreWindow()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

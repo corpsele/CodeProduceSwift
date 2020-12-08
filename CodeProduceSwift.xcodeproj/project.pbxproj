@@ -14,7 +14,6 @@
 		5C703C5324EB7F2A00ABBC6F /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C4C24EB7F2A00ABBC6F /* sm4.c */; };
 		5C703C5424EB7F2A00ABBC6F /* hex2str.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C4D24EB7F2A00ABBC6F /* hex2str.c */; };
 		5C703C5524EB7F2A00ABBC6F /* SM4Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C4F24EB7F2A00ABBC6F /* SM4Util.m */; };
-		5C703C5624EB7F2A00ABBC6F /* libSM3Util.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C703C5224EB7F2A00ABBC6F /* libSM3Util.a */; };
 		5C703C5C24EB809A00ABBC6F /* SM4Code.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C5824EB809A00ABBC6F /* SM4Code.c */; };
 		5C703C5D24EB809A00ABBC6F /* IUMEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C5B24EB809A00ABBC6F /* IUMEncryptor.m */; };
 		5C703C6424EB826600ABBC6F /* AESCryptVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C6024EB826500ABBC6F /* AESCryptVM.swift */; };
@@ -32,6 +31,7 @@
 		5CBCE1D723964F1D00ECBD43 /* MyTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D623964F1D00ECBD43 /* MyTransitionAnimator.swift */; };
 		5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */; };
 		5CBCE1DB23973DB900ECBD43 /* AppHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1DA23973DB900ECBD43 /* AppHelp.swift */; };
+		5CCC913B257E0BEF00A69790 /* ModalWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC913A257E0BEF00A69790 /* ModalWindow.swift */; };
 		5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF07D0F242A0AC900688E99 /* CPSApplication.swift */; };
 		A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676FC9FB7EB1D92C339E086 /* Pods_CodeProduceSwift.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +95,7 @@
 		5CBCE1D623964F1D00ECBD43 /* MyTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTransitionAnimator.swift; sourceTree = "<group>"; };
 		5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCFileVM.swift; sourceTree = "<group>"; };
 		5CBCE1DA23973DB900ECBD43 /* AppHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelp.swift; sourceTree = "<group>"; };
+		5CCC913A257E0BEF00A69790 /* ModalWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWindow.swift; sourceTree = "<group>"; };
 		5CF07D0F242A0AC900688E99 /* CPSApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSApplication.swift; sourceTree = "<group>"; };
 		80EB26791B5F3F2BD1F74547 /* Pods-CodeProduceSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftTests/Pods-CodeProduceSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93E9DB8627402104BF4A2929 /* Pods-CodeProduceSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftUITests/Pods-CodeProduceSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */,
-				5C703C5624EB7F2A00ABBC6F /* libSM3Util.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +223,7 @@
 		5CBCE19F2394DDD000ECBD43 /* CodeProduceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5CCC9139257E0BA400A69790 /* ModalWindow */,
 				5C703C5E24EB826500ABBC6F /* Crypto */,
 				5C703C5724EB809A00ABBC6F /* Tools */,
 				5C703C5024EB7F2A00ABBC6F /* SM3Util */,
@@ -277,6 +278,14 @@
 				5CBCE1DA23973DB900ECBD43 /* AppHelp.swift */,
 			);
 			path = Public;
+			sourceTree = "<group>";
+		};
+		5CCC9139257E0BA400A69790 /* ModalWindow */ = {
+			isa = PBXGroup;
+			children = (
+				5CCC913A257E0BEF00A69790 /* ModalWindow.swift */,
+			);
+			path = ModalWindow;
 			sourceTree = "<group>";
 		};
 		D936E4B3C52CDFD36240E697 /* Frameworks */ = {
@@ -356,7 +365,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = eport2;
 				TargetAttributes = {
 					5CBCE19C2394DDD000ECBD43 = {
@@ -527,6 +536,7 @@
 				5C703C6624EB826600ABBC6F /* AESCryptVC.swift in Sources */,
 				5CBCE1D52396453B00ECBD43 /* ViewModel.swift in Sources */,
 				5CBCE1D02394DEFA00ECBD43 /* CreateOCFile.swift in Sources */,
+				5CCC913B257E0BEF00A69790 /* ModalWindow.swift in Sources */,
 				5CBCE1D723964F1D00ECBD43 /* MyTransitionAnimator.swift in Sources */,
 				5C703C6424EB826600ABBC6F /* AESCryptVM.swift in Sources */,
 			);
@@ -601,6 +611,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -661,6 +672,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -695,6 +707,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeProduceSwift/CodeProduceSwift.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -712,7 +725,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeProduceSwift/Crypto/CodeProduceSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -723,6 +736,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeProduceSwift/CodeProduceSwift.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -739,7 +753,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeProduceSwift/Crypto/CodeProduceSwift-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
