@@ -11,8 +11,13 @@ import ReactiveSwift
 import ReactiveCocoa
 
 class ViewController: NSViewController {
+//    func changeTitle(title: String) {
+//        print("title = \(title)")
+//    }
+    
     
     private var vm: ViewModel!
+//    @IBOutlet weak var mainWindow: NSWindow!
     
     lazy var btnWindow: NSButton? = {
        let btn = NSButton()
@@ -67,6 +72,8 @@ class ViewController: NSViewController {
         NSApplication.shared.windows.first?.title = AppInfo.appDisplayName
         
         print(AppInfo.appDisplayName)
+        
+        
     }
 
     override var representedObject: Any? {
@@ -113,6 +120,9 @@ class ViewController: NSViewController {
         vm.btnWindowAction.values.observeValues({ [unowned self] success in
             if success {
                 print("btnWindowAction")
+//                modalWindow?.hDelegate = self
+                self.view.window?.hidesOnDeactivate = true
+                self.view.window?.setIsVisible(false)
                 NSApp.runModal(for: modalWindow!)
             }
         })

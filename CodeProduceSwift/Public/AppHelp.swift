@@ -30,3 +30,8 @@ struct Alert {
         
     }
 }
+
+
+//@objc protocol HelpDelegate {
+//    func changeTitle(title: String)
+//}
