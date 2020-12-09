@@ -44,8 +44,8 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
         delegate = self
         NSApp.activate(ignoringOtherApps: true)
-        NotificationCenter.default.addObserver(forName: NSApplication.didResignActiveNotification, object: nil, queue: OperationQueue.main) {[unowned self] (noti) in
-            self.level = .floating
+        NotificationCenter.default.addObserver(forName: NSApplication.didResignActiveNotification, object: nil, queue: OperationQueue.main) {[weak self] (noti) in
+            self?.level = .floating
             
         }
         
@@ -61,6 +61,8 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
         let menuItem2 = NSMenuItem(title: "Exit App", action: #selector(menuItem2Event(any:)), keyEquivalent: "")
         menuMouse?.addItem(menuItem2)
+        
+
     }
     
     func setClock(){
@@ -103,9 +105,40 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
     }
     
+    func windowWillClose(_ notification: Notification) {
+        
+    }
     
     @objc func menuItem1Event(any: Any){
+//        self.hidesOnDeactivate = true
+//        self.setIsVisible(false)
+//        self.orderOut(nil)
+//        if let session = shared?.mainSession {
+//            NSApplication.shared.endModalSession((shared?.window1Session)!)
+//        }
+//        if let window = shared?.window1 {
+//            window.close()
+//            NSApp.removeWindowsItem(window)
+//        }
         
+        print("=============== windows = \(NSApplication.shared.windows)")
+        DispatchQueue.main.async {
+            for window in NSApplication.shared.windows {
+                if !window.isKind(of: ModalWindow.self) {
+    //                window.makeKeyAndOrderFront(nil)
+                    window.orderFront(nil)
+                    break
+                }
+            }
+    //        if let window = NSApplication.shared.windows.first {
+    //            NSApp.runModal(for: window)
+                
+    //            shared?.mainSession = NSApp.beginModalSession(for: window)
+    //            delegate.vc?.view.window?.setIsVisible(true)
+    //        }
+            self.orderOut(nil)
+
+        }
     }
     
     @objc func menuItem2Event(any: Any){
@@ -121,11 +154,11 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         // or, in Swift 3:
         //
         // timer?.scheduleRepeating(deadline: .now(), interval: .seconds(5), leeway: .seconds(1))
-        timer?.setEventHandler { [unowned self] in // `[weak self]` only needed if you reference `self` in this closure and you want to prevent strong reference cycle
+        timer?.setEventHandler { [weak self] in // `[weak self]` only needed if you reference `self` in this closure and you want to prevent strong reference cycle
             print(Date())
-            self.restoreWindow()
+            self?.restoreWindow()
             DispatchQueue.main.async {
-                self.txtBackView?.setNeedsDisplay(self.txtBackView?.frame ?? .zero)
+                self?.txtBackView?.setNeedsDisplay(self?.txtBackView?.frame ?? .zero)
             }
         }
         timer?.resume()
@@ -136,29 +169,32 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     }
     
     private func restoreWindow() {
-        DispatchQueue.main.async { [unowned self] in
-            print("screen x = \(screenFrame?.origin.x) y = \(screenFrame?.origin.y) w = \(screenFrame?.width) h = \(screenFrame?.height) self.frame.x = \(self.frame.origin.x) self.frame.y = \(self.frame.origin.y)")
-            var frame = self.frame
+        guard let sf = screenFrame else {
+            return
+        }
+        DispatchQueue.main.async { [weak self] in
+            print("screen x = \(self?.screenFrame?.origin.x) y = \(self?.screenFrame?.origin.y) w = \(self?.screenFrame?.width) h = \(self?.screenFrame?.height) self.frame.x = \(self?.frame.origin.x) self.frame.y = \(self?.frame.origin.y)")
+            var frame = self?.frame ?? .zero
             if frame.origin.x <= 0.0  {
                 frame.origin.x = 0.0
-                self.setFrame(frame, display: true, animate: true)
+                self?.setFrame(frame, display: true, animate: true)
             }
             if frame.origin.y <= 0.0 {
                 frame.origin.y = 0.0
-                self.setFrame(frame, display: true, animate: true)
+                self?.setFrame(frame, display: true, animate: true)
             }
-            if let w = screenFrame?.width {
+            if let w = self?.screenFrame?.width {
                 print("w = \(w) frame.w = \(frame.origin.x + frame.width)")
                 if frame.origin.x + frame.width >= w {
                     frame.origin.x = w - frame.width
-                    self.setFrame(frame, display: true, animate: true)
+                    self?.setFrame(frame, display: true, animate: true)
                 }
             }
-            if let h = screenFrame?.height {
+            if let h = self?.screenFrame?.height {
                 print("h = \(h) frame.h = \(frame.origin.y + frame.height)")
                 if frame.origin.y + frame.height >= h {
                     frame.origin.y = h - frame.height
-                    self.setFrame(frame, display: true, animate: true)
+                    self?.setFrame(frame, display: true, animate: true)
                 }
             }
             
@@ -193,9 +229,9 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     }()
     
     override func rightMouseUp(with event: NSEvent) {
-        let ePoint = NSEvent.mouseLocation
-        menuMouse?.popUp(positioning: nil, at: ePoint, in: NSApp.mainWindow?.contentView)
-        
+//        let ePoint = NSEvent.mouseLocation
+//        menuMouse?.popUp(positioning: nil, at: ePoint, in: NSApp.windows.first?.contentView)//NSApp.mainWindow?.contentView
+        NSMenu.popUpContextMenu(menuMouse!, with: event, for: self.contentView!)
     }
     
     lazy var imgClock: NSImageView? = {

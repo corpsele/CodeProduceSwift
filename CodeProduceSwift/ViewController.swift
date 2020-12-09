@@ -18,6 +18,7 @@ class ViewController: NSViewController {
     
     private var vm: ViewModel!
 //    @IBOutlet weak var mainWindow: NSWindow!
+//    var modalWindow: ModalWindow?
     
     lazy var btnWindow: NSButton? = {
        let btn = NSButton()
@@ -73,6 +74,12 @@ class ViewController: NSViewController {
         
         print(AppInfo.appDisplayName)
         
+//        modalWindow = ModalWindow()
+        
+        if shared?.window1 == nil {
+            shared?.window1 = modalWindow
+        }
+        
         
     }
 
@@ -117,13 +124,36 @@ class ViewController: NSViewController {
             
         }
         
-        vm.btnWindowAction.values.observeValues({ [unowned self] success in
+        vm.btnWindowAction.values.observeValues({ [weak self] success in
             if success {
                 print("btnWindowAction")
 //                modalWindow?.hDelegate = self
-                self.view.window?.hidesOnDeactivate = true
-                self.view.window?.setIsVisible(false)
-                NSApp.runModal(for: modalWindow!)
+//                self.view.window?.hidesOnDeactivate = true
+//                self.view.window?.setIsVisible(false)
+//                self.view.window?.close()
+//                if let delegate = NSApplication.shared.delegate as? AppDelegate {
+//                    delegate.window?.orderOut(nil)
+//                }
+//                if let window = shared?.window1 {
+//                if self?.modalWindow == nil {
+//                    self?.modalWindow = ModalWindow()
+//                }
+//                let modalW = ModalWindow()
+                DispatchQueue.main.async {
+//                    self?.modalWindow?.makeKeyAndOrderFront(nil)
+                    self?.modalWindow?.orderFront(nil)
+                    
+                    for window in NSApplication.shared.windows {
+                        if !window.isKind(of: ModalWindow.self){
+                            window.orderOut(nil)
+                        }
+                    }
+                }
+                
+//                    NSApp.runModal(for: window)
+//                }
+//                NSApplication.shared.endModalSession((shared?.mainSession)!)
+//                shared?.window1Session = NSApp.beginModalSession(for: modalWindow!)
             }
         })
         

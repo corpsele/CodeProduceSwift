@@ -1,5 +1,7 @@
 import Cocoa
 
+let shared = NSApplication.shared.delegate as? AppDelegate
+
 struct  AppInfo {
     
     static let infoDictionary = Bundle.main.infoDictionary
