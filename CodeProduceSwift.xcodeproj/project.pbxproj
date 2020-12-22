@@ -32,6 +32,9 @@
 		5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */; };
 		5CBCE1DB23973DB900ECBD43 /* AppHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1DA23973DB900ECBD43 /* AppHelp.swift */; };
 		5CCC913B257E0BEF00A69790 /* ModalWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC913A257E0BEF00A69790 /* ModalWindow.swift */; };
+		5CEC5A9C25903EE4004197BA /* TaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC5A9B25903EE4004197BA /* TaskVC.swift */; };
+		5CEC5AA425903F48004197BA /* TaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CEC5AA325903F48004197BA /* TaskVC.xib */; };
+		5CEC5AA925906F5A004197BA /* TaskVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC5AA825906F5A004197BA /* TaskVM.swift */; };
 		5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF07D0F242A0AC900688E99 /* CPSApplication.swift */; };
 		A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676FC9FB7EB1D92C339E086 /* Pods_CodeProduceSwift.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +99,9 @@
 		5CBCE1D823965C0100ECBD43 /* CreateOCFileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCFileVM.swift; sourceTree = "<group>"; };
 		5CBCE1DA23973DB900ECBD43 /* AppHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelp.swift; sourceTree = "<group>"; };
 		5CCC913A257E0BEF00A69790 /* ModalWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWindow.swift; sourceTree = "<group>"; };
+		5CEC5A9B25903EE4004197BA /* TaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVC.swift; sourceTree = "<group>"; };
+		5CEC5AA325903F48004197BA /* TaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskVC.xib; sourceTree = "<group>"; };
+		5CEC5AA825906F5A004197BA /* TaskVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVM.swift; sourceTree = "<group>"; };
 		5CF07D0F242A0AC900688E99 /* CPSApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSApplication.swift; sourceTree = "<group>"; };
 		80EB26791B5F3F2BD1F74547 /* Pods-CodeProduceSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftTests/Pods-CodeProduceSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93E9DB8627402104BF4A2929 /* Pods-CodeProduceSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftUITests/Pods-CodeProduceSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +229,7 @@
 		5CBCE19F2394DDD000ECBD43 /* CodeProduceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5CEC5A97259039FC004197BA /* TaskSchedule */,
 				5CCC9139257E0BA400A69790 /* ModalWindow */,
 				5C703C5E24EB826500ABBC6F /* Crypto */,
 				5C703C5724EB809A00ABBC6F /* Tools */,
@@ -286,6 +293,16 @@
 				5CCC913A257E0BEF00A69790 /* ModalWindow.swift */,
 			);
 			path = ModalWindow;
+			sourceTree = "<group>";
+		};
+		5CEC5A97259039FC004197BA /* TaskSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				5CEC5A9B25903EE4004197BA /* TaskVC.swift */,
+				5CEC5AA325903F48004197BA /* TaskVC.xib */,
+				5CEC5AA825906F5A004197BA /* TaskVM.swift */,
+			);
+			path = TaskSchedule;
 			sourceTree = "<group>";
 		};
 		D936E4B3C52CDFD36240E697 /* Frameworks */ = {
@@ -408,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CBCE1A72394DDD000ECBD43 /* Assets.xcassets in Resources */,
+				5CEC5AA425903F48004197BA /* TaskVC.xib in Resources */,
 				5CBCE1AA2394DDD000ECBD43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,9 +540,11 @@
 				5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */,
 				5C660B6A2398AC020089B667 /* CreateOCCodeVM.swift in Sources */,
 				5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */,
+				5CEC5A9C25903EE4004197BA /* TaskVC.swift in Sources */,
 				5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */,
 				5C660B682398ABEE0089B667 /* CreateOCCode.swift in Sources */,
 				5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */,
+				5CEC5AA925906F5A004197BA /* TaskVM.swift in Sources */,
 				5C703C5524EB7F2A00ABBC6F /* SM4Util.m in Sources */,
 				5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */,
 				5CBCE1DB23973DB900ECBD43 /* AppHelp.swift in Sources */,

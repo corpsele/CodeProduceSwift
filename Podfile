@@ -14,6 +14,8 @@ target 'CodeProduceSwift' do
   pod 'SwifterSwift'
   pod 'SQLite.swift'
   pod 'ReactiveKit'
+  pod 'RxCombine'
+  pod 'anim'
 
   target 'CodeProduceSwiftTests' do
     inherit! :search_paths

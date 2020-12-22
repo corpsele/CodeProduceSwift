@@ -14,6 +14,8 @@ import SwifterSwift
 @_exported import ReactiveSwift
 @_exported import ReactiveCocoa
 @_exported import SnapKit
+@_exported import RxCombine
+@_exported import anim
 //@_exported import ReactiveKit
 import SQLite3
 import MMKV
