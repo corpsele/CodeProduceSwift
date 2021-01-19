@@ -16,6 +16,8 @@ target 'CodeProduceSwift' do
   pod 'ReactiveKit'
   pod 'RxCombine'
   pod 'anim'
+  pod 'Commander'
+  pod 'SwiftShell'
 
   target 'CodeProduceSwiftTests' do
     inherit! :search_paths

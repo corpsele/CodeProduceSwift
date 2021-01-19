@@ -18,6 +18,19 @@
 		5C703C5D24EB809A00ABBC6F /* IUMEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C5B24EB809A00ABBC6F /* IUMEncryptor.m */; };
 		5C703C6424EB826600ABBC6F /* AESCryptVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C6024EB826500ABBC6F /* AESCryptVM.swift */; };
 		5C703C6624EB826600ABBC6F /* AESCryptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C6224EB826500ABBC6F /* AESCryptVC.swift */; };
+		5C86D4FA25B55B5900314CEF /* CommandWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D4F925B55B5900314CEF /* CommandWork.swift */; };
+		5C86D66425B56E0D00314CEF /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65625B56E0D00314CEF /* Argument.swift */; };
+		5C86D66525B56E0D00314CEF /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65725B56E0D00314CEF /* Option.swift */; };
+		5C86D66625B56E0D00314CEF /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65825B56E0D00314CEF /* Tool.swift */; };
+		5C86D66725B56E0D00314CEF /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65925B56E0D00314CEF /* Version.swift */; };
+		5C86D66825B56E0D00314CEF /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65B25B56E0D00314CEF /* ArrayExtensions.swift */; };
+		5C86D66925B56E0D00314CEF /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65C25B56E0D00314CEF /* DictionaryExtensions.swift */; };
+		5C86D66A25B56E0D00314CEF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65D25B56E0D00314CEF /* StringExtensions.swift */; };
+		5C86D66B25B56E0D00314CEF /* FileManager+stlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65E25B56E0D00314CEF /* FileManager+stlr.swift */; };
+		5C86D66C25B56E0D00314CEF /* ANSIEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D65F25B56E0D00314CEF /* ANSIEncoding.swift */; };
+		5C86D66D25B56E0D00314CEF /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D66125B56E0D00314CEF /* Parameters.swift */; };
+		5C86D66E25B56E0D00314CEF /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D66225B56E0D00314CEF /* Command.swift */; };
+		5C86D66F25B56E0D00314CEF /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D66325B56E0D00314CEF /* Runnable.swift */; };
 		5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */; };
 		5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A22394DDD000ECBD43 /* ViewController.swift */; };
 		5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A42394DDD000ECBD43 /* Document.swift */; };
@@ -78,6 +91,19 @@
 		5C703C6024EB826500ABBC6F /* AESCryptVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESCryptVM.swift; sourceTree = "<group>"; };
 		5C703C6224EB826500ABBC6F /* AESCryptVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESCryptVC.swift; sourceTree = "<group>"; };
 		5C703C6324EB826500ABBC6F /* CodeProduceSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CodeProduceSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		5C86D4F925B55B5900314CEF /* CommandWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandWork.swift; sourceTree = "<group>"; };
+		5C86D65625B56E0D00314CEF /* Argument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		5C86D65725B56E0D00314CEF /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		5C86D65825B56E0D00314CEF /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		5C86D65925B56E0D00314CEF /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		5C86D65B25B56E0D00314CEF /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		5C86D65C25B56E0D00314CEF /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		5C86D65D25B56E0D00314CEF /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		5C86D65E25B56E0D00314CEF /* FileManager+stlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+stlr.swift"; sourceTree = "<group>"; };
+		5C86D65F25B56E0D00314CEF /* ANSIEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSIEncoding.swift; sourceTree = "<group>"; };
+		5C86D66125B56E0D00314CEF /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		5C86D66225B56E0D00314CEF /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		5C86D66325B56E0D00314CEF /* Runnable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
 		5CBCE19D2394DDD000ECBD43 /* CodeProduceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeProduceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBCE1A22394DDD000ECBD43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +229,57 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
+		5C86D4F825B55B4700314CEF /* CommandWork */ = {
+			isa = PBXGroup;
+			children = (
+				5C86D4F925B55B5900314CEF /* CommandWork.swift */,
+			);
+			path = CommandWork;
+			sourceTree = "<group>";
+		};
+		5C86D54C25B5655800314CEF /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				5C86D65525B56E0D00314CEF /* CommandKit */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		5C86D65525B56E0D00314CEF /* CommandKit */ = {
+			isa = PBXGroup;
+			children = (
+				5C86D65625B56E0D00314CEF /* Argument.swift */,
+				5C86D65725B56E0D00314CEF /* Option.swift */,
+				5C86D65825B56E0D00314CEF /* Tool.swift */,
+				5C86D65925B56E0D00314CEF /* Version.swift */,
+				5C86D65A25B56E0D00314CEF /* Extensions */,
+				5C86D65F25B56E0D00314CEF /* ANSIEncoding.swift */,
+				5C86D66025B56E0D00314CEF /* Protocols */,
+			);
+			path = CommandKit;
+			sourceTree = "<group>";
+		};
+		5C86D65A25B56E0D00314CEF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C86D65B25B56E0D00314CEF /* ArrayExtensions.swift */,
+				5C86D65C25B56E0D00314CEF /* DictionaryExtensions.swift */,
+				5C86D65D25B56E0D00314CEF /* StringExtensions.swift */,
+				5C86D65E25B56E0D00314CEF /* FileManager+stlr.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5C86D66025B56E0D00314CEF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5C86D66125B56E0D00314CEF /* Parameters.swift */,
+				5C86D66225B56E0D00314CEF /* Command.swift */,
+				5C86D66325B56E0D00314CEF /* Runnable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5CBCE1942394DDD000ECBD43 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +306,8 @@
 		5CBCE19F2394DDD000ECBD43 /* CodeProduceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5C86D54C25B5655800314CEF /* Third */,
+				5C86D4F825B55B4700314CEF /* CommandWork */,
 				5CEC5A97259039FC004197BA /* TaskSchedule */,
 				5CCC9139257E0BA400A69790 /* ModalWindow */,
 				5C703C5E24EB826500ABBC6F /* Crypto */,
@@ -537,28 +616,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C86D66425B56E0D00314CEF /* Argument.swift in Sources */,
+				5C86D66825B56E0D00314CEF /* ArrayExtensions.swift in Sources */,
 				5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */,
 				5C660B6A2398AC020089B667 /* CreateOCCodeVM.swift in Sources */,
+				5C86D66625B56E0D00314CEF /* Tool.swift in Sources */,
 				5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */,
 				5CEC5A9C25903EE4004197BA /* TaskVC.swift in Sources */,
 				5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */,
 				5C660B682398ABEE0089B667 /* CreateOCCode.swift in Sources */,
+				5C86D66B25B56E0D00314CEF /* FileManager+stlr.swift in Sources */,
 				5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */,
+				5C86D66C25B56E0D00314CEF /* ANSIEncoding.swift in Sources */,
 				5CEC5AA925906F5A004197BA /* TaskVM.swift in Sources */,
+				5C86D66F25B56E0D00314CEF /* Runnable.swift in Sources */,
 				5C703C5524EB7F2A00ABBC6F /* SM4Util.m in Sources */,
 				5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */,
+				5C86D66D25B56E0D00314CEF /* Parameters.swift in Sources */,
+				5C86D4FA25B55B5900314CEF /* CommandWork.swift in Sources */,
+				5C86D66925B56E0D00314CEF /* DictionaryExtensions.swift in Sources */,
 				5CBCE1DB23973DB900ECBD43 /* AppHelp.swift in Sources */,
 				5CBCE1D32394DF2D00ECBD43 /* PublicImport.swift in Sources */,
 				5C703C5324EB7F2A00ABBC6F /* sm4.c in Sources */,
+				5C86D66725B56E0D00314CEF /* Version.swift in Sources */,
 				5C703C5C24EB809A00ABBC6F /* SM4Code.c in Sources */,
+				5C86D66E25B56E0D00314CEF /* Command.swift in Sources */,
 				5C703C5424EB7F2A00ABBC6F /* hex2str.c in Sources */,
 				5C703C5D24EB809A00ABBC6F /* IUMEncryptor.m in Sources */,
 				5C703C6624EB826600ABBC6F /* AESCryptVC.swift in Sources */,
 				5CBCE1D52396453B00ECBD43 /* ViewModel.swift in Sources */,
+				5C86D66A25B56E0D00314CEF /* StringExtensions.swift in Sources */,
 				5CBCE1D02394DEFA00ECBD43 /* CreateOCFile.swift in Sources */,
 				5CCC913B257E0BEF00A69790 /* ModalWindow.swift in Sources */,
 				5CBCE1D723964F1D00ECBD43 /* MyTransitionAnimator.swift in Sources */,
 				5C703C6424EB826600ABBC6F /* AESCryptVM.swift in Sources */,
+				5C86D66525B56E0D00314CEF /* Option.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

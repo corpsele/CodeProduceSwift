@@ -87,6 +87,8 @@ class ViewController: NSViewController {
         if shared?.window1 == nil {
             shared?.window1 = modalWindow
         }
+        
+        
     }
 
     override var representedObject: Any? {
@@ -188,8 +190,17 @@ class ViewController: NSViewController {
         }
         
         let menuItem1 = NSMenuItem(title: "Show Task View", action: #selector(menuItem1Action(sender:)), keyEquivalent: "")
+        
+        let menuItem2 = NSMenuItem(title: "Open Wifi", action: #selector(menuItem2Action(sender:)), keyEquivalent: "")
+        
+        let menuItem3 = NSMenuItem(title: "Close Wifi", action: #selector(menuItem3Action(sender:)), keyEquivalent: "")
+        
+        let menuItem4 = NSMenuItem(title: "Connect Wifi", action: #selector(menuItem4Action(sender:)), keyEquivalent: "")
 
         taskMenu?.addItem(menuItem1)
+        taskMenu?.addItem(menuItem2)
+        taskMenu?.addItem(menuItem3)
+        taskMenu?.addItem(menuItem4)
         
         vm.btnTaskMenuAction.values.observeValues { [unowned self] _ in
             if let event = NSApp.currentEvent {
@@ -202,6 +213,18 @@ class ViewController: NSViewController {
     @objc func menuItem1Action(sender: NSMenuItem){
             let vc = TaskVC.init(nibName: "TaskVC", bundle: Bundle.main)
             self.presentAsSheet(vc)
+    }
+    
+    @objc func menuItem2Action(sender: NSMenuItem) {
+        CommandWork.openWifi()
+    }
+    
+    @objc func menuItem3Action(sender: NSMenuItem) {
+        CommandWork.closeWifi()
+    }
+    
+    @objc func menuItem4Action(sender: NSMenuItem) {
+        CommandWork.connectCLWifi()
     }
 
     // MARK: layout

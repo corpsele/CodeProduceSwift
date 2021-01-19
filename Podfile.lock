@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.4.0)
   - anim (1.2.10)
+  - Commander (0.9.1)
   - MMKV (1.2.6):
     - MMKVCore (~> 1.2.6)
   - MMKVCore (1.2.6)
@@ -43,10 +44,12 @@ PODS:
   - SwifterSwift/StoreKit (5.2.0)
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwifterSwift/UIKit (5.2.0)
+  - SwiftShell (5.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - anim
+  - Commander
   - MMKV
   - ReactiveCocoa
   - ReactiveKit
@@ -55,11 +58,13 @@ DEPENDENCIES:
   - SnapKit
   - SQLite.swift
   - SwifterSwift
+  - SwiftShell
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - anim
+    - Commander
     - MMKV
     - MMKVCore
     - ReactiveCocoa
@@ -71,10 +76,12 @@ SPEC REPOS:
     - SnapKit
     - SQLite.swift
     - SwifterSwift
+    - SwiftShell
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   anim: 8603b8aa9f20c26fb04bfc94967f0e942687938d
+  Commander: 723330cf3697b604c00afb9db9576be81a03c501
   MMKV: 27f6b9e34849e77e78c5a1cc8f7f513e37f5fa15
   MMKVCore: c301b04fd2ab9957e6e4d4465b9b60e443b0bb6b
   ReactiveCocoa: 7bc87ad2d361b9de141278b1950edd7fe91b15b1
@@ -86,7 +93,8 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftShell: 0c2c6f2fcfc210e84a7b06390581923e2aab2ec7
 
-PODFILE CHECKSUM: 006b936aa55d6225e89cf696f47b449ac5620dca
+PODFILE CHECKSUM: b9bf705bb0a3c89ed9e10569abf0e124690b1665
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
