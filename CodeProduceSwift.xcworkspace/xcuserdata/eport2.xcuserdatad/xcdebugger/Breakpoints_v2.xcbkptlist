@@ -332,8 +332,8 @@
             filePath = "CodeProduceSwift/CommandWork/CommandWork.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "shell(command:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -341,16 +341,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3E641C09-D2BC-4ECE-96BF-818E80A1C0D9"
+            uuid = "FE7B7972-2022-4C0A-905C-234C73264816"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeProduceSwift/CommandWork/CommandWork.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "closeWifi()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B00E15BC-B7B9-4DC0-A75E-5FECF9107550"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeProduceSwift/CommandWork/CommandWork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "openWifi()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

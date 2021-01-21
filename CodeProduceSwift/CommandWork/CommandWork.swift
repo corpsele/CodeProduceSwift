@@ -49,21 +49,87 @@ class CommandWork: NSObject {
     static func openWifi() {
 //        let _ = shell(command: "open /Users/eport2/Documents/openwifi.app")
         var err: NSDictionary? = [:]
-        let _ = NSAppleScript(source: "tell application \"/Users/eport2/Documents/openwifi.app\" \n end tell")?.executeAndReturnError(&err)
-        print(err)
+        let str = "tell application \"/Users/eport2/Documents/openwifi.app\" \n end tell"
+        print(str)
+        let appleScript = NSAppleScript(source: str)
+        if let flag = appleScript?.compileAndReturnError(&err) {
+            if flag {
+                let event = appleScript?.executeAndReturnError(&err)
+                if err?.allKeys.count != 0 {
+                    let alert = NSAlert()
+                    guard let str = err?["NSAppleScriptErrorMessage"] as? String else {
+                        print(err)
+                        
+                        return
+                    }
+                    alert.messageText = str
+                    alert.runModal()
+                }
+                if let flag = appleScript?.isCompiled {
+                    if flag {
+                        print("finish")
+                    }
+                }
+                print(err)
+            }
+        }
+
     }
     
     static func closeWifi() {
 //        let _ = shell(command: "open /Users/eport2/Documents/closewifi.app")
         var err: NSDictionary? = [:]
-        let _ = NSAppleScript(source: "tell application \"/Users/eport2/Documents/closewifi.app\" \n end tell")?.executeAndReturnError(&err)
-        print(err)
+        let str = "tell application \"/Users/eport2/Documents/closewifi.app\" \n end tell"
+//        let _ = NSAppleScript(source: str)?.executeAndReturnError(&err)
+        let appleScript = NSAppleScript(source: str)
+        if let flag = appleScript?.compileAndReturnError(&err) {
+            if flag {
+                let event = appleScript?.executeAndReturnError(&err)
+                if err?.allKeys.count != 0 {
+                    let alert = NSAlert()
+                    guard let str = err?["NSAppleScriptErrorMessage"] as? String else {
+                        print(err)
+                        
+                        return
+                    }
+                    alert.messageText = str
+                    alert.runModal()
+                }
+                if let flag = appleScript?.isCompiled {
+                    if flag {
+                        print("finish")
+                    }
+                }
+                print(err)
+            }
+        }
     }
     
     static func connectCLWifi() {
         var err: NSDictionary? = [:]
-        let _ = NSAppleScript(source: "tell application \"/Users/eport2/Documents/connectclwifi.app\" \n end tell")?.executeAndReturnError(&err)
-        print(err)
+        let str = "tell application \"/Users/eport2/Documents/connectclwifi.app\" \n end tell"
+        let appleScript = NSAppleScript(source: str)
+        if let flag = appleScript?.compileAndReturnError(&err) {
+            if flag {
+                let event = appleScript?.executeAndReturnError(&err)
+                if err?.allKeys.count != 0 {
+                    let alert = NSAlert()
+                    guard let str = err?["NSAppleScriptErrorMessage"] as? String else {
+                        print(err)
+                        
+                        return
+                    }
+                    alert.messageText = str
+                    alert.runModal()
+                }
+                if let flag = appleScript?.isCompiled {
+                    if flag {
+                        print("finish")
+                    }
+                }
+                print(err)
+            }
+        }
     }
     
     func shell(command: String) -> Int32 {
