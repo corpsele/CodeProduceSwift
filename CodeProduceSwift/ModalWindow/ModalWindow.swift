@@ -155,7 +155,7 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         //
         // timer?.scheduleRepeating(deadline: .now(), interval: .seconds(5), leeway: .seconds(1))
         timer?.setEventHandler { [weak self] in // `[weak self]` only needed if you reference `self` in this closure and you want to prevent strong reference cycle
-            print(Date())
+//            print(Date())
             self?.restoreWindow()
             DispatchQueue.main.async {
                 self?.txtBackView?.setNeedsDisplay(self?.txtBackView?.frame ?? .zero)
@@ -173,7 +173,7 @@ class ModalWindow: NSWindow, NSWindowDelegate {
             return
         }
         DispatchQueue.main.async { [weak self] in
-            print("screen x = \(self?.screenFrame?.origin.x) y = \(self?.screenFrame?.origin.y) w = \(self?.screenFrame?.width) h = \(self?.screenFrame?.height) self.frame.x = \(self?.frame.origin.x) self.frame.y = \(self?.frame.origin.y)")
+//            print("screen x = \(self?.screenFrame?.origin.x) y = \(self?.screenFrame?.origin.y) w = \(self?.screenFrame?.width) h = \(self?.screenFrame?.height) self.frame.x = \(self?.frame.origin.x) self.frame.y = \(self?.frame.origin.y)")
             var frame = self?.frame ?? .zero
             if frame.origin.x <= 0.0  {
                 frame.origin.x = 0.0
@@ -184,14 +184,14 @@ class ModalWindow: NSWindow, NSWindowDelegate {
                 self?.setFrame(frame, display: true, animate: true)
             }
             if let w = self?.screenFrame?.width {
-                print("w = \(w) frame.w = \(frame.origin.x + frame.width)")
+//                print("w = \(w) frame.w = \(frame.origin.x + frame.width)")
                 if frame.origin.x + frame.width >= w {
                     frame.origin.x = w - frame.width
                     self?.setFrame(frame, display: true, animate: true)
                 }
             }
             if let h = self?.screenFrame?.height {
-                print("h = \(h) frame.h = \(frame.origin.y + frame.height)")
+//                print("h = \(h) frame.h = \(frame.origin.y + frame.height)")
                 if frame.origin.y + frame.height >= h {
                     frame.origin.y = h - frame.height
                     self?.setFrame(frame, display: true, animate: true)

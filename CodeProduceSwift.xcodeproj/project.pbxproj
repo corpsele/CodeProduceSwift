@@ -31,6 +31,9 @@
 		5C86D66D25B56E0D00314CEF /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D66125B56E0D00314CEF /* Parameters.swift */; };
 		5C86D66E25B56E0D00314CEF /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D66225B56E0D00314CEF /* Command.swift */; };
 		5C86D66F25B56E0D00314CEF /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D66325B56E0D00314CEF /* Runnable.swift */; };
+		5CA659CE25C914D600C6C12B /* CryptoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA659CD25C914D600C6C12B /* CryptoVC.swift */; };
+		5CA659D325C917A700C6C12B /* CryptoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA659D225C917A700C6C12B /* CryptoVM.swift */; };
+		5CA659DC25C91BD300C6C12B /* SCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA659DB25C91BD300C6C12B /* SCrypto.swift */; };
 		5CBCE1A12394DDD000ECBD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */; };
 		5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A22394DDD000ECBD43 /* ViewController.swift */; };
 		5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCE1A42394DDD000ECBD43 /* Document.swift */; };
@@ -104,6 +107,9 @@
 		5C86D66125B56E0D00314CEF /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
 		5C86D66225B56E0D00314CEF /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		5C86D66325B56E0D00314CEF /* Runnable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
+		5CA659CD25C914D600C6C12B /* CryptoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVC.swift; sourceTree = "<group>"; };
+		5CA659D225C917A700C6C12B /* CryptoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVM.swift; sourceTree = "<group>"; };
+		5CA659DB25C91BD300C6C12B /* SCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCrypto.swift; sourceTree = "<group>"; };
 		5CBCE19D2394DDD000ECBD43 /* CodeProduceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeProduceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBCE1A02394DDD000ECBD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBCE1A22394DDD000ECBD43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +231,8 @@
 				5C703C6024EB826500ABBC6F /* AESCryptVM.swift */,
 				5C703C6224EB826500ABBC6F /* AESCryptVC.swift */,
 				5C703C6324EB826500ABBC6F /* CodeProduceSwift-Bridging-Header.h */,
+				5CA659CD25C914D600C6C12B /* CryptoVC.swift */,
+				5CA659D225C917A700C6C12B /* CryptoVM.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 		5C86D54C25B5655800314CEF /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				5CA659DA25C91BD300C6C12B /* Crypto */,
 				5C86D65525B56E0D00314CEF /* CommandKit */,
 			);
 			path = Third;
@@ -278,6 +287,14 @@
 				5C86D66325B56E0D00314CEF /* Runnable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5CA659DA25C91BD300C6C12B /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				5CA659DB25C91BD300C6C12B /* SCrypto.swift */,
+			);
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 		5CBCE1942394DDD000ECBD43 = {
@@ -622,6 +639,7 @@
 				5C660B6A2398AC020089B667 /* CreateOCCodeVM.swift in Sources */,
 				5C86D66625B56E0D00314CEF /* Tool.swift in Sources */,
 				5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */,
+				5CA659D325C917A700C6C12B /* CryptoVM.swift in Sources */,
 				5CEC5A9C25903EE4004197BA /* TaskVC.swift in Sources */,
 				5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */,
 				5C660B682398ABEE0089B667 /* CreateOCCode.swift in Sources */,
@@ -631,9 +649,11 @@
 				5CEC5AA925906F5A004197BA /* TaskVM.swift in Sources */,
 				5C86D66F25B56E0D00314CEF /* Runnable.swift in Sources */,
 				5C703C5524EB7F2A00ABBC6F /* SM4Util.m in Sources */,
+				5CA659CE25C914D600C6C12B /* CryptoVC.swift in Sources */,
 				5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */,
 				5C86D66D25B56E0D00314CEF /* Parameters.swift in Sources */,
 				5C86D4FA25B55B5900314CEF /* CommandWork.swift in Sources */,
+				5CA659DC25C91BD300C6C12B /* SCrypto.swift in Sources */,
 				5C86D66925B56E0D00314CEF /* DictionaryExtensions.swift in Sources */,
 				5CBCE1DB23973DB900ECBD43 /* AppHelp.swift in Sources */,
 				5CBCE1D32394DF2D00ECBD43 /* PublicImport.swift in Sources */,

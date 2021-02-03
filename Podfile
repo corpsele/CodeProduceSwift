@@ -18,6 +18,7 @@ target 'CodeProduceSwift' do
   pod 'anim'
   pod 'Commander'
   pod 'SwiftShell'
+  pod 'CryptoSwift'
 
   target 'CodeProduceSwiftTests' do
     inherit! :search_paths

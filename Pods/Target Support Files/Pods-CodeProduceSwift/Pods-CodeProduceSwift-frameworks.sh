@@ -177,6 +177,7 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Commander/Commander.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework"
@@ -194,6 +195,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Commander/Commander.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework"
