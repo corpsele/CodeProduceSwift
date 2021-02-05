@@ -39,6 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         
         return true;
     }
+    
 
     func windowWillClose(_ notification: Notification) {
 

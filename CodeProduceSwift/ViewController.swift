@@ -198,12 +198,15 @@ class ViewController: NSViewController {
         let menuItem4 = NSMenuItem(title: "Connect Wifi", action: #selector(menuItem4Action(sender:)), keyEquivalent: "")
         
         let menuItem5 = NSMenuItem(title: "En/Des Crypoto", action: #selector(menuItem5Action(sender:)), keyEquivalent: "")
+        
+        let menuItem6 = NSMenuItem(title: "Date Convert", action: #selector(menuItem6Action(sender:)), keyEquivalent: "")
 
         taskMenu?.addItem(menuItem1)
         taskMenu?.addItem(menuItem2)
         taskMenu?.addItem(menuItem3)
         taskMenu?.addItem(menuItem4)
         taskMenu?.addItem(menuItem5)
+        taskMenu?.addItem(menuItem6)
         
         vm.btnTaskMenuAction.values.observeValues { [unowned self] _ in
             if let event = NSApp.currentEvent {
@@ -232,6 +235,14 @@ class ViewController: NSViewController {
     
     @objc func menuItem5Action(sender: NSMenuItem) {
         let vc = self.storyboard?.instantiateController(withIdentifier: "CryptoVC") as! NSViewController
+//        vc.view.snp.makeConstraints { (make) in
+//            make.height.equalTo(500.0)
+//        }
+        self.presentAsSheet(vc)
+    }
+    
+    @objc func menuItem6Action(sender: NSMenuItem) {
+        let vc = self.storyboard?.instantiateController(withIdentifier: "DateConvertVC") as! NSViewController
 //        vc.view.snp.makeConstraints { (make) in
 //            make.height.equalTo(500.0)
 //        }
