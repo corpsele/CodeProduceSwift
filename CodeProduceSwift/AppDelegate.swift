@@ -30,13 +30,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+        
     }
     
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
 //        for window in sender.windows {
 //            NSApp.terminate(window)
 //        }
-        
+        CommandWork.setVolumeMute()
         return true;
     }
     

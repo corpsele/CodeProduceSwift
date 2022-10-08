@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
 options: "e5ab5e9422a53ba45284d18bd4db99f7d23d5b063ef0ee7da37f5de7eaca9930"
-build_start_time: [1665209585, 901756048]
-build_end_time: [1665209615, 412581920]
+build_start_time: [1665212619, 801044940]
+build_end_time: [1665212620, 44168949]
 inputs:
   "/Users/eport2/Documents/CodeProduceSwift/Pods/CryptoSwift/Sources/CryptoSwift/AEAD/AEAD.swift": [1665209562, 88478088]
   "/Users/eport2/Documents/CodeProduceSwift/Pods/CryptoSwift/Sources/CryptoSwift/AEAD/AEADChaCha20Poly1305.swift": [1665209562, 87985038]

@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
 options: "770f1554c2c735f91716dab5a25cd24e557de89cbd88c3c88debee899be14c50"
-build_start_time: [1665209633, 579254150]
-build_end_time: [1665209635, 759042978]
+build_start_time: [1665212619, 999861955]
+build_end_time: [1665212620, 90753078]
 inputs:
   "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Combine+Rx/Publisher+Rx.swift": [1665209562, 326899290]
   "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Combine+Rx/Subject+Rx.swift": [1665209562, 326396942]

@@ -1,0 +1,57 @@
+Target dependency graph (18 targets)
+Alamofire in Pods, no dependencies
+Commander in Pods, no dependencies
+CryptoSwift in Pods, no dependencies
+MMKVCore in Pods, no dependencies
+MMKV in Pods, depends on:
+MMKVCore in Pods (explicit)
+ReactiveSwift in Pods, no dependencies
+ReactiveCocoa in Pods, depends on:
+ReactiveSwift in Pods (explicit)
+ReactiveKit in Pods, no dependencies
+RxSwift in Pods, no dependencies
+RxRelay in Pods, depends on:
+RxSwift in Pods (explicit)
+RxCombine in Pods, depends on:
+RxRelay in Pods (explicit)
+RxSwift in Pods (explicit)
+SQLite.swift in Pods, no dependencies
+SnapKit in Pods, no dependencies
+SwiftShell in Pods, no dependencies
+SwifterSwift in Pods, no dependencies
+anim in Pods, no dependencies
+Pods-CodeProduceSwift in Pods, depends on:
+Alamofire in Pods (explicit)
+Commander in Pods (explicit)
+CryptoSwift in Pods (explicit)
+MMKV in Pods (explicit)
+MMKVCore in Pods (explicit)
+ReactiveCocoa in Pods (explicit)
+ReactiveKit in Pods (explicit)
+ReactiveSwift in Pods (explicit)
+RxCombine in Pods (explicit)
+RxRelay in Pods (explicit)
+RxSwift in Pods (explicit)
+SQLite.swift in Pods (explicit)
+SnapKit in Pods (explicit)
+SwiftShell in Pods (explicit)
+SwifterSwift in Pods (explicit)
+anim in Pods (explicit)
+CodeProduceSwift in CodeProduceSwift, depends on:
+Pods-CodeProduceSwift in Pods (implicit dependency via file 'Pods_CodeProduceSwift.framework' in build phase 'Link Binary')
+Alamofire in Pods (implicit dependency via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS')
+Commander in Pods (implicit dependency via options '-framework Commander' in build setting 'OTHER_LDFLAGS')
+CryptoSwift in Pods (implicit dependency via options '-framework CryptoSwift' in build setting 'OTHER_LDFLAGS')
+MMKV in Pods (implicit dependency via options '-framework MMKV' in build setting 'OTHER_LDFLAGS')
+MMKVCore in Pods (implicit dependency via options '-framework MMKVCore' in build setting 'OTHER_LDFLAGS')
+ReactiveCocoa in Pods (implicit dependency via options '-framework ReactiveCocoa' in build setting 'OTHER_LDFLAGS')
+ReactiveKit in Pods (implicit dependency via options '-framework ReactiveKit' in build setting 'OTHER_LDFLAGS')
+ReactiveSwift in Pods (implicit dependency via options '-framework ReactiveSwift' in build setting 'OTHER_LDFLAGS')
+RxCombine in Pods (implicit dependency via options '-framework RxCombine' in build setting 'OTHER_LDFLAGS')
+RxRelay in Pods (implicit dependency via options '-framework RxRelay' in build setting 'OTHER_LDFLAGS')
+RxSwift in Pods (implicit dependency via options '-framework RxSwift' in build setting 'OTHER_LDFLAGS')
+SQLite.swift in Pods (implicit dependency via options '-framework SQLite' in build setting 'OTHER_LDFLAGS')
+SnapKit in Pods (implicit dependency via options '-framework SnapKit' in build setting 'OTHER_LDFLAGS')
+SwiftShell in Pods (implicit dependency via options '-framework SwiftShell' in build setting 'OTHER_LDFLAGS')
+SwifterSwift in Pods (implicit dependency via options '-framework SwifterSwift' in build setting 'OTHER_LDFLAGS')
+anim in Pods (implicit dependency via options '-framework anim' in build setting 'OTHER_LDFLAGS')

@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
 options: "e5ab5e9422a53ba45284d18bd4db99f7d23d5b063ef0ee7da37f5de7eaca9930"
-build_start_time: [1665209623, 121898174]
-build_end_time: [1665209636, 86001873]
+build_start_time: [1665212622, 532137870]
+build_end_time: [1665212622, 691545963]
 inputs:
   "/Users/eport2/Documents/CodeProduceSwift/Pods/Alamofire/Source/AFError.swift": [1665209562, 44839620]
   "/Users/eport2/Documents/CodeProduceSwift/Pods/Alamofire/Source/Alamofire.swift": [1665209562, 50653934]

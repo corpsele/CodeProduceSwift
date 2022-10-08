@@ -1,11 +1,11 @@
 version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
 options: "6bd7a250b2880c69f4c622cd042c7bd3bc8deb9370f40a5eb0ced545e4e9ab66"
-build_start_time: [1665209642, 993937969]
-build_end_time: [1665209658, 77780008]
+build_start_time: [1665215829, 605147838]
+build_end_time: [1665215831, 77770948]
 inputs:
   "/Users/eport2/Documents/CodeProduceSwift/CPSApplication.swift": [1585042138, 416020870]
-  "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/AppDelegate.swift": [1612496067, 465658664]
-  "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/CommandWork/CommandWork.swift": [1611205690, 679739952]
+  "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/AppDelegate.swift": [1665213890, 899878501]
+  "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/CommandWork/CommandWork.swift": [1665215823, 799001693]
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/CreateCode/CreateOCCode.swift": [1575614366, 937388658]
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/CreateCode/CreateOCCodeVM.swift": [1575614790, 866470813]
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/CreateFiles/CreateOCFile.swift": [1575515109, 459624290]
@@ -20,6 +20,7 @@ inputs:
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/Public/AppHelp.swift": [1610946612, 163171291]
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/Public/MyTransitionAnimator.swift": [1575360573, 252259969]
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/Public/PublicImport.swift": [1608599338, 126385688]
+  "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/Public/SystemControl.swift": [1665212752, 142506837]
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/TaskSchedule/TaskVC.swift": [1610946612, 164169311]
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/TaskSchedule/TaskVM.swift": [1608598884, 685955762]
   "/Users/eport2/Documents/CodeProduceSwift/CodeProduceSwift/Third/CommandKit/ANSIEncoding.swift": [1610954322, 31333208]

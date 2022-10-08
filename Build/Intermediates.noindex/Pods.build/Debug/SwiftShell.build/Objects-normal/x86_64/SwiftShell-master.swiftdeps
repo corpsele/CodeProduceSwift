@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
 options: "e5ab5e9422a53ba45284d18bd4db99f7d23d5b063ef0ee7da37f5de7eaca9930"
-build_start_time: [1665209577, 51686048]
-build_end_time: [1665209577, 175192832]
+build_start_time: [1665212620, 205676078]
+build_end_time: [1665212620, 264899969]
 inputs:
   "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Bash.swift": [1610959790, 984964132]
   "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Command.swift": [1610959790, 986416101]

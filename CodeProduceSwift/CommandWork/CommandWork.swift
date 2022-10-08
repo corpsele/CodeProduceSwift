@@ -46,6 +46,13 @@ class CommandWork: NSObject {
         return isOpened
     }
     
+    static func setVolumeMute() {
+//        var err: NSDictionary? = [:]
+//        let str = "set volume with output muted"
+        let cw = CommandWork()
+        let _ = cw.shell(command: "osascript -e \"set Volume 0\"")
+    }
+    
     static func openWifi() {
 //        let _ = shell(command: "open /Users/eport2/Documents/openwifi.app")
         var err: NSDictionary? = [:]

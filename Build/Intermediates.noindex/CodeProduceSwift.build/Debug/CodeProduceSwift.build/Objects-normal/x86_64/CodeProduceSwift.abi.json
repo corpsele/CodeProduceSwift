@@ -7354,6 +7354,54 @@
     },
     {
       "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "CodeProduceSwift",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "AVFoundation",
+      "printedName": "AVFoundation",
+      "declKind": "Import",
+      "moduleName": "CodeProduceSwift"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "SystemControl",
+      "printedName": "SystemControl",
+      "children": [
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SystemControl",
+              "printedName": "CodeProduceSwift.SystemControl",
+              "usr": "s:16CodeProduceSwift13SystemControlC"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:16CodeProduceSwift13SystemControlCACycfc",
+          "mangledName": "$s16CodeProduceSwift13SystemControlCACycfc",
+          "moduleName": "CodeProduceSwift",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:16CodeProduceSwift13SystemControlC",
+      "mangledName": "$s16CodeProduceSwift13SystemControlC",
+      "moduleName": "CodeProduceSwift",
+      "isOpen": true
+    },
+    {
+      "kind": "Import",
       "name": "Cocoa",
       "printedName": "Cocoa",
       "declKind": "Import",
@@ -17373,6 +17421,27 @@
           "isOpen": true,
           "declAttributes": [
             "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "setVolumeMute",
+          "printedName": "setVolumeMute()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:16CodeProduceSwift11CommandWorkC13setVolumeMuteyyFZ",
+          "mangledName": "$s16CodeProduceSwift11CommandWorkC13setVolumeMuteyyFZ",
+          "moduleName": "CodeProduceSwift",
+          "static": true,
+          "declAttributes": [
+            "Final"
           ],
           "funcSelfKind": "NonMutating"
         },

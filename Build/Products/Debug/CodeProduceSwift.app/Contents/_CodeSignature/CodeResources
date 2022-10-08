@@ -227,6 +227,15 @@
 			<key>requirement</key>
 			<string>cdhash H"d8a10bca8f8dca98c6b1146c0a67710432c0487a" or cdhash H"956a1dc7cdfe1d75a47e4fc21aa0537d89cf8857"</string>
 		</dict>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			vG/+wrcE2vnxenLi//6PdPbBnnI=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"feb2b00ea35babbf1f8ecd2b9dd7c3523b8dd2e3" or cdhash H"bc6ffec2b704daf9f17a72e2fffe8f74f6c19e72"</string>
+		</dict>
 		<key>Frameworks/libswiftAppKit.dylib</key>
 		<dict>
 			<key>cdhash</key>
@@ -244,6 +253,15 @@
 			</data>
 			<key>requirement</key>
 			<string>cdhash H"5896a3c5c845fa8e206333a333969a967f159eeb" or cdhash H"197e26997abeeff990a23f2865d9fc1eeb70d18f"</string>
+		</dict>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			A7UrDoeeg9NbAL6zhhfNao2U+rc=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"addbf0ec5c37ef636ad1edbe3596d1ecf1a9db42" or cdhash H"03b52b0e879e83d35b00beb38617cd6a8d94fab7"</string>
 		</dict>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<dict>
@@ -289,6 +307,15 @@
 			</data>
 			<key>requirement</key>
 			<string>cdhash H"0ceefdc8e253242d4742f03d97825b104c3994ae" or cdhash H"432f21ebbc2f0f5c96b774911a08a4e9dfd1fdc5"</string>
+		</dict>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			wKq5+CadziNvyHnxt5nSaAMhEdk=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"fcfdbfac49b22f22aff1a259db747bf573307d2a" or cdhash H"c0aab9f8269dce236fc879f1b799d268032111d9"</string>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<dict>
