@@ -19,6 +19,7 @@ target 'CodeProduceSwift' do
   pod 'Commander'
   pod 'SwiftShell'
   pod 'CryptoSwift'
+#  pod 'ZMChineseConvert'
 
   target 'CodeProduceSwiftTests' do
     inherit! :search_paths

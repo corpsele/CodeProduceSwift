@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "57e3a72a2865e39529628e09d2127c30539f8f9e1457e92b1fa7b32c05ea3c0f"
+build_start_time: [1665198094, 674618005]
+build_end_time: [1665198095, 983746051]
+inputs:
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxRelay/RxRelay/BehaviorRelay.swift": [1608542387, 207336902]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxRelay/RxRelay/Observable+Bind.swift": [1608542387, 206676244]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxRelay/RxRelay/PublishRelay.swift": [1608542387, 206249237]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxRelay/RxRelay/Utils.swift": [1608542387, 207020044]

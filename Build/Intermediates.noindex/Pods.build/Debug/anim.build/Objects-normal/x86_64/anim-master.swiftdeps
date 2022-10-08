@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "e5ab5e9422a53ba45284d18bd4db99f7d23d5b063ef0ee7da37f5de7eaca9930"
+build_start_time: [1665209577, 58017969]
+build_end_time: [1665209577, 142476081]
+inputs:
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/Animator-ios.swift": [1608599306, 102165222]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/Animator-macos.swift": [1608599306, 101936578]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/Animator.swift": [1608599306, 102598667]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/AnimatorType.swift": [1608599306, 103509664]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/Constraint.swift": [1608599306, 103746175]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/Ease.swift": [1608599306, 103229284]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/Promise.swift": [1608599306, 103020191]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/Settings.swift": [1608599306, 102808475]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/anim/src/anim.swift": [1608599306, 102380752]

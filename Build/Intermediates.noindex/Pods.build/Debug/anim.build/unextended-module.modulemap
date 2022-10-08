@@ -1,0 +1,10 @@
+framework module anim {
+  umbrella header "anim-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module anim.__Swift {
+    exclude header "anim-Swift.h"
+}

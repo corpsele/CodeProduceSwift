@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/eport2/Documents/CodeProduceSwift/Build/Products/Debug/ReactiveKit/ReactiveKit.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/eport2/Documents/CodeProduceSwift/Build/Intermediates.noindex/Pods.build/Debug/ReactiveKit.build/unextended-module.modulemap",
+    }]
+  }]
+}

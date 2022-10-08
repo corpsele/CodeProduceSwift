@@ -1,0 +1,3894 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxRelay",
+      "printedName": "RxRelay",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "RxCurrentValueRelay",
+      "printedName": "RxCurrentValueRelay",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "rxRelay",
+          "printedName": "rxRelay",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "BehaviorRelay",
+              "printedName": "RxRelay.BehaviorRelay<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:7RxRelay08BehaviorB0C"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC02rxE033_3584E9B0516063AB377A128BCEFFD3A3LL0aE008BehaviorE0CyxGvp",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC02rxE033_3584E9B0516063AB377A128BCEFFD3A3LL0aE008BehaviorE0CyxGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subject",
+          "printedName": "subject",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CurrentValueSubject",
+              "printedName": "Combine.CurrentValueSubject<τ_0_0, Swift.Never>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ],
+              "usr": "s:7Combine19CurrentValueSubjectC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC7subject33_3584E9B0516063AB377A128BCEFFD3A3LL0B00cD7SubjectCyxs5NeverOGvp",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC7subject33_3584E9B0516063AB377A128BCEFFD3A3LL0B00cD7SubjectCyxs5NeverOGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subscription",
+          "printedName": "subscription",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Combine.AnyCancellable?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnyCancellable",
+                  "printedName": "Combine.AnyCancellable",
+                  "usr": "s:7Combine14AnyCancellableC"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC12subscription33_3584E9B0516063AB377A128BCEFFD3A3LL0B014AnyCancellableCSgvp",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC12subscription33_3584E9B0516063AB377A128BCEFFD3A3LL0B014AnyCancellableCSgvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "value",
+          "printedName": "value",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC5valuexvp",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC5valuexvp",
+          "moduleName": "RxCombine",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9RxCombine0A17CurrentValueRelayC5valuexvg",
+              "mangledName": "$s9RxCombine0A17CurrentValueRelayC5valuexvg",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0>",
+              "sugared_genericSig": "<Output>",
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9RxCombine0A17CurrentValueRelayC5valuexvs",
+              "mangledName": "$s9RxCombine0A17CurrentValueRelayC5valuexvs",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0>",
+              "sugared_genericSig": "<Output>",
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9RxCombine0A17CurrentValueRelayC5valuexvM",
+              "mangledName": "$s9RxCombine0A17CurrentValueRelayC5valuexvM",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0>",
+              "sugared_genericSig": "<Output>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(rxRelay:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxCurrentValueRelay",
+              "printedName": "RxCombine.RxCurrentValueRelay<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A17CurrentValueRelayC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "BehaviorRelay",
+              "printedName": "RxRelay.BehaviorRelay<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:7RxRelay08BehaviorB0C"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC02rxE0ACyxG0aE008BehaviorE0CyxG_tcfc",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC02rxE0ACyxG0aE008BehaviorE0CyxG_tcfc",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "receive",
+          "printedName": "receive(subscriber:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC7receive10subscriberyqd___t5InputQyd__Rsz0B010SubscriberRd__s5NeverO7FailureRtd__lF",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC7receive10subscriberyqd___t5InputQyd__Rsz0B010SubscriberRd__s5NeverO7FailureRtd__lF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 == τ_1_0.Input, τ_1_0 : Combine.Subscriber, τ_1_0.Failure == Swift.Never>",
+          "sugared_genericSig": "<Output, S where Output == S.Input, S : Combine.Subscriber, S.Failure == RxCombine.RxCurrentValueRelay<Output>.Failure>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC4sendyyxF",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC4sendyyxF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Completion",
+              "printedName": "Combine.Subscribers.Completion<Swift.Never>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ],
+              "usr": "s:7Combine11SubscribersO10CompletionO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC4send10completiony0B011SubscribersO10CompletionOy_s5NeverOG_tF",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC4send10completiony0B011SubscribersO10CompletionOy_s5NeverOG_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(subscription:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Subscription",
+              "printedName": "Combine.Subscription",
+              "usr": "s:7Combine12SubscriptionP"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A17CurrentValueRelayC4send12subscriptiony0B012Subscription_p_tF",
+          "mangledName": "$s9RxCombine0A17CurrentValueRelayC4send12subscriptiony0B012Subscription_p_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9RxCombine0A17CurrentValueRelayC",
+      "mangledName": "$s9RxCombine0A17CurrentValueRelayC",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<Output>",
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Final",
+        "AccessControl",
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "hasMissingDesignatedInitializers": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subject",
+          "printedName": "Subject",
+          "usr": "s:7Combine7SubjectP",
+          "mangledName": "$s7Combine7SubjectP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Publisher",
+          "printedName": "Publisher",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Failure",
+              "printedName": "Failure",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine9PublisherP",
+          "mangledName": "$s7Combine9PublisherP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "RxCurrentValueSubject",
+      "printedName": "RxCurrentValueSubject",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "rxSubject",
+          "printedName": "rxSubject",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "BehaviorSubject",
+              "printedName": "RxSwift.BehaviorSubject<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:7RxSwift15BehaviorSubjectC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC02rxE033_F9DA284A31F73B55ADF974DF4F8A3311LL0A5Swift08BehaviorE0CyxGvp",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC02rxE033_F9DA284A31F73B55ADF974DF4F8A3311LL0A5Swift08BehaviorE0CyxGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subject",
+          "printedName": "subject",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CurrentValueSubject",
+              "printedName": "Combine.CurrentValueSubject<τ_0_0, Swift.Error>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:7Combine19CurrentValueSubjectC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC7subject33_F9DA284A31F73B55ADF974DF4F8A3311LL0B00cdE0Cyxs5Error_pGvp",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC7subject33_F9DA284A31F73B55ADF974DF4F8A3311LL0B00cdE0Cyxs5Error_pGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subscription",
+          "printedName": "subscription",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Combine.AnyCancellable?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnyCancellable",
+                  "printedName": "Combine.AnyCancellable",
+                  "usr": "s:7Combine14AnyCancellableC"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC12subscription33_F9DA284A31F73B55ADF974DF4F8A3311LL0B014AnyCancellableCSgvp",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC12subscription33_F9DA284A31F73B55ADF974DF4F8A3311LL0B014AnyCancellableCSgvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "value",
+          "printedName": "value",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC5valuexvp",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC5valuexvp",
+          "moduleName": "RxCombine",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9RxCombine0A19CurrentValueSubjectC5valuexvg",
+              "mangledName": "$s9RxCombine0A19CurrentValueSubjectC5valuexvg",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0>",
+              "sugared_genericSig": "<Output>",
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9RxCombine0A19CurrentValueSubjectC5valuexvs",
+              "mangledName": "$s9RxCombine0A19CurrentValueSubjectC5valuexvs",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0>",
+              "sugared_genericSig": "<Output>",
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9RxCombine0A19CurrentValueSubjectC5valuexvM",
+              "mangledName": "$s9RxCombine0A19CurrentValueSubjectC5valuexvM",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0>",
+              "sugared_genericSig": "<Output>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(rxSubject:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxCurrentValueSubject",
+              "printedName": "RxCombine.RxCurrentValueSubject<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A19CurrentValueSubjectC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "BehaviorSubject",
+              "printedName": "RxSwift.BehaviorSubject<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:7RxSwift15BehaviorSubjectC"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC02rxE0ACyxG0A5Swift08BehaviorE0CyxG_tcfc",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC02rxE0ACyxG0A5Swift08BehaviorE0CyxG_tcfc",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "receive",
+          "printedName": "receive(subscriber:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC7receive10subscriberyqd___t5InputQyd__Rsz0B010SubscriberRd__s5Error_p7FailureRtd__lF",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC7receive10subscriberyqd___t5InputQyd__Rsz0B010SubscriberRd__s5Error_p7FailureRtd__lF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 == τ_1_0.Input, τ_1_0 : Combine.Subscriber, τ_1_0.Failure == Swift.Error>",
+          "sugared_genericSig": "<Output, S where Output == S.Input, S : Combine.Subscriber, S.Failure == RxCombine.RxCurrentValueSubject<Output>.Failure>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC4sendyyxF",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC4sendyyxF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Completion",
+              "printedName": "Combine.Subscribers.Completion<Swift.Error>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:7Combine11SubscribersO10CompletionO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC4send10completiony0B011SubscribersO10CompletionOy_s5Error_pG_tF",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC4send10completiony0B011SubscribersO10CompletionOy_s5Error_pG_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(subscription:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Subscription",
+              "printedName": "Combine.Subscription",
+              "usr": "s:7Combine12SubscriptionP"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A19CurrentValueSubjectC4send12subscriptiony0B012Subscription_p_tF",
+          "mangledName": "$s9RxCombine0A19CurrentValueSubjectC4send12subscriptiony0B012Subscription_p_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9RxCombine0A19CurrentValueSubjectC",
+      "mangledName": "$s9RxCombine0A19CurrentValueSubjectC",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<Output>",
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Final",
+        "AccessControl",
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "hasMissingDesignatedInitializers": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subject",
+          "printedName": "Subject",
+          "usr": "s:7Combine7SubjectP",
+          "mangledName": "$s7Combine7SubjectP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Publisher",
+          "printedName": "Publisher",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Failure",
+              "printedName": "Failure",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine9PublisherP",
+          "mangledName": "$s7Combine9PublisherP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "DemandBuffer",
+      "printedName": "DemandBuffer",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "lock",
+          "printedName": "lock",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSRecursiveLock",
+              "printedName": "Foundation.NSRecursiveLock",
+              "usr": "c:objc(cs)NSRecursiveLock"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine12DemandBufferC4lock33_0C06098961EBDB340C604AF175CCA5BCLLSo15NSRecursiveLockCvp",
+          "mangledName": "$s9RxCombine12DemandBufferC4lock33_0C06098961EBDB340C604AF175CCA5BCLLSo15NSRecursiveLockCvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "buffer",
+          "printedName": "buffer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[τ_0_0.Input]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Input"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine12DemandBufferC6buffer33_0C06098961EBDB340C604AF175CCA5BCLLSay5InputQzGvp",
+          "mangledName": "$s9RxCombine12DemandBufferC6buffer33_0C06098961EBDB340C604AF175CCA5BCLLSay5InputQzGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subscriber",
+          "printedName": "subscriber",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine12DemandBufferC10subscriber33_0C06098961EBDB340C604AF175CCA5BCLLxvp",
+          "mangledName": "$s9RxCombine12DemandBufferC10subscriber33_0C06098961EBDB340C604AF175CCA5BCLLxvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "completion",
+          "printedName": "completion",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Combine.Subscribers.Completion<τ_0_0.Failure>?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Completion",
+                  "printedName": "Combine.Subscribers.Completion<τ_0_0.Failure>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "DependentMember",
+                      "printedName": "τ_0_0.Failure"
+                    }
+                  ],
+                  "usr": "s:7Combine11SubscribersO10CompletionO"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine12DemandBufferC10completion33_0C06098961EBDB340C604AF175CCA5BCLL0B011SubscribersO10CompletionOy_7FailureQzGSgvp",
+          "mangledName": "$s9RxCombine12DemandBufferC10completion33_0C06098961EBDB340C604AF175CCA5BCLL0B011SubscribersO10CompletionOy_7FailureQzGSgvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "demandState",
+          "printedName": "demandState",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Demand",
+              "printedName": "RxCombine.DemandBuffer<τ_0_0>.Demand",
+              "usr": "s:9RxCombine12DemandBufferC0C033_0C06098961EBDB340C604AF175CCA5BCLLV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine12DemandBufferC11demandState33_0C06098961EBDB340C604AF175CCA5BCLLAC0C0AELLVyx_Gvp",
+          "mangledName": "$s9RxCombine12DemandBufferC11demandState33_0C06098961EBDB340C604AF175CCA5BCLLAC0C0AELLVyx_Gvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 4,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(subscriber:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DemandBuffer",
+              "printedName": "RxCombine.DemandBuffer<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine12DemandBufferC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:9RxCombine12DemandBufferC10subscriberACyxGx_tcfc",
+          "mangledName": "$s9RxCombine12DemandBufferC10subscriberACyxGx_tcfc",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : Combine.Subscriber>",
+          "sugared_genericSig": "<S where S : Combine.Subscriber>",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "buffer",
+          "printedName": "buffer(value:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Demand",
+              "printedName": "Combine.Subscribers.Demand",
+              "usr": "s:7Combine11SubscribersO6DemandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "DependentMember",
+              "printedName": "τ_0_0.Input"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine12DemandBufferC6buffer5value0B011SubscribersO0C0V5InputQz_tF",
+          "mangledName": "$s9RxCombine12DemandBufferC6buffer5value0B011SubscribersO0C0V5InputQz_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : Combine.Subscriber>",
+          "sugared_genericSig": "<S where S : Combine.Subscriber>",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "complete",
+          "printedName": "complete(completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Completion",
+              "printedName": "Combine.Subscribers.Completion<τ_0_0.Failure>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Failure"
+                }
+              ],
+              "usr": "s:7Combine11SubscribersO10CompletionO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine12DemandBufferC8complete10completiony0B011SubscribersO10CompletionOy_7FailureQzG_tF",
+          "mangledName": "$s9RxCombine12DemandBufferC8complete10completiony0B011SubscribersO10CompletionOy_7FailureQzG_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : Combine.Subscriber>",
+          "sugared_genericSig": "<S where S : Combine.Subscriber>",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "demand",
+          "printedName": "demand(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Demand",
+              "printedName": "Combine.Subscribers.Demand",
+              "usr": "s:7Combine11SubscribersO6DemandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Demand",
+              "printedName": "Combine.Subscribers.Demand",
+              "usr": "s:7Combine11SubscribersO6DemandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine12DemandBufferC6demandy0B011SubscribersO0C0VAIF",
+          "mangledName": "$s9RxCombine12DemandBufferC6demandy0B011SubscribersO0C0VAIF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : Combine.Subscriber>",
+          "sugared_genericSig": "<S where S : Combine.Subscriber>",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9RxCombine12DemandBufferC",
+      "mangledName": "$s9RxCombine12DemandBufferC",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0 where τ_0_0 : Combine.Subscriber>",
+      "sugared_genericSig": "<S where S : Combine.Subscriber>",
+      "isOpen": true,
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "RxPublisher",
+      "printedName": "RxPublisher",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "upstream",
+          "printedName": "upstream",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A9PublisherC8upstream33_7D2458E234B3D7CF8869FCBBD1EE2E61LLxvp",
+          "mangledName": "$s9RxCombine0A9PublisherC8upstream33_7D2458E234B3D7CF8869FCBBD1EE2E61LLxvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(upstream:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxPublisher",
+              "printedName": "RxCombine.RxPublisher<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A9PublisherC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:9RxCombine0A9PublisherC8upstreamACyxGx_tcfc",
+          "mangledName": "$s9RxCombine0A9PublisherC8upstreamACyxGx_tcfc",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : RxSwift.ObservableConvertibleType>",
+          "sugared_genericSig": "<Upstream where Upstream : RxSwift.ObservableConvertibleType>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "receive",
+          "printedName": "receive(subscriber:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A9PublisherC7receive10subscriberyqd___t0B010SubscriberRd__5InputQyd__7ElementRtzs5Error_p7FailureRtd__lF",
+          "mangledName": "$s9RxCombine0A9PublisherC7receive10subscriberyqd___t0B010SubscriberRd__5InputQyd__7ElementRtzs5Error_p7FailureRtd__lF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_1_0 : Combine.Subscriber, τ_0_0.Element == τ_1_0.Input, τ_1_0.Failure == Swift.Error>",
+          "sugared_genericSig": "<Upstream, S where Upstream : RxSwift.ObservableConvertibleType, S : Combine.Subscriber, Upstream.Element == S.Input, S.Failure == RxCombine.RxPublisher<Upstream>.Failure>",
+          "isOpen": true,
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9RxCombine0A9PublisherC",
+      "mangledName": "$s9RxCombine0A9PublisherC",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0 where τ_0_0 : RxSwift.ObservableConvertibleType>",
+      "sugared_genericSig": "<Upstream where Upstream : RxSwift.ObservableConvertibleType>",
+      "isOpen": true,
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "AccessControl",
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "hasMissingDesignatedInitializers": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Publisher",
+          "printedName": "Publisher",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Element"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Failure",
+              "printedName": "Failure",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine9PublisherP",
+          "mangledName": "$s7Combine9PublisherP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxRelay",
+      "printedName": "RxRelay",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "RxPassthroughRelay",
+      "printedName": "RxPassthroughRelay",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "rxRelay",
+          "printedName": "rxRelay",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "PublishRelay",
+              "printedName": "RxRelay.PublishRelay<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:7RxRelay07PublishB0C"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A16PassthroughRelayC02rxD033_407B73E0BC457920CF56658CA7D5AFD7LL0aD007PublishD0CyxGvp",
+          "mangledName": "$s9RxCombine0A16PassthroughRelayC02rxD033_407B73E0BC457920CF56658CA7D5AFD7LL0aD007PublishD0CyxGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subject",
+          "printedName": "subject",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "PassthroughSubject",
+              "printedName": "Combine.PassthroughSubject<τ_0_0, Swift.Never>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ],
+              "usr": "s:7Combine18PassthroughSubjectC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A16PassthroughRelayC7subject33_407B73E0BC457920CF56658CA7D5AFD7LL0B00C7SubjectCyxs5NeverOGvp",
+          "mangledName": "$s9RxCombine0A16PassthroughRelayC7subject33_407B73E0BC457920CF56658CA7D5AFD7LL0B00C7SubjectCyxs5NeverOGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subscription",
+          "printedName": "subscription",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Combine.AnyCancellable?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnyCancellable",
+                  "printedName": "Combine.AnyCancellable",
+                  "usr": "s:7Combine14AnyCancellableC"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A16PassthroughRelayC12subscription33_407B73E0BC457920CF56658CA7D5AFD7LL0B014AnyCancellableCSgvp",
+          "mangledName": "$s9RxCombine0A16PassthroughRelayC12subscription33_407B73E0BC457920CF56658CA7D5AFD7LL0B014AnyCancellableCSgvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(rxRelay:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxPassthroughRelay",
+              "printedName": "RxCombine.RxPassthroughRelay<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A16PassthroughRelayC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "PublishRelay",
+              "printedName": "RxRelay.PublishRelay<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:7RxRelay07PublishB0C"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:9RxCombine0A16PassthroughRelayC02rxD0ACyxG0aD007PublishD0CyxG_tcfc",
+          "mangledName": "$s9RxCombine0A16PassthroughRelayC02rxD0ACyxG0aD007PublishD0CyxG_tcfc",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "receive",
+          "printedName": "receive(subscriber:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A16PassthroughRelayC7receive10subscriberyqd___t5InputQyd__Rsz0B010SubscriberRd__s5NeverO7FailureRtd__lF",
+          "mangledName": "$s9RxCombine0A16PassthroughRelayC7receive10subscriberyqd___t5InputQyd__Rsz0B010SubscriberRd__s5NeverO7FailureRtd__lF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 == τ_1_0.Input, τ_1_0 : Combine.Subscriber, τ_1_0.Failure == Swift.Never>",
+          "sugared_genericSig": "<Output, S where Output == S.Input, S : Combine.Subscriber, S.Failure == RxCombine.RxPassthroughRelay<Output>.Failure>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A16PassthroughRelayC4sendyyxF",
+          "mangledName": "$s9RxCombine0A16PassthroughRelayC4sendyyxF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Completion",
+              "printedName": "Combine.Subscribers.Completion<Swift.Never>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ],
+              "usr": "s:7Combine11SubscribersO10CompletionO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A16PassthroughRelayC4send10completiony0B011SubscribersO10CompletionOy_s5NeverOG_tF",
+          "mangledName": "$s9RxCombine0A16PassthroughRelayC4send10completiony0B011SubscribersO10CompletionOy_s5NeverOG_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(subscription:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Subscription",
+              "printedName": "Combine.Subscription",
+              "usr": "s:7Combine12SubscriptionP"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A16PassthroughRelayC4send12subscriptiony0B012Subscription_p_tF",
+          "mangledName": "$s9RxCombine0A16PassthroughRelayC4send12subscriptiony0B012Subscription_p_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9RxCombine0A16PassthroughRelayC",
+      "mangledName": "$s9RxCombine0A16PassthroughRelayC",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<Output>",
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Final",
+        "AccessControl",
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "hasMissingDesignatedInitializers": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subject",
+          "printedName": "Subject",
+          "usr": "s:7Combine7SubjectP",
+          "mangledName": "$s7Combine7SubjectP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Publisher",
+          "printedName": "Publisher",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Failure",
+              "printedName": "Failure",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine9PublisherP",
+          "mangledName": "$s7Combine9PublisherP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "RxPassthroughSubject",
+      "printedName": "RxPassthroughSubject",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "rxSubject",
+          "printedName": "rxSubject",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "PublishSubject",
+              "printedName": "RxSwift.PublishSubject<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:7RxSwift14PublishSubjectC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A18PassthroughSubjectC02rxD033_DAD4EE4CDA392ECD4C335EA1E47AED38LL0A5Swift07PublishD0CyxGvp",
+          "mangledName": "$s9RxCombine0A18PassthroughSubjectC02rxD033_DAD4EE4CDA392ECD4C335EA1E47AED38LL0A5Swift07PublishD0CyxGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subject",
+          "printedName": "subject",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "PassthroughSubject",
+              "printedName": "Combine.PassthroughSubject<τ_0_0, Swift.Error>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:7Combine18PassthroughSubjectC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A18PassthroughSubjectC7subject33_DAD4EE4CDA392ECD4C335EA1E47AED38LL0B00cD0Cyxs5Error_pGvp",
+          "mangledName": "$s9RxCombine0A18PassthroughSubjectC7subject33_DAD4EE4CDA392ECD4C335EA1E47AED38LL0B00cD0Cyxs5Error_pGvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "subscription",
+          "printedName": "subscription",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Combine.AnyCancellable?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnyCancellable",
+                  "printedName": "Combine.AnyCancellable",
+                  "usr": "s:7Combine14AnyCancellableC"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A18PassthroughSubjectC12subscription33_DAD4EE4CDA392ECD4C335EA1E47AED38LL0B014AnyCancellableCSgvp",
+          "mangledName": "$s9RxCombine0A18PassthroughSubjectC12subscription33_DAD4EE4CDA392ECD4C335EA1E47AED38LL0B014AnyCancellableCSgvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(rxSubject:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxPassthroughSubject",
+              "printedName": "RxCombine.RxPassthroughSubject<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A18PassthroughSubjectC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "PublishSubject",
+              "printedName": "RxSwift.PublishSubject<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:7RxSwift14PublishSubjectC"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:9RxCombine0A18PassthroughSubjectC02rxD0ACyxG0A5Swift07PublishD0CyxG_tcfc",
+          "mangledName": "$s9RxCombine0A18PassthroughSubjectC02rxD0ACyxG0A5Swift07PublishD0CyxG_tcfc",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "receive",
+          "printedName": "receive(subscriber:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A18PassthroughSubjectC7receive10subscriberyqd___t5InputQyd__Rsz0B010SubscriberRd__s5Error_p7FailureRtd__lF",
+          "mangledName": "$s9RxCombine0A18PassthroughSubjectC7receive10subscriberyqd___t5InputQyd__Rsz0B010SubscriberRd__s5Error_p7FailureRtd__lF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 == τ_1_0.Input, τ_1_0 : Combine.Subscriber, τ_1_0.Failure == Swift.Error>",
+          "sugared_genericSig": "<Output, S where Output == S.Input, S : Combine.Subscriber, S.Failure == RxCombine.RxPassthroughSubject<Output>.Failure>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A18PassthroughSubjectC4sendyyxF",
+          "mangledName": "$s9RxCombine0A18PassthroughSubjectC4sendyyxF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Completion",
+              "printedName": "Combine.Subscribers.Completion<Swift.Error>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:7Combine11SubscribersO10CompletionO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A18PassthroughSubjectC4send10completiony0B011SubscribersO10CompletionOy_s5Error_pG_tF",
+          "mangledName": "$s9RxCombine0A18PassthroughSubjectC4send10completiony0B011SubscribersO10CompletionOy_s5Error_pG_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(subscription:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Subscription",
+              "printedName": "Combine.Subscription",
+              "usr": "s:7Combine12SubscriptionP"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A18PassthroughSubjectC4send12subscriptiony0B012Subscription_p_tF",
+          "mangledName": "$s9RxCombine0A18PassthroughSubjectC4send12subscriptiony0B012Subscription_p_tF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Output>",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9RxCombine0A18PassthroughSubjectC",
+      "mangledName": "$s9RxCombine0A18PassthroughSubjectC",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<Output>",
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Final",
+        "AccessControl",
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "hasMissingDesignatedInitializers": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subject",
+          "printedName": "Subject",
+          "usr": "s:7Combine7SubjectP",
+          "mangledName": "$s7Combine7SubjectP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Publisher",
+          "printedName": "Publisher",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Failure",
+              "printedName": "Failure",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine9PublisherP",
+          "mangledName": "$s7Combine9PublisherP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxRelay",
+      "printedName": "RxRelay",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "RxSubscription",
+      "printedName": "RxSubscription",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "disposable",
+          "printedName": "disposable",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "RxSwift.Disposable?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Disposable",
+                  "printedName": "RxSwift.Disposable",
+                  "usr": "s:7RxSwift10DisposableP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A12SubscriptionC10disposable33_551371421742CA957D2BD5687E8764DALL0A5Swift10Disposable_pSgvp",
+          "mangledName": "$s9RxCombine0A12SubscriptionC10disposable33_551371421742CA957D2BD5687E8764DALL0A5Swift10Disposable_pSgvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "buffer",
+          "printedName": "buffer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DemandBuffer",
+              "printedName": "RxCombine.DemandBuffer<τ_0_1>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
+                }
+              ],
+              "usr": "s:9RxCombine12DemandBufferC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A12SubscriptionC6buffer33_551371421742CA957D2BD5687E8764DALLAA12DemandBufferCyq_Gvp",
+          "mangledName": "$s9RxCombine0A12SubscriptionC6buffer33_551371421742CA957D2BD5687E8764DALLAA12DemandBufferCyq_Gvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(upstream:downstream:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxSubscription",
+              "printedName": "RxCombine.RxSubscription<τ_0_0, τ_0_1>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
+                }
+              ],
+              "usr": "s:9RxCombine0A12SubscriptionC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_1"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:9RxCombine0A12SubscriptionC8upstream10downstreamACyxq_Gx_q_tcfc",
+          "mangledName": "$s9RxCombine0A12SubscriptionC8upstream10downstreamACyxq_Gx_q_tcfc",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Error>",
+          "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Error>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "request",
+          "printedName": "request(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Demand",
+              "printedName": "Combine.Subscribers.Demand",
+              "usr": "s:7Combine11SubscribersO6DemandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A12SubscriptionC7requestyy0B011SubscribersO6DemandVF",
+          "mangledName": "$s9RxCombine0A12SubscriptionC7requestyy0B011SubscribersO6DemandVF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Error>",
+          "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Error>",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "cancel",
+          "printedName": "cancel()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A12SubscriptionC6cancelyyF",
+          "mangledName": "$s9RxCombine0A12SubscriptionC6cancelyyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Error>",
+          "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Error>",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "description",
+          "printedName": "description",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A12SubscriptionC11descriptionSSvp",
+          "mangledName": "$s9RxCombine0A12SubscriptionC11descriptionSSvp",
+          "moduleName": "RxCombine",
+          "isOpen": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9RxCombine0A12SubscriptionC11descriptionSSvg",
+              "mangledName": "$s9RxCombine0A12SubscriptionC11descriptionSSvg",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Error>",
+              "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Error>",
+              "isOpen": true,
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9RxCombine0A12SubscriptionC",
+      "mangledName": "$s9RxCombine0A12SubscriptionC",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Error>",
+      "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Error>",
+      "isOpen": true,
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subscription",
+          "printedName": "Subscription",
+          "usr": "s:7Combine12SubscriptionP",
+          "mangledName": "$s7Combine12SubscriptionP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Cancellable",
+          "printedName": "Cancellable",
+          "usr": "s:7Combine11CancellableP",
+          "mangledName": "$s7Combine11CancellableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomCombineIdentifierConvertible",
+          "printedName": "CustomCombineIdentifierConvertible",
+          "usr": "s:7Combine06CustomA21IdentifierConvertibleP",
+          "mangledName": "$s7Combine06CustomA21IdentifierConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "RxInfallibleSubscription",
+      "printedName": "RxInfallibleSubscription",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "disposable",
+          "printedName": "disposable",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "RxSwift.Disposable?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Disposable",
+                  "printedName": "RxSwift.Disposable",
+                  "usr": "s:7RxSwift10DisposableP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A22InfallibleSubscriptionC10disposable33_551371421742CA957D2BD5687E8764DALL0A5Swift10Disposable_pSgvp",
+          "mangledName": "$s9RxCombine0A22InfallibleSubscriptionC10disposable33_551371421742CA957D2BD5687E8764DALL0A5Swift10Disposable_pSgvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "buffer",
+          "printedName": "buffer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DemandBuffer",
+              "printedName": "RxCombine.DemandBuffer<τ_0_1>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
+                }
+              ],
+              "usr": "s:9RxCombine12DemandBufferC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A22InfallibleSubscriptionC6buffer33_551371421742CA957D2BD5687E8764DALLAA12DemandBufferCyq_Gvp",
+          "mangledName": "$s9RxCombine0A22InfallibleSubscriptionC6buffer33_551371421742CA957D2BD5687E8764DALLAA12DemandBufferCyq_Gvp",
+          "moduleName": "RxCombine",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(upstream:downstream:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxInfallibleSubscription",
+              "printedName": "RxCombine.RxInfallibleSubscription<τ_0_0, τ_0_1>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
+                }
+              ],
+              "usr": "s:9RxCombine0A22InfallibleSubscriptionC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_1"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:9RxCombine0A22InfallibleSubscriptionC8upstream10downstreamACyxq_Gx_q_tcfc",
+          "mangledName": "$s9RxCombine0A22InfallibleSubscriptionC8upstream10downstreamACyxq_Gx_q_tcfc",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Never>",
+          "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Never>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "request",
+          "printedName": "request(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Demand",
+              "printedName": "Combine.Subscribers.Demand",
+              "usr": "s:7Combine11SubscribersO6DemandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A22InfallibleSubscriptionC7requestyy0B011SubscribersO6DemandVF",
+          "mangledName": "$s9RxCombine0A22InfallibleSubscriptionC7requestyy0B011SubscribersO6DemandVF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Never>",
+          "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Never>",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "cancel",
+          "printedName": "cancel()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine0A22InfallibleSubscriptionC6cancelyyF",
+          "mangledName": "$s9RxCombine0A22InfallibleSubscriptionC6cancelyyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Never>",
+          "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Never>",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "description",
+          "printedName": "description",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9RxCombine0A22InfallibleSubscriptionC11descriptionSSvp",
+          "mangledName": "$s9RxCombine0A22InfallibleSubscriptionC11descriptionSSvp",
+          "moduleName": "RxCombine",
+          "isOpen": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9RxCombine0A22InfallibleSubscriptionC11descriptionSSvg",
+              "mangledName": "$s9RxCombine0A22InfallibleSubscriptionC11descriptionSSvg",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Never>",
+              "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Never>",
+              "isOpen": true,
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9RxCombine0A22InfallibleSubscriptionC",
+      "mangledName": "$s9RxCombine0A22InfallibleSubscriptionC",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_0_1 : Combine.Subscriber, τ_0_0.Element == τ_0_1.Input, τ_0_1.Failure == Swift.Never>",
+      "sugared_genericSig": "<Upstream, Downstream where Upstream : RxSwift.ObservableConvertibleType, Downstream : Combine.Subscriber, Upstream.Element == Downstream.Input, Downstream.Failure == Swift.Never>",
+      "isOpen": true,
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subscription",
+          "printedName": "Subscription",
+          "usr": "s:7Combine12SubscriptionP",
+          "mangledName": "$s7Combine12SubscriptionP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Cancellable",
+          "printedName": "Cancellable",
+          "usr": "s:7Combine11CancellableP",
+          "mangledName": "$s7Combine11CancellableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomCombineIdentifierConvertible",
+          "printedName": "CustomCombineIdentifierConvertible",
+          "usr": "s:7Combine06CustomA21IdentifierConvertibleP",
+          "mangledName": "$s7Combine06CustomA21IdentifierConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Combine",
+      "printedName": "Combine",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxSwift",
+      "printedName": "RxSwift",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "Import",
+      "name": "RxRelay",
+      "printedName": "RxRelay",
+      "declKind": "Import",
+      "moduleName": "RxCombine"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AnyObserverConvertible",
+      "printedName": "AnyObserverConvertible",
+      "children": [
+        {
+          "kind": "AssociatedType",
+          "name": "Output",
+          "printedName": "Output",
+          "declKind": "AssociatedType",
+          "usr": "s:9RxCombine22AnyObserverConvertibleP6OutputQa",
+          "mangledName": "$s9RxCombine22AnyObserverConvertibleP6OutputQa",
+          "moduleName": "RxCombine",
+          "protocolReq": true,
+          "overriding": true
+        },
+        {
+          "kind": "Function",
+          "name": "asAnyObserver",
+          "printedName": "asAnyObserver()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyObserver",
+              "printedName": "RxSwift.AnyObserver<τ_0_0.Output>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Output"
+                }
+              ],
+              "usr": "s:7RxSwift11AnyObserverV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine22AnyObserverConvertibleP02ascD00A5Swift0cD0Vy6OutputQzGyF",
+          "mangledName": "$s9RxCombine22AnyObserverConvertibleP02ascD00A5Swift0cD0Vy6OutputQzGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : RxCombine.AnyObserverConvertible>",
+          "sugared_genericSig": "<Self where Self : RxCombine.AnyObserverConvertible>",
+          "protocolReq": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "asAnyObserver",
+          "printedName": "asAnyObserver()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyObserver",
+              "printedName": "RxSwift.AnyObserver<τ_0_0.Output>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Output"
+                }
+              ],
+              "usr": "s:7RxSwift11AnyObserverV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9RxCombine22AnyObserverConvertiblePAAE02ascD00A5Swift0cD0Vy6OutputQzGyF",
+          "mangledName": "$s9RxCombine22AnyObserverConvertiblePAAE02ascD00A5Swift0cD0Vy6OutputQzGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : RxCombine.AnyObserverConvertible>",
+          "sugared_genericSig": "<Self where Self : RxCombine.AnyObserverConvertible>",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:9RxCombine22AnyObserverConvertibleP",
+      "mangledName": "$s9RxCombine22AnyObserverConvertibleP",
+      "moduleName": "RxCombine",
+      "genericSig": "<τ_0_0 : Combine.Subject, τ_0_0.Failure == Swift.Error>",
+      "sugared_genericSig": "<Self : Combine.Subject, Self.Failure == Swift.Error>",
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "AccessControl",
+        "Available",
+        "Available",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subject",
+          "printedName": "Subject",
+          "usr": "s:7Combine7SubjectP",
+          "mangledName": "$s7Combine7SubjectP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Publisher",
+          "printedName": "Publisher",
+          "usr": "s:7Combine9PublisherP",
+          "mangledName": "$s7Combine9PublisherP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "BehaviorRelay",
+      "printedName": "BehaviorRelay",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "toCombine",
+          "printedName": "toCombine()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxCurrentValueRelay",
+              "printedName": "RxCombine.RxCurrentValueRelay<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A17CurrentValueRelayC"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7RxRelay08BehaviorB0C0A7CombineE02toD0AD0a12CurrentValueB0CyxGyF",
+          "mangledName": "$s7RxRelay08BehaviorB0C0A7CombineE02toD0AD0a12CurrentValueB0CyxGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Element>",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "publisher",
+          "printedName": "publisher",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyPublisher",
+              "printedName": "Combine.AnyPublisher<τ_0_0, Swift.Never>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ],
+              "usr": "s:7Combine12AnyPublisherV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:7RxRelay08BehaviorB0C0A7CombineE9publisher0D012AnyPublisherVyxs5NeverOGvp",
+          "mangledName": "$s7RxRelay08BehaviorB0C0A7CombineE9publisher0D012AnyPublisherVyxs5NeverOGvp",
+          "moduleName": "RxCombine",
+          "declAttributes": [
+            "Final",
+            "RawDocComment"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnyPublisher",
+                  "printedName": "Combine.AnyPublisher<τ_0_0, Swift.Never>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Never",
+                      "printedName": "Swift.Never",
+                      "usr": "s:s5NeverO"
+                    }
+                  ],
+                  "usr": "s:7Combine12AnyPublisherV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:7RxRelay08BehaviorB0C0A7CombineE9publisher0D012AnyPublisherVyxs5NeverOGvg",
+              "mangledName": "$s7RxRelay08BehaviorB0C0A7CombineE9publisher0D012AnyPublisherVyxs5NeverOGvg",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0>",
+              "sugared_genericSig": "<Element>",
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "asPublisher",
+          "printedName": "asPublisher()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyPublisher",
+              "printedName": "Combine.AnyPublisher<τ_0_0, Swift.Never>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ],
+              "usr": "s:7Combine12AnyPublisherV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7RxRelay08BehaviorB0C0A7CombineE11asPublisher0D003AnyF0Vyxs5NeverOGyF",
+          "mangledName": "$s7RxRelay08BehaviorB0C0A7CombineE11asPublisher0D003AnyF0Vyxs5NeverOGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Element>",
+          "declAttributes": [
+            "Final",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:7RxRelay08BehaviorB0C",
+      "mangledName": "$s7RxRelay08BehaviorB0C",
+      "moduleName": "RxRelay",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<Element>",
+      "declAttributes": [
+        "Final"
+      ],
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "ObservableType",
+          "printedName": "ObservableType",
+          "usr": "s:7RxSwift14ObservableTypeP",
+          "mangledName": "$s7RxSwift14ObservableTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObservableConvertibleType",
+          "printedName": "ObservableConvertibleType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift25ObservableConvertibleTypeP",
+          "mangledName": "$s7RxSwift25ObservableConvertibleTypeP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "BehaviorSubject",
+      "printedName": "BehaviorSubject",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "toCombine",
+          "printedName": "toCombine()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxCurrentValueSubject",
+              "printedName": "RxCombine.RxCurrentValueSubject<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A19CurrentValueSubjectC"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7RxSwift15BehaviorSubjectC0A7CombineE02toE0AD0a12CurrentValueD0CyxGyF",
+          "mangledName": "$s7RxSwift15BehaviorSubjectC0A7CombineE02toE0AD0a12CurrentValueD0CyxGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Element>",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:7RxSwift15BehaviorSubjectC",
+      "mangledName": "$s7RxSwift15BehaviorSubjectC",
+      "moduleName": "RxSwift",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<Element>",
+      "declAttributes": [
+        "Final"
+      ],
+      "superclassUsr": "s:7RxSwift10ObservableC",
+      "isExternal": true,
+      "hasMissingDesignatedInitializers": true,
+      "superclassNames": [
+        "RxSwift.Observable<τ_0_0>"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "SubjectType",
+          "printedName": "SubjectType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Observer",
+              "printedName": "Observer",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "BehaviorSubject",
+                  "printedName": "RxSwift.BehaviorSubject<τ_0_0>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    }
+                  ],
+                  "usr": "s:7RxSwift15BehaviorSubjectC"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift11SubjectTypeP",
+          "mangledName": "$s7RxSwift11SubjectTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObserverType",
+          "printedName": "ObserverType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift12ObserverTypeP",
+          "mangledName": "$s7RxSwift12ObserverTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "SynchronizedUnsubscribeType",
+          "printedName": "SynchronizedUnsubscribeType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "DisposeKey",
+              "printedName": "DisposeKey",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "BagKey",
+                  "printedName": "RxSwift.BagKey",
+                  "usr": "s:7RxSwift6BagKeyV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift27SynchronizedUnsubscribeTypeP",
+          "mangledName": "$s7RxSwift27SynchronizedUnsubscribeTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Cancelable",
+          "printedName": "Cancelable",
+          "usr": "s:7RxSwift10CancelableP",
+          "mangledName": "$s7RxSwift10CancelableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Disposable",
+          "printedName": "Disposable",
+          "usr": "s:7RxSwift10DisposableP",
+          "mangledName": "$s7RxSwift10DisposableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObservableType",
+          "printedName": "ObservableType",
+          "usr": "s:7RxSwift14ObservableTypeP",
+          "mangledName": "$s7RxSwift14ObservableTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObservableConvertibleType",
+          "printedName": "ObservableConvertibleType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift25ObservableConvertibleTypeP",
+          "mangledName": "$s7RxSwift25ObservableConvertibleTypeP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ObservableConvertibleType",
+      "printedName": "ObservableConvertibleType",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "publisher",
+          "printedName": "publisher",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyPublisher",
+              "printedName": "Combine.AnyPublisher<τ_0_0.Element, Swift.Error>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Element"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:7Combine12AnyPublisherV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:7RxSwift25ObservableConvertibleTypeP0A7CombineE9publisher0F012AnyPublisherVy7ElementQzs5Error_pGvp",
+          "mangledName": "$s7RxSwift25ObservableConvertibleTypeP0A7CombineE9publisher0F012AnyPublisherVy7ElementQzs5Error_pGvp",
+          "moduleName": "RxCombine",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnyPublisher",
+                  "printedName": "Combine.AnyPublisher<τ_0_0.Element, Swift.Error>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "DependentMember",
+                      "printedName": "τ_0_0.Element"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Error",
+                      "printedName": "Swift.Error",
+                      "usr": "s:s5ErrorP"
+                    }
+                  ],
+                  "usr": "s:7Combine12AnyPublisherV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:7RxSwift25ObservableConvertibleTypeP0A7CombineE9publisher0F012AnyPublisherVy7ElementQzs5Error_pGvg",
+              "mangledName": "$s7RxSwift25ObservableConvertibleTypeP0A7CombineE9publisher0F012AnyPublisherVy7ElementQzs5Error_pGvg",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0 where τ_0_0 : RxSwift.ObservableConvertibleType>",
+              "sugared_genericSig": "<Self where Self : RxSwift.ObservableConvertibleType>",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "asPublisher",
+          "printedName": "asPublisher()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyPublisher",
+              "printedName": "Combine.AnyPublisher<τ_0_0.Element, Swift.Error>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Element"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:7Combine12AnyPublisherV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7RxSwift25ObservableConvertibleTypeP0A7CombineE11asPublisher0F003AnyH0Vy7ElementQzs5Error_pGyF",
+          "mangledName": "$s7RxSwift25ObservableConvertibleTypeP0A7CombineE11asPublisher0F003AnyH0Vy7ElementQzs5Error_pGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : RxSwift.ObservableConvertibleType>",
+          "sugared_genericSig": "<Self where Self : RxSwift.ObservableConvertibleType>",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "bind",
+          "printedName": "bind(to:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Disposable",
+              "printedName": "RxSwift.Disposable",
+              "usr": "s:7RxSwift10DisposableP"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7RxSwift25ObservableConvertibleTypeP0A7CombineE4bind2toAA10Disposable_pqd___tAD011AnyObserverD0Rd__6OutputQyd__7ElementRtzlF",
+          "mangledName": "$s7RxSwift25ObservableConvertibleTypeP0A7CombineE4bind2toAA10Disposable_pqd___tAD011AnyObserverD0Rd__6OutputQyd__7ElementRtzlF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : RxSwift.ObservableConvertibleType, τ_1_0 : RxCombine.AnyObserverConvertible, τ_0_0.Element == τ_1_0.Output>",
+          "sugared_genericSig": "<Self, S where Self : RxSwift.ObservableConvertibleType, S : RxCombine.AnyObserverConvertible, Self.Element == S.Output>",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:7RxSwift25ObservableConvertibleTypeP",
+      "mangledName": "$s7RxSwift25ObservableConvertibleTypeP",
+      "moduleName": "RxSwift",
+      "isExternal": true
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Publisher",
+      "printedName": "Publisher",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "asObservable",
+          "printedName": "asObservable()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Observable",
+              "printedName": "RxSwift.Observable<τ_0_0.Output>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Output"
+                }
+              ],
+              "usr": "s:7RxSwift10ObservableC"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7Combine9PublisherP02RxA0E12asObservable0C5Swift0E0Cy6OutputQzGyF",
+          "mangledName": "$s7Combine9PublisherP02RxA0E12asObservable0C5Swift0E0Cy6OutputQzGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : Combine.Publisher>",
+          "sugared_genericSig": "<Self where Self : Combine.Publisher>",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "asInfallible",
+          "printedName": "asInfallible()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Infallible",
+              "printedName": "RxSwift.Infallible<τ_0_0.Output>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DependentMember",
+                  "printedName": "τ_0_0.Output"
+                }
+              ],
+              "usr": "s:7RxSwift10InfallibleV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7Combine9PublisherP02RxA0s5NeverO7FailureRtzrlE12asInfallible0C5Swift0G0Vy6OutputQzGyF",
+          "mangledName": "$s7Combine9PublisherP02RxA0s5NeverO7FailureRtzrlE12asInfallible0C5Swift0G0Vy6OutputQzGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0 where τ_0_0 : Combine.Publisher, τ_0_0.Failure == Swift.Never>",
+          "sugared_genericSig": "<Self where Self : Combine.Publisher, Self.Failure == Swift.Never>",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:7Combine9PublisherP",
+      "mangledName": "$s7Combine9PublisherP",
+      "moduleName": "Combine",
+      "genericSig": "<τ_0_0.Failure : Swift.Error>",
+      "sugared_genericSig": "<Self.Failure : Swift.Error>",
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Available",
+        "Available",
+        "Available",
+        "Available"
+      ],
+      "isExternal": true
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "PublishRelay",
+      "printedName": "PublishRelay",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "toCombine",
+          "printedName": "toCombine()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxPassthroughRelay",
+              "printedName": "RxCombine.RxPassthroughRelay<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A16PassthroughRelayC"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7RxRelay07PublishB0C0A7CombineE02toD0AD0a11PassthroughB0CyxGyF",
+          "mangledName": "$s7RxRelay07PublishB0C0A7CombineE02toD0AD0a11PassthroughB0CyxGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Element>",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "publisher",
+          "printedName": "publisher",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyPublisher",
+              "printedName": "Combine.AnyPublisher<τ_0_0, Swift.Never>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ],
+              "usr": "s:7Combine12AnyPublisherV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:7RxRelay07PublishB0C0A7CombineE9publisher0D012AnyPublisherVyxs5NeverOGvp",
+          "mangledName": "$s7RxRelay07PublishB0C0A7CombineE9publisher0D012AnyPublisherVyxs5NeverOGvp",
+          "moduleName": "RxCombine",
+          "declAttributes": [
+            "Final",
+            "RawDocComment"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnyPublisher",
+                  "printedName": "Combine.AnyPublisher<τ_0_0, Swift.Never>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Never",
+                      "printedName": "Swift.Never",
+                      "usr": "s:s5NeverO"
+                    }
+                  ],
+                  "usr": "s:7Combine12AnyPublisherV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:7RxRelay07PublishB0C0A7CombineE9publisher0D012AnyPublisherVyxs5NeverOGvg",
+              "mangledName": "$s7RxRelay07PublishB0C0A7CombineE9publisher0D012AnyPublisherVyxs5NeverOGvg",
+              "moduleName": "RxCombine",
+              "genericSig": "<τ_0_0>",
+              "sugared_genericSig": "<Element>",
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "asPublisher",
+          "printedName": "asPublisher()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyPublisher",
+              "printedName": "Combine.AnyPublisher<τ_0_0, Swift.Never>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Never",
+                  "printedName": "Swift.Never",
+                  "usr": "s:s5NeverO"
+                }
+              ],
+              "usr": "s:7Combine12AnyPublisherV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7RxRelay07PublishB0C0A7CombineE11asPublisher0D003AnyF0Vyxs5NeverOGyF",
+          "mangledName": "$s7RxRelay07PublishB0C0A7CombineE11asPublisher0D003AnyF0Vyxs5NeverOGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Element>",
+          "declAttributes": [
+            "Final",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:7RxRelay07PublishB0C",
+      "mangledName": "$s7RxRelay07PublishB0C",
+      "moduleName": "RxRelay",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<Element>",
+      "declAttributes": [
+        "Final"
+      ],
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "ObservableType",
+          "printedName": "ObservableType",
+          "usr": "s:7RxSwift14ObservableTypeP",
+          "mangledName": "$s7RxSwift14ObservableTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObservableConvertibleType",
+          "printedName": "ObservableConvertibleType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift25ObservableConvertibleTypeP",
+          "mangledName": "$s7RxSwift25ObservableConvertibleTypeP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "PublishSubject",
+      "printedName": "PublishSubject",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "toCombine",
+          "printedName": "toCombine()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RxPassthroughSubject",
+              "printedName": "RxCombine.RxPassthroughSubject<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:9RxCombine0A18PassthroughSubjectC"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:7RxSwift14PublishSubjectC0A7CombineE02toE0AD0a11PassthroughD0CyxGyF",
+          "mangledName": "$s7RxSwift14PublishSubjectC0A7CombineE02toE0AD0a11PassthroughD0CyxGyF",
+          "moduleName": "RxCombine",
+          "genericSig": "<τ_0_0>",
+          "sugared_genericSig": "<Element>",
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:7RxSwift14PublishSubjectC",
+      "mangledName": "$s7RxSwift14PublishSubjectC",
+      "moduleName": "RxSwift",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<Element>",
+      "declAttributes": [
+        "Final"
+      ],
+      "superclassUsr": "s:7RxSwift10ObservableC",
+      "isExternal": true,
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "RxSwift.Observable<τ_0_0>"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "SubjectType",
+          "printedName": "SubjectType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Observer",
+              "printedName": "Observer",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "PublishSubject",
+                  "printedName": "RxSwift.PublishSubject<τ_0_0>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    }
+                  ],
+                  "usr": "s:7RxSwift14PublishSubjectC"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift11SubjectTypeP",
+          "mangledName": "$s7RxSwift11SubjectTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Cancelable",
+          "printedName": "Cancelable",
+          "usr": "s:7RxSwift10CancelableP",
+          "mangledName": "$s7RxSwift10CancelableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObserverType",
+          "printedName": "ObserverType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift12ObserverTypeP",
+          "mangledName": "$s7RxSwift12ObserverTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "SynchronizedUnsubscribeType",
+          "printedName": "SynchronizedUnsubscribeType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "DisposeKey",
+              "printedName": "DisposeKey",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "BagKey",
+                  "printedName": "RxSwift.BagKey",
+                  "usr": "s:7RxSwift6BagKeyV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift27SynchronizedUnsubscribeTypeP",
+          "mangledName": "$s7RxSwift27SynchronizedUnsubscribeTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Disposable",
+          "printedName": "Disposable",
+          "usr": "s:7RxSwift10DisposableP",
+          "mangledName": "$s7RxSwift10DisposableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObservableType",
+          "printedName": "ObservableType",
+          "usr": "s:7RxSwift14ObservableTypeP",
+          "mangledName": "$s7RxSwift14ObservableTypeP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObservableConvertibleType",
+          "printedName": "ObservableConvertibleType",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7RxSwift25ObservableConvertibleTypeP",
+          "mangledName": "$s7RxSwift25ObservableConvertibleTypeP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "PassthroughSubject",
+      "printedName": "PassthroughSubject",
+      "declKind": "Class",
+      "usr": "s:7Combine18PassthroughSubjectC",
+      "mangledName": "$s7Combine18PassthroughSubjectC",
+      "moduleName": "Combine",
+      "genericSig": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error>",
+      "sugared_genericSig": "<Output, Failure where Failure : Swift.Error>",
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Final",
+        "Available",
+        "Available",
+        "Available",
+        "Available"
+      ],
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subject",
+          "printedName": "Subject",
+          "usr": "s:7Combine7SubjectP",
+          "mangledName": "$s7Combine7SubjectP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Publisher",
+          "printedName": "Publisher",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Failure",
+              "printedName": "Failure",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine9PublisherP",
+          "mangledName": "$s7Combine9PublisherP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "AnyObserverConvertible",
+          "printedName": "AnyObserverConvertible",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:9RxCombine22AnyObserverConvertibleP",
+          "mangledName": "$s9RxCombine22AnyObserverConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "CurrentValueSubject",
+      "printedName": "CurrentValueSubject",
+      "declKind": "Class",
+      "usr": "s:7Combine19CurrentValueSubjectC",
+      "mangledName": "$s7Combine19CurrentValueSubjectC",
+      "moduleName": "Combine",
+      "genericSig": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error>",
+      "sugared_genericSig": "<Output, Failure where Failure : Swift.Error>",
+      "intro_Macosx": "10.15",
+      "intro_iOS": "13.0",
+      "intro_tvOS": "13.0",
+      "intro_watchOS": "6.0",
+      "declAttributes": [
+        "Final",
+        "Available",
+        "Available",
+        "Available",
+        "Available"
+      ],
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Subject",
+          "printedName": "Subject",
+          "usr": "s:7Combine7SubjectP",
+          "mangledName": "$s7Combine7SubjectP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Publisher",
+          "printedName": "Publisher",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Failure",
+              "printedName": "Failure",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine9PublisherP",
+          "mangledName": "$s7Combine9PublisherP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "AnyObserverConvertible",
+          "printedName": "AnyObserverConvertible",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:9RxCombine22AnyObserverConvertibleP",
+          "mangledName": "$s9RxCombine22AnyObserverConvertibleP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "e5ab5e9422a53ba45284d18bd4db99f7d23d5b063ef0ee7da37f5de7eaca9930"
+build_start_time: [1665209577, 53862094]
+build_end_time: [1665209599, 760840892]
+inputs:
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/ArgumentConvertible.swift": [1665209562, 59935808]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/ArgumentDescription.swift": [1665209562, 60716390]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/ArgumentParser.swift": [1665209562, 63258171]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/Command.swift": [1665209562, 62518119]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/CommandRunner.swift": [1665209562, 63505649]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/CommandType.swift": [1665209562, 63031196]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/Commands.swift": [1665209562, 62163352]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/Error.swift": [1665209562, 60298204]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/Commander/Sources/Commander/Group.swift": [1665209562, 62780857]

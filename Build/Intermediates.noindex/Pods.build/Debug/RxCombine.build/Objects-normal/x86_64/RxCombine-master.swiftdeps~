@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "770f1554c2c735f91716dab5a25cd24e557de89cbd88c3c88debee899be14c50"
+build_start_time: [1665198101, 755453109]
+build_end_time: [1665198105, 103261947]
+inputs:
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Combine+Rx/Publisher+Rx.swift": [1608542380, 206372737]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Combine+Rx/Subject+Rx.swift": !private [1608542380, 205565929]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Common/DemandBuffer.swift": [1608542380, 209454059]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Rx+Combine/BehaviorRelay+Combine.swift": [1608542380, 208020210]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Rx+Combine/BehaviorSubject+Combine.swift": [1608542380, 208244323]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Rx+Combine/Observable+Combine.swift": [1608542380, 207739353]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Rx+Combine/PublishRelay+Combine.swift": [1608542380, 208516597]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Rx+Combine/PublishSubject+Combine.swift": [1608542380, 207466125]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Rx+Combine/Relays+Combine.swift": [1608542380, 207199335]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/RxCombine/Sources/Rx+Combine/RxSubscription.swift": [1608542380, 208874702]

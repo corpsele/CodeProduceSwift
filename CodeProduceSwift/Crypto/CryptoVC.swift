@@ -16,6 +16,9 @@ class CryptoVC: NSViewController {
     @IBOutlet weak var btnEn: NSButton!
     @IBOutlet weak var btnDe: NSButton!
     @IBOutlet weak var btnPopup: NSPopUpButton!
+    @IBOutlet weak var tfSimple: NSTextField!
+    @IBOutlet weak var lblDisplay: NSTextField!
+    @IBOutlet weak var btnRefresh: NSButton!
     
 //    override init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -24,6 +27,8 @@ class CryptoVC: NSViewController {
 //    required init?(coder: NSCoder) {
 //        fatalError("init(coder:) has not been implemented")
 //    }
+    
+    var num = 1121
     
     lazy var btnClose: NSButton = {
         let btn = NSButton()
@@ -65,6 +70,12 @@ class CryptoVC: NSViewController {
             
         }
         
+        btnRefresh.reactive.states.observeValues {[unowned self] (state) in
+            num = Int.random(in: 1000..<9999)
+            self.lblDisplay.stringValue = num.string
+        }
+        num = Int.random(in: 1000..<9999)
+        self.lblDisplay.stringValue = num.string
         
     }
     

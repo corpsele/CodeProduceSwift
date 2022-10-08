@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "e5ab5e9422a53ba45284d18bd4db99f7d23d5b063ef0ee7da37f5de7eaca9930"
+build_start_time: [1665209577, 51686048]
+build_end_time: [1665209577, 175192832]
+inputs:
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Bash.swift": [1610959790, 984964132]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Command.swift": [1610959790, 986416101]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Context.swift": [1610959790, 986592292]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Files.swift": [1610959790, 986192226]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/General/Array.swift": [1610959790, 985537767]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Process.swift": [1610959790, 985136508]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Stream/Lazy-split.swift": [1610959790, 986028671]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/Stream/Stream.swift": [1610959790, 985863447]
+  "/Users/eport2/Documents/CodeProduceSwift/Pods/SwiftShell/Sources/SwiftShell/String.swift": [1610959790, 986752033]

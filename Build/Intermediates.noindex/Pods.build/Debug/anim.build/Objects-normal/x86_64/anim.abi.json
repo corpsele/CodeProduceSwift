@@ -1,0 +1,5900 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "AppKit",
+      "printedName": "AppKit",
+      "declKind": "Import",
+      "moduleName": "anim"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "anim",
+      "printedName": "anim",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "defaultSettings",
+          "printedName": "defaultSettings",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animSettings",
+              "printedName": "anim.animSettings",
+              "usr": "s:4anim0A8SettingsV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4animAAC15defaultSettingsAA0aC0VvpZ",
+          "mangledName": "$s4animAAC15defaultSettingsAA0aC0VvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animSettings",
+                  "printedName": "anim.animSettings",
+                  "usr": "s:4anim0A8SettingsV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC15defaultSettingsAA0aC0VvgZ",
+              "mangledName": "$s4animAAC15defaultSettingsAA0aC0VvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "animSettings",
+                  "printedName": "anim.animSettings",
+                  "usr": "s:4anim0A8SettingsV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC15defaultSettingsAA0aC0VvsZ",
+              "mangledName": "$s4animAAC15defaultSettingsAA0aC0VvsZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC15defaultSettingsAA0aC0VvMZ",
+              "mangledName": "$s4animAAC15defaultSettingsAA0aC0VvMZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "animationClosure",
+          "printedName": "animationClosure",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "(() -> ())?",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4animAAC16animationClosure33_4218E39D62808BF2C09F07883B84C02CLLyycSgvp",
+          "mangledName": "$s4animAAC16animationClosure33_4218E39D62808BF2C09F07883B84C02CLLyycSgvp",
+          "moduleName": "anim",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "animationSettings",
+          "printedName": "animationSettings",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animSettings",
+              "printedName": "anim.animSettings",
+              "usr": "s:4anim0A8SettingsV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4animAAC17animationSettingsAA0aC0Vvp",
+          "mangledName": "$s4animAAC17animationSettingsAA0aC0Vvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animSettings",
+                  "printedName": "anim.animSettings",
+                  "usr": "s:4anim0A8SettingsV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC17animationSettingsAA0aC0Vvg",
+              "mangledName": "$s4animAAC17animationSettingsAA0aC0Vvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "animSettings",
+                  "printedName": "anim.animSettings",
+                  "usr": "s:4anim0A8SettingsV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC17animationSettingsAA0aC0Vvs",
+              "mangledName": "$s4animAAC17animationSettingsAA0aC0Vvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC17animationSettingsAA0aC0VvM",
+              "mangledName": "$s4animAAC17animationSettingsAA0aC0VvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "promise",
+          "printedName": "promise",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Promise",
+              "printedName": "anim.anim.Promise",
+              "usr": "s:4animAAC7PromiseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4animAAC7promiseAB7PromiseVvp",
+          "mangledName": "$s4animAAC7promiseAB7PromiseVvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Promise",
+                  "printedName": "anim.anim.Promise",
+                  "usr": "s:4animAAC7PromiseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC7promiseAB7PromiseVvg",
+              "mangledName": "$s4animAAC7promiseAB7PromiseVvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Promise",
+                  "printedName": "anim.anim.Promise",
+                  "usr": "s:4animAAC7PromiseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC7promiseAB7PromiseVvs",
+              "mangledName": "$s4animAAC7promiseAB7PromiseVvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC7promiseAB7PromiseVvM",
+              "mangledName": "$s4animAAC7promiseAB7PromiseVvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "animationConstraintLayout",
+          "printedName": "animationConstraintLayout",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "anim.Constraint?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Constraint",
+                  "printedName": "anim.Constraint",
+                  "usr": "s:4anim10ConstraintV"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4animAAC25animationConstraintLayoutAA0C0VSgvp",
+          "mangledName": "$s4animAAC25animationConstraintLayoutAA0C0VSgvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "anim.Constraint?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Constraint",
+                      "printedName": "anim.Constraint",
+                      "usr": "s:4anim10ConstraintV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC25animationConstraintLayoutAA0C0VSgvg",
+              "mangledName": "$s4animAAC25animationConstraintLayoutAA0C0VSgvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "anim.Constraint?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Constraint",
+                      "printedName": "anim.Constraint",
+                      "usr": "s:4anim10ConstraintV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC25animationConstraintLayoutAA0C0VSgvs",
+              "mangledName": "$s4animAAC25animationConstraintLayoutAA0C0VSgvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4animAAC25animationConstraintLayoutAA0C0VSgvM",
+              "mangledName": "$s4animAAC25animationConstraintLayoutAA0C0VSgvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "animator",
+          "printedName": "animator",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "anim.Animator?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Animator",
+                  "printedName": "anim.Animator",
+                  "usr": "s:4anim8AnimatorP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4animAAC8animator33_4218E39D62808BF2C09F07883B84C02CLLAA8Animator_pSgvp",
+          "mangledName": "$s4animAAC8animator33_4218E39D62808BF2C09F07883B84C02CLLAA8Animator_pSgvp",
+          "moduleName": "anim",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 4,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(inout anim.animSettings) -> () -> ()",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "InOut",
+                  "printedName": "inout anim.animSettings"
+                }
+              ]
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4animAACyAByycAA0A8SettingsVzccfc",
+          "mangledName": "$s4animAACyAByycAA0A8SettingsVzccfc",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Convenience",
+            "AccessControl",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "init_kind": "Convenience"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4animAACyAByyccfc",
+          "mangledName": "$s4animAACyAByyccfc",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Convenience",
+            "AccessControl",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "init_kind": "Convenience"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(closureWithoutProcess:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(inout anim.animSettings) -> () -> ()",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "InOut",
+                  "printedName": "inout anim.animSettings"
+                }
+              ]
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4animAAC21closureWithoutProcessAByycAA0A8SettingsVzc_tcfc",
+          "mangledName": "$s4animAAC21closureWithoutProcessAByycAA0A8SettingsVzc_tcfc",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Convenience",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "init_kind": "Convenience"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(closureWithoutProcess:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4animAAC21closureWithoutProcessAByyc_tcfc",
+          "mangledName": "$s4animAAC21closureWithoutProcessAByyc_tcfc",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Convenience",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "init_kind": "Convenience"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(settings:closure:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "animSettings",
+              "printedName": "anim.animSettings",
+              "usr": "s:4anim0A8SettingsV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "(() -> ())?",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4animAAC8settings7closureAbA0A8SettingsV_yycSgtcfc",
+          "mangledName": "$s4animAAC8settings7closureAbA0A8SettingsV_yycSgtcfc",
+          "moduleName": "anim",
+          "declAttributes": [
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "process",
+          "printedName": "process()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC7processyyF",
+          "mangledName": "$s4animAAC7processyyF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "stop",
+          "printedName": "stop()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC4stopyyF",
+          "mangledName": "$s4animAAC4stopyyF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@anim@objc(cs)anim(im)init",
+          "mangledName": "$s4animAACABycfc",
+          "moduleName": "anim",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "init",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(constraintParent:_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSView",
+              "printedName": "AppKit.NSView",
+              "usr": "c:objc(cs)NSView"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(inout anim.animSettings) -> () -> ()",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "InOut",
+                  "printedName": "inout anim.animSettings"
+                }
+              ]
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4animAAC16constraintParent_ABSo6NSViewC_yycAA0A8SettingsVzctcfc",
+          "mangledName": "$s4animAAC16constraintParent_ABSo6NSViewC_yycAA0A8SettingsVzctcfc",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Convenience",
+            "AccessControl",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "init_kind": "Convenience"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(constraintParent:_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSView",
+              "printedName": "AppKit.NSView",
+              "usr": "c:objc(cs)NSView"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4animAAC16constraintParent_ABSo6NSViewC_yyctcfc",
+          "mangledName": "$s4animAAC16constraintParent_ABSo6NSViewC_yyctcfc",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Convenience",
+            "AccessControl",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "init_kind": "Convenience"
+        },
+        {
+          "kind": "Function",
+          "name": "then",
+          "printedName": "then(constraintParent:_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSView",
+              "printedName": "AppKit.NSView",
+              "usr": "c:objc(cs)NSView"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(inout anim.animSettings) -> () -> ()",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "InOut",
+                  "printedName": "inout anim.animSettings"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC4then16constraintParent_ABSo6NSViewC_yycAA0A8SettingsVzctF",
+          "mangledName": "$s4animAAC4then16constraintParent_ABSo6NSViewC_yycAA0A8SettingsVzctF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "AccessControl",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "then",
+          "printedName": "then(constraintParent:_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSView",
+              "printedName": "AppKit.NSView",
+              "usr": "c:objc(cs)NSView"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC4then16constraintParent_ABSo6NSViewC_yyctF",
+          "mangledName": "$s4animAAC4then16constraintParent_ABSo6NSViewC_yyctF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "AccessControl",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "TypeDecl",
+          "name": "Promise",
+          "printedName": "Promise",
+          "children": [
+            {
+              "kind": "TypeDecl",
+              "name": "State",
+              "printedName": "State",
+              "children": [
+                {
+                  "kind": "Var",
+                  "name": "created",
+                  "printedName": "created",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(anim.anim.Promise.State.Type) -> anim.anim.Promise.State",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "State",
+                          "printedName": "anim.anim.Promise.State",
+                          "usr": "s:4animAAC7PromiseV5StateO"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Metatype",
+                          "printedName": "anim.anim.Promise.State.Type",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "State",
+                              "printedName": "anim.anim.Promise.State",
+                              "usr": "s:4animAAC7PromiseV5StateO"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "declKind": "EnumElement",
+                  "usr": "s:4animAAC7PromiseV5StateO7createdyA2FmF",
+                  "mangledName": "$s4animAAC7PromiseV5StateO7createdyA2FmF",
+                  "moduleName": "anim",
+                  "fixedbinaryorder": 0
+                },
+                {
+                  "kind": "Var",
+                  "name": "started",
+                  "printedName": "started",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(anim.anim.Promise.State.Type) -> anim.anim.Promise.State",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "State",
+                          "printedName": "anim.anim.Promise.State",
+                          "usr": "s:4animAAC7PromiseV5StateO"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Metatype",
+                          "printedName": "anim.anim.Promise.State.Type",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "State",
+                              "printedName": "anim.anim.Promise.State",
+                              "usr": "s:4animAAC7PromiseV5StateO"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "declKind": "EnumElement",
+                  "usr": "s:4animAAC7PromiseV5StateO7startedyA2FmF",
+                  "mangledName": "$s4animAAC7PromiseV5StateO7startedyA2FmF",
+                  "moduleName": "anim",
+                  "fixedbinaryorder": 1
+                },
+                {
+                  "kind": "Var",
+                  "name": "finished",
+                  "printedName": "finished",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(anim.anim.Promise.State.Type) -> anim.anim.Promise.State",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "State",
+                          "printedName": "anim.anim.Promise.State",
+                          "usr": "s:4animAAC7PromiseV5StateO"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Metatype",
+                          "printedName": "anim.anim.Promise.State.Type",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "State",
+                              "printedName": "anim.anim.Promise.State",
+                              "usr": "s:4animAAC7PromiseV5StateO"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "declKind": "EnumElement",
+                  "usr": "s:4animAAC7PromiseV5StateO8finishedyA2FmF",
+                  "mangledName": "$s4animAAC7PromiseV5StateO8finishedyA2FmF",
+                  "moduleName": "anim",
+                  "fixedbinaryorder": 2
+                },
+                {
+                  "kind": "Var",
+                  "name": "cancelled",
+                  "printedName": "cancelled",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(anim.anim.Promise.State.Type) -> anim.anim.Promise.State",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "State",
+                          "printedName": "anim.anim.Promise.State",
+                          "usr": "s:4animAAC7PromiseV5StateO"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Metatype",
+                          "printedName": "anim.anim.Promise.State.Type",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "State",
+                              "printedName": "anim.anim.Promise.State",
+                              "usr": "s:4animAAC7PromiseV5StateO"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "declKind": "EnumElement",
+                  "usr": "s:4animAAC7PromiseV5StateO9cancelledyA2FmF",
+                  "mangledName": "$s4animAAC7PromiseV5StateO9cancelledyA2FmF",
+                  "moduleName": "anim",
+                  "fixedbinaryorder": 3
+                },
+                {
+                  "kind": "Function",
+                  "name": "__derived_enum_equals",
+                  "printedName": "__derived_enum_equals(_:_:)",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Bool",
+                      "printedName": "Swift.Bool",
+                      "usr": "s:Sb"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "State",
+                      "printedName": "anim.anim.Promise.State",
+                      "usr": "s:4animAAC7PromiseV5StateO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "State",
+                      "printedName": "anim.anim.Promise.State",
+                      "usr": "s:4animAAC7PromiseV5StateO"
+                    }
+                  ],
+                  "declKind": "Func",
+                  "usr": "s:4animAAC7PromiseV5StateO21__derived_enum_equalsySbAF_AFtFZ",
+                  "mangledName": "$s4animAAC7PromiseV5StateO21__derived_enum_equalsySbAF_AFtFZ",
+                  "moduleName": "anim",
+                  "static": true,
+                  "implicit": true,
+                  "declAttributes": [
+                    "Implements"
+                  ],
+                  "funcSelfKind": "NonMutating"
+                },
+                {
+                  "kind": "Var",
+                  "name": "hashValue",
+                  "printedName": "hashValue",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "declKind": "Var",
+                  "usr": "s:4animAAC7PromiseV5StateO9hashValueSivp",
+                  "mangledName": "$s4animAAC7PromiseV5StateO9hashValueSivp",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "accessors": [
+                    {
+                      "kind": "Accessor",
+                      "name": "Get",
+                      "printedName": "Get()",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Int",
+                          "printedName": "Swift.Int",
+                          "usr": "s:Si"
+                        }
+                      ],
+                      "declKind": "Accessor",
+                      "usr": "s:4animAAC7PromiseV5StateO9hashValueSivg",
+                      "mangledName": "$s4animAAC7PromiseV5StateO9hashValueSivg",
+                      "moduleName": "anim",
+                      "implicit": true,
+                      "accessorKind": "get"
+                    }
+                  ]
+                },
+                {
+                  "kind": "Function",
+                  "name": "hash",
+                  "printedName": "hash(into:)",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Hasher",
+                      "printedName": "Swift.Hasher",
+                      "paramValueOwnership": "InOut",
+                      "usr": "s:s6HasherV"
+                    }
+                  ],
+                  "declKind": "Func",
+                  "usr": "s:4animAAC7PromiseV5StateO4hash4intoys6HasherVz_tF",
+                  "mangledName": "$s4animAAC7PromiseV5StateO4hash4intoys6HasherVz_tF",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "funcSelfKind": "NonMutating"
+                }
+              ],
+              "declKind": "Enum",
+              "usr": "s:4animAAC7PromiseV5StateO",
+              "mangledName": "$s4animAAC7PromiseV5StateO",
+              "moduleName": "anim",
+              "declAttributes": [
+                "AccessControl",
+                "RawDocComment"
+              ],
+              "isEnumExhaustive": true,
+              "conformances": [
+                {
+                  "kind": "Conformance",
+                  "name": "Equatable",
+                  "printedName": "Equatable",
+                  "usr": "s:SQ",
+                  "mangledName": "$sSQ"
+                },
+                {
+                  "kind": "Conformance",
+                  "name": "Hashable",
+                  "printedName": "Hashable",
+                  "usr": "s:SH",
+                  "mangledName": "$sSH"
+                },
+                {
+                  "kind": "Conformance",
+                  "name": "Sendable",
+                  "printedName": "Sendable",
+                  "usr": "s:s8SendableP",
+                  "mangledName": "$ss8SendableP"
+                }
+              ]
+            },
+            {
+              "kind": "Var",
+              "name": "next",
+              "printedName": "next",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "anim.anim?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "anim",
+                      "printedName": "anim.anim",
+                      "usr": "c:@M@anim@objc(cs)anim"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:4animAAC7PromiseV4nextABSgvp",
+              "mangledName": "$s4animAAC7PromiseV4nextABSgvp",
+              "moduleName": "anim",
+              "declAttributes": [
+                "HasInitialValue",
+                "HasStorage",
+                "AccessControl",
+                "RawDocComment"
+              ],
+              "fixedbinaryorder": 0,
+              "hasStorage": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "anim.anim?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "anim",
+                          "printedName": "anim.anim",
+                          "usr": "c:@M@anim@objc(cs)anim"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV4nextABSgvg",
+                  "mangledName": "$s4animAAC7PromiseV4nextABSgvg",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "get"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Set",
+                  "printedName": "Set()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "anim.anim?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "anim",
+                          "printedName": "anim.anim",
+                          "usr": "c:@M@anim@objc(cs)anim"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV4nextABSgvs",
+                  "mangledName": "$s4animAAC7PromiseV4nextABSgvs",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "set"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Modify",
+                  "printedName": "Modify()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV4nextABSgvM",
+                  "mangledName": "$s4animAAC7PromiseV4nextABSgvM",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "_modify"
+                }
+              ]
+            },
+            {
+              "kind": "Var",
+              "name": "prev",
+              "printedName": "prev",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "WeakStorage",
+                  "printedName": "anim.anim?"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:4animAAC7PromiseV4prevABSgvp",
+              "mangledName": "$s4animAAC7PromiseV4prevABSgvp",
+              "moduleName": "anim",
+              "declAttributes": [
+                "HasInitialValue",
+                "HasStorage",
+                "AccessControl",
+                "ReferenceOwnership",
+                "RawDocComment"
+              ],
+              "fixedbinaryorder": 1,
+              "ownership": 1,
+              "hasStorage": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "anim.anim?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "anim",
+                          "printedName": "anim.anim",
+                          "usr": "c:@M@anim@objc(cs)anim"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV4prevABSgvg",
+                  "mangledName": "$s4animAAC7PromiseV4prevABSgvg",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "get"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Set",
+                  "printedName": "Set()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "anim.anim?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "anim",
+                          "printedName": "anim.anim",
+                          "usr": "c:@M@anim@objc(cs)anim"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV4prevABSgvs",
+                  "mangledName": "$s4animAAC7PromiseV4prevABSgvs",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "set"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Modify",
+                  "printedName": "Modify()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV4prevABSgvM",
+                  "mangledName": "$s4animAAC7PromiseV4prevABSgvM",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "_modify"
+                }
+              ]
+            },
+            {
+              "kind": "Var",
+              "name": "state",
+              "printedName": "state",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "State",
+                  "printedName": "anim.anim.Promise.State",
+                  "usr": "s:4animAAC7PromiseV5StateO"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:4animAAC7PromiseV5stateAD5StateOvp",
+              "mangledName": "$s4animAAC7PromiseV5stateAD5StateOvp",
+              "moduleName": "anim",
+              "declAttributes": [
+                "HasInitialValue",
+                "HasStorage",
+                "AccessControl",
+                "RawDocComment"
+              ],
+              "fixedbinaryorder": 2,
+              "hasStorage": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "State",
+                      "printedName": "anim.anim.Promise.State",
+                      "usr": "s:4animAAC7PromiseV5StateO"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV5stateAD5StateOvg",
+                  "mangledName": "$s4animAAC7PromiseV5stateAD5StateOvg",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "get"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Set",
+                  "printedName": "Set()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "State",
+                      "printedName": "anim.anim.Promise.State",
+                      "usr": "s:4animAAC7PromiseV5StateO"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV5stateAD5StateOvs",
+                  "mangledName": "$s4animAAC7PromiseV5stateAD5StateOvs",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "set"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Modify",
+                  "printedName": "Modify()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4animAAC7PromiseV5stateAD5StateOvM",
+                  "mangledName": "$s4animAAC7PromiseV5stateAD5StateOvM",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "_modify"
+                }
+              ]
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init(next:prev:state:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Promise",
+                  "printedName": "anim.anim.Promise",
+                  "usr": "s:4animAAC7PromiseV"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "anim.anim?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "anim",
+                      "printedName": "anim.anim",
+                      "usr": "c:@M@anim@objc(cs)anim"
+                    }
+                  ],
+                  "hasDefaultArg": true,
+                  "usr": "s:Sq"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "anim.anim?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "anim",
+                      "printedName": "anim.anim",
+                      "usr": "c:@M@anim@objc(cs)anim"
+                    }
+                  ],
+                  "hasDefaultArg": true,
+                  "usr": "s:Sq"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "State",
+                  "printedName": "anim.anim.Promise.State",
+                  "hasDefaultArg": true,
+                  "usr": "s:4animAAC7PromiseV5StateO"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:4animAAC7PromiseV4next4prev5stateAdBSg_AhD5StateOtcfc",
+              "mangledName": "$s4animAAC7PromiseV4next4prev5stateAdBSg_AhD5StateOtcfc",
+              "moduleName": "anim",
+              "implicit": true,
+              "init_kind": "Designated"
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Promise",
+                  "printedName": "anim.anim.Promise",
+                  "usr": "s:4animAAC7PromiseV"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:4animAAC7PromiseVADycfc",
+              "mangledName": "$s4animAAC7PromiseVADycfc",
+              "moduleName": "anim",
+              "implicit": true,
+              "init_kind": "Designated"
+            }
+          ],
+          "declKind": "Struct",
+          "usr": "s:4animAAC7PromiseV",
+          "mangledName": "$s4animAAC7PromiseV",
+          "moduleName": "anim",
+          "declAttributes": [
+            "AccessControl"
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "then",
+          "printedName": "then(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(inout anim.animSettings) -> () -> ()",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "InOut",
+                  "printedName": "inout anim.animSettings"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC4thenyAByycAA0A8SettingsVzcF",
+          "mangledName": "$s4animAAC4thenyAByycAA0A8SettingsVzcF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "then",
+          "printedName": "then(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC4thenyAByycF",
+          "mangledName": "$s4animAAC4thenyAByycF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "wait",
+          "printedName": "wait(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC4waityABSdF",
+          "mangledName": "$s4animAAC4waityABSdF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "callback",
+          "printedName": "callback(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC8callbackyAByycF",
+          "mangledName": "$s4animAAC8callbackyAByycF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "DiscardableResult",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "chain",
+          "printedName": "chain(to:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "anim",
+              "printedName": "anim.anim",
+              "usr": "c:@M@anim@objc(cs)anim"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4animAAC5chain2toyAB_tF",
+          "mangledName": "$s4animAAC5chain2toyAB_tF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "Final",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@anim@objc(cs)anim",
+      "mangledName": "$s4animAAC",
+      "moduleName": "anim",
+      "declAttributes": [
+        "AccessControl",
+        "Final",
+        "RawDocComment",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)NSObject",
+      "hasMissingDesignatedInitializers": true,
+      "superclassNames": [
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "AppKit",
+      "printedName": "AppKit",
+      "declKind": "Import",
+      "moduleName": "anim"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "MacAnimator",
+      "printedName": "MacAnimator",
+      "children": [
+        {
+          "kind": "TypeDecl",
+          "name": "AnimatingLayer",
+          "printedName": "AnimatingLayer",
+          "children": [
+            {
+              "kind": "Var",
+              "name": "layer",
+              "printedName": "layer",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CALayer",
+                  "printedName": "QuartzCore.CALayer",
+                  "usr": "c:objc(cs)CALayer"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:4anim11MacAnimatorC14AnimatingLayerV5layerSo7CALayerCvp",
+              "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV5layerSo7CALayerCvp",
+              "moduleName": "anim",
+              "declAttributes": [
+                "HasStorage",
+                "AccessControl"
+              ],
+              "fixedbinaryorder": 0,
+              "hasStorage": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "CALayer",
+                      "printedName": "QuartzCore.CALayer",
+                      "usr": "c:objc(cs)CALayer"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4anim11MacAnimatorC14AnimatingLayerV5layerSo7CALayerCvg",
+                  "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV5layerSo7CALayerCvg",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "get"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Set",
+                  "printedName": "Set()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "CALayer",
+                      "printedName": "QuartzCore.CALayer",
+                      "usr": "c:objc(cs)CALayer"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4anim11MacAnimatorC14AnimatingLayerV5layerSo7CALayerCvs",
+                  "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV5layerSo7CALayerCvs",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "set"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Modify",
+                  "printedName": "Modify()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4anim11MacAnimatorC14AnimatingLayerV5layerSo7CALayerCvM",
+                  "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV5layerSo7CALayerCvM",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "_modify"
+                }
+              ]
+            },
+            {
+              "kind": "Var",
+              "name": "key",
+              "printedName": "key",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:4anim11MacAnimatorC14AnimatingLayerV3keySSvp",
+              "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV3keySSvp",
+              "moduleName": "anim",
+              "declAttributes": [
+                "HasStorage",
+                "AccessControl"
+              ],
+              "fixedbinaryorder": 1,
+              "hasStorage": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4anim11MacAnimatorC14AnimatingLayerV3keySSvg",
+                  "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV3keySSvg",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "get"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Set",
+                  "printedName": "Set()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4anim11MacAnimatorC14AnimatingLayerV3keySSvs",
+                  "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV3keySSvs",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "set"
+                },
+                {
+                  "kind": "Accessor",
+                  "name": "Modify",
+                  "printedName": "Modify()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:4anim11MacAnimatorC14AnimatingLayerV3keySSvM",
+                  "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV3keySSvM",
+                  "moduleName": "anim",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Transparent"
+                  ],
+                  "accessorKind": "_modify"
+                }
+              ]
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init(layer:key:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnimatingLayer",
+                  "printedName": "anim.MacAnimator.AnimatingLayer",
+                  "usr": "s:4anim11MacAnimatorC14AnimatingLayerV"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "CALayer",
+                  "printedName": "QuartzCore.CALayer",
+                  "usr": "c:objc(cs)CALayer"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:4anim11MacAnimatorC14AnimatingLayerV5layer3keyAESo7CALayerC_SStcfc",
+              "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV5layer3keyAESo7CALayerC_SStcfc",
+              "moduleName": "anim",
+              "implicit": true,
+              "init_kind": "Designated"
+            }
+          ],
+          "declKind": "Struct",
+          "usr": "s:4anim11MacAnimatorC14AnimatingLayerV",
+          "mangledName": "$s4anim11MacAnimatorC14AnimatingLayerV",
+          "moduleName": "anim",
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "conformances": [
+            {
+              "kind": "Conformance",
+              "name": "Sendable",
+              "printedName": "Sendable",
+              "usr": "s:s8SendableP",
+              "mangledName": "$ss8SendableP"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "activeInstance",
+          "printedName": "activeInstance",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "anim.MacAnimator?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MacAnimator",
+                  "printedName": "anim.MacAnimator",
+                  "usr": "s:4anim11MacAnimatorC"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim11MacAnimatorC14activeInstanceACSgvpZ",
+          "mangledName": "$s4anim11MacAnimatorC14activeInstanceACSgvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "anim.MacAnimator?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MacAnimator",
+                      "printedName": "anim.MacAnimator",
+                      "usr": "s:4anim11MacAnimatorC"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim11MacAnimatorC14activeInstanceACSgvgZ",
+              "mangledName": "$s4anim11MacAnimatorC14activeInstanceACSgvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "anim.MacAnimator?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MacAnimator",
+                      "printedName": "anim.MacAnimator",
+                      "usr": "s:4anim11MacAnimatorC"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim11MacAnimatorC14activeInstanceACSgvsZ",
+              "mangledName": "$s4anim11MacAnimatorC14activeInstanceACSgvsZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim11MacAnimatorC14activeInstanceACSgvMZ",
+              "mangledName": "$s4anim11MacAnimatorC14activeInstanceACSgvMZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "timingFunction",
+          "printedName": "timingFunction",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "QuartzCore.CAMediaTimingFunction?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CAMediaTimingFunction",
+                  "printedName": "QuartzCore.CAMediaTimingFunction",
+                  "usr": "c:objc(cs)CAMediaTimingFunction"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim11MacAnimatorC14timingFunctionSo013CAMediaTimingE0CSgvpZ",
+          "mangledName": "$s4anim11MacAnimatorC14timingFunctionSo013CAMediaTimingE0CSgvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "QuartzCore.CAMediaTimingFunction?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "CAMediaTimingFunction",
+                      "printedName": "QuartzCore.CAMediaTimingFunction",
+                      "usr": "c:objc(cs)CAMediaTimingFunction"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim11MacAnimatorC14timingFunctionSo013CAMediaTimingE0CSgvgZ",
+              "mangledName": "$s4anim11MacAnimatorC14timingFunctionSo013CAMediaTimingE0CSgvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "QuartzCore.CAMediaTimingFunction?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "CAMediaTimingFunction",
+                      "printedName": "QuartzCore.CAMediaTimingFunction",
+                      "usr": "c:objc(cs)CAMediaTimingFunction"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim11MacAnimatorC14timingFunctionSo013CAMediaTimingE0CSgvsZ",
+              "mangledName": "$s4anim11MacAnimatorC14timingFunctionSo013CAMediaTimingE0CSgvsZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim11MacAnimatorC14timingFunctionSo013CAMediaTimingE0CSgvMZ",
+              "mangledName": "$s4anim11MacAnimatorC14timingFunctionSo013CAMediaTimingE0CSgvMZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "animatingLayers",
+          "printedName": "animatingLayers",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "[anim.MacAnimator.AnimatingLayer]?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[anim.MacAnimator.AnimatingLayer]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AnimatingLayer",
+                      "printedName": "anim.MacAnimator.AnimatingLayer",
+                      "usr": "s:4anim11MacAnimatorC14AnimatingLayerV"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim11MacAnimatorC15animatingLayers33_CBC365692BE1944A7AA776507A680FE9LLSayAC14AnimatingLayerVGSgvp",
+          "mangledName": "$s4anim11MacAnimatorC15animatingLayers33_CBC365692BE1944A7AA776507A680FE9LLSayAC14AnimatingLayerVGSgvp",
+          "moduleName": "anim",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Function",
+          "name": "startAnimation",
+          "printedName": "startAnimation(animationClosure:completion:settings:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "animSettings",
+              "printedName": "anim.animSettings",
+              "usr": "s:4anim0A8SettingsV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim11MacAnimatorC14startAnimation16animationClosure10completion8settingsyyyc_yycAA0A8SettingsVtF",
+          "mangledName": "$s4anim11MacAnimatorC14startAnimation16animationClosure10completion8settingsyyyc_yycAA0A8SettingsVtF",
+          "moduleName": "anim",
+          "isOpen": true,
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "stopAnimation",
+          "printedName": "stopAnimation()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim11MacAnimatorC13stopAnimationyyF",
+          "mangledName": "$s4anim11MacAnimatorC13stopAnimationyyF",
+          "moduleName": "anim",
+          "isOpen": true,
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "addLayerToAnimator",
+          "printedName": "addLayerToAnimator(_:_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "CALayer",
+              "printedName": "QuartzCore.CALayer",
+              "usr": "c:objc(cs)CALayer"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim11MacAnimatorC010addLayerToC0yySo7CALayerC_SStFZ",
+          "mangledName": "$s4anim11MacAnimatorC010addLayerToC0yySo7CALayerC_SStFZ",
+          "moduleName": "anim",
+          "static": true,
+          "isOpen": true,
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "MacAnimator",
+              "printedName": "anim.MacAnimator",
+              "usr": "s:4anim11MacAnimatorC"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4anim11MacAnimatorCACycfc",
+          "mangledName": "$s4anim11MacAnimatorCACycfc",
+          "moduleName": "anim",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:4anim11MacAnimatorC",
+      "mangledName": "$s4anim11MacAnimatorC",
+      "moduleName": "anim",
+      "isOpen": true,
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Animator",
+          "printedName": "Animator",
+          "usr": "s:4anim8AnimatorP",
+          "mangledName": "$s4anim8AnimatorP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Animator",
+      "printedName": "Animator",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "startAnimation",
+          "printedName": "startAnimation(animationClosure:completion:settings:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "animSettings",
+              "printedName": "anim.animSettings",
+              "usr": "s:4anim0A8SettingsV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim8AnimatorP14startAnimation16animationClosure10completion8settingsyyyc_yycAA0A8SettingsVtF",
+          "mangledName": "$s4anim8AnimatorP14startAnimation16animationClosure10completion8settingsyyyc_yycAA0A8SettingsVtF",
+          "moduleName": "anim",
+          "genericSig": "<τ_0_0 where τ_0_0 : anim.Animator>",
+          "sugared_genericSig": "<Self where Self : anim.Animator>",
+          "protocolReq": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "stopAnimation",
+          "printedName": "stopAnimation()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim8AnimatorP13stopAnimationyyF",
+          "mangledName": "$s4anim8AnimatorP13stopAnimationyyF",
+          "moduleName": "anim",
+          "genericSig": "<τ_0_0 where τ_0_0 : anim.Animator>",
+          "sugared_genericSig": "<Self where Self : anim.Animator>",
+          "protocolReq": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:4anim8AnimatorP",
+      "mangledName": "$s4anim8AnimatorP",
+      "moduleName": "anim",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AnimatorType",
+      "printedName": "AnimatorType",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "propertyAnimator",
+          "printedName": "propertyAnimator",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(anim.AnimatorType.Type) -> anim.AnimatorType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnimatorType",
+                  "printedName": "anim.AnimatorType",
+                  "usr": "s:4anim12AnimatorTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "anim.AnimatorType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AnimatorType",
+                      "printedName": "anim.AnimatorType",
+                      "usr": "s:4anim12AnimatorTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:4anim12AnimatorTypeO08propertyB0yA2CmF",
+          "mangledName": "$s4anim12AnimatorTypeO08propertyB0yA2CmF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 0
+        },
+        {
+          "kind": "Var",
+          "name": "viewAnimator",
+          "printedName": "viewAnimator",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(anim.AnimatorType.Type) -> anim.AnimatorType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnimatorType",
+                  "printedName": "anim.AnimatorType",
+                  "usr": "s:4anim12AnimatorTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "anim.AnimatorType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AnimatorType",
+                      "printedName": "anim.AnimatorType",
+                      "usr": "s:4anim12AnimatorTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:4anim12AnimatorTypeO04viewB0yA2CmF",
+          "mangledName": "$s4anim12AnimatorTypeO04viewB0yA2CmF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 1
+        },
+        {
+          "kind": "Var",
+          "name": "macAnimator",
+          "printedName": "macAnimator",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(anim.AnimatorType.Type) -> anim.AnimatorType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnimatorType",
+                  "printedName": "anim.AnimatorType",
+                  "usr": "s:4anim12AnimatorTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "anim.AnimatorType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AnimatorType",
+                      "printedName": "anim.AnimatorType",
+                      "usr": "s:4anim12AnimatorTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:4anim12AnimatorTypeO03macB0yA2CmF",
+          "mangledName": "$s4anim12AnimatorTypeO03macB0yA2CmF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 2
+        },
+        {
+          "kind": "Function",
+          "name": "__derived_enum_equals",
+          "printedName": "__derived_enum_equals(_:_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "AnimatorType",
+              "printedName": "anim.AnimatorType",
+              "usr": "s:4anim12AnimatorTypeO"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "AnimatorType",
+              "printedName": "anim.AnimatorType",
+              "usr": "s:4anim12AnimatorTypeO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim12AnimatorTypeO21__derived_enum_equalsySbAC_ACtFZ",
+          "mangledName": "$s4anim12AnimatorTypeO21__derived_enum_equalsySbAC_ACtFZ",
+          "moduleName": "anim",
+          "static": true,
+          "implicit": true,
+          "declAttributes": [
+            "Implements"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "hashValue",
+          "printedName": "hashValue",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim12AnimatorTypeO9hashValueSivp",
+          "mangledName": "$s4anim12AnimatorTypeO9hashValueSivp",
+          "moduleName": "anim",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim12AnimatorTypeO9hashValueSivg",
+              "mangledName": "$s4anim12AnimatorTypeO9hashValueSivg",
+              "moduleName": "anim",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "hash",
+          "printedName": "hash(into:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Hasher",
+              "printedName": "Swift.Hasher",
+              "paramValueOwnership": "InOut",
+              "usr": "s:s6HasherV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim12AnimatorTypeO4hash4intoys6HasherVz_tF",
+          "mangledName": "$s4anim12AnimatorTypeO4hash4intoys6HasherVz_tF",
+          "moduleName": "anim",
+          "implicit": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "default",
+          "printedName": "default",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnimatorType",
+              "printedName": "anim.AnimatorType",
+              "usr": "s:4anim12AnimatorTypeO"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim12AnimatorTypeO7defaultACvpZ",
+          "mangledName": "$s4anim12AnimatorTypeO7defaultACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnimatorType",
+                  "printedName": "anim.AnimatorType",
+                  "usr": "s:4anim12AnimatorTypeO"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim12AnimatorTypeO7defaultACvgZ",
+              "mangledName": "$s4anim12AnimatorTypeO7defaultACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "instance",
+          "printedName": "instance",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Animator",
+              "printedName": "anim.Animator",
+              "usr": "s:4anim8AnimatorP"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim12AnimatorTypeO8instanceAA0B0_pvp",
+          "mangledName": "$s4anim12AnimatorTypeO8instanceAA0B0_pvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Animator",
+                  "printedName": "anim.Animator",
+                  "usr": "s:4anim8AnimatorP"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim12AnimatorTypeO8instanceAA0B0_pvg",
+              "mangledName": "$s4anim12AnimatorTypeO8instanceAA0B0_pvg",
+              "moduleName": "anim",
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Enum",
+      "usr": "s:4anim12AnimatorTypeO",
+      "mangledName": "$s4anim12AnimatorTypeO",
+      "moduleName": "anim",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "isEnumExhaustive": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "AnimatorTypeProtocol",
+          "printedName": "AnimatorTypeProtocol",
+          "usr": "s:4anim20AnimatorTypeProtocolP",
+          "mangledName": "$s4anim20AnimatorTypeProtocolP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AnimatorTypeProtocol",
+      "printedName": "AnimatorTypeProtocol",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "default",
+          "printedName": "default",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim20AnimatorTypeProtocolP7defaultxvpZ",
+          "mangledName": "$s4anim20AnimatorTypeProtocolP7defaultxvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "protocolReq": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim20AnimatorTypeProtocolP7defaultxvgZ",
+              "mangledName": "$s4anim20AnimatorTypeProtocolP7defaultxvgZ",
+              "moduleName": "anim",
+              "genericSig": "<τ_0_0 where τ_0_0 : anim.AnimatorTypeProtocol>",
+              "sugared_genericSig": "<Self where Self : anim.AnimatorTypeProtocol>",
+              "static": true,
+              "protocolReq": true,
+              "reqNewWitnessTableEntry": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "instance",
+          "printedName": "instance",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Animator",
+              "printedName": "anim.Animator",
+              "usr": "s:4anim8AnimatorP"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim20AnimatorTypeProtocolP8instanceAA0B0_pvp",
+          "mangledName": "$s4anim20AnimatorTypeProtocolP8instanceAA0B0_pvp",
+          "moduleName": "anim",
+          "protocolReq": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Animator",
+                  "printedName": "anim.Animator",
+                  "usr": "s:4anim8AnimatorP"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim20AnimatorTypeProtocolP8instanceAA0B0_pvg",
+              "mangledName": "$s4anim20AnimatorTypeProtocolP8instanceAA0B0_pvg",
+              "moduleName": "anim",
+              "genericSig": "<τ_0_0 where τ_0_0 : anim.AnimatorTypeProtocol>",
+              "sugared_genericSig": "<Self where Self : anim.AnimatorTypeProtocol>",
+              "protocolReq": true,
+              "reqNewWitnessTableEntry": true,
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:4anim20AnimatorTypeProtocolP",
+      "mangledName": "$s4anim20AnimatorTypeProtocolP",
+      "moduleName": "anim",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Constraint",
+      "printedName": "Constraint",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "closure",
+          "printedName": "closure",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim10ConstraintV7closureyycvp",
+          "mangledName": "$s4anim10ConstraintV7closureyycvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim10ConstraintV7closureyycvg",
+              "mangledName": "$s4anim10ConstraintV7closureyycvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim10ConstraintV7closureyycvs",
+              "mangledName": "$s4anim10ConstraintV7closureyycvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim10ConstraintV7closureyycvM",
+              "mangledName": "$s4anim10ConstraintV7closureyycvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "parent",
+          "printedName": "parent",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSView",
+              "printedName": "AppKit.NSView",
+              "usr": "c:objc(cs)NSView"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim10ConstraintV6parentSo6NSViewCvp",
+          "mangledName": "$s4anim10ConstraintV6parentSo6NSViewCvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSView",
+                  "printedName": "AppKit.NSView",
+                  "usr": "c:objc(cs)NSView"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim10ConstraintV6parentSo6NSViewCvg",
+              "mangledName": "$s4anim10ConstraintV6parentSo6NSViewCvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSView",
+                  "printedName": "AppKit.NSView",
+                  "usr": "c:objc(cs)NSView"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim10ConstraintV6parentSo6NSViewCvs",
+              "mangledName": "$s4anim10ConstraintV6parentSo6NSViewCvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim10ConstraintV6parentSo6NSViewCvM",
+              "mangledName": "$s4anim10ConstraintV6parentSo6NSViewCvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "update",
+          "printedName": "update()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim10ConstraintV6updateyyF",
+          "mangledName": "$s4anim10ConstraintV6updateyyF",
+          "moduleName": "anim",
+          "declAttributes": [
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(closure:parent:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Constraint",
+              "printedName": "anim.Constraint",
+              "usr": "s:4anim10ConstraintV"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "() -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ]
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSView",
+              "printedName": "AppKit.NSView",
+              "usr": "c:objc(cs)NSView"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4anim10ConstraintV7closure6parentACyyc_So6NSViewCtcfc",
+          "mangledName": "$s4anim10ConstraintV7closure6parentACyyc_So6NSViewCtcfc",
+          "moduleName": "anim",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:4anim10ConstraintV",
+      "mangledName": "$s4anim10ConstraintV",
+      "moduleName": "anim",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "AppKit",
+      "printedName": "AppKit",
+      "declKind": "Import",
+      "moduleName": "anim"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "animEase",
+      "printedName": "animEase",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "point1",
+          "printedName": "point1",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGPoint",
+              "printedName": "CoreGraphics.CGPoint",
+              "usr": "c:@S@CGPoint"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV6point1So7CGPointVvp",
+          "mangledName": "$s4anim0A4EaseV6point1So7CGPointVvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGPoint",
+                  "printedName": "CoreGraphics.CGPoint",
+                  "usr": "c:@S@CGPoint"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV6point1So7CGPointVvg",
+              "mangledName": "$s4anim0A4EaseV6point1So7CGPointVvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "point2",
+          "printedName": "point2",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGPoint",
+              "printedName": "CoreGraphics.CGPoint",
+              "usr": "c:@S@CGPoint"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV6point2So7CGPointVvp",
+          "mangledName": "$s4anim0A4EaseV6point2So7CGPointVvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGPoint",
+                  "printedName": "CoreGraphics.CGPoint",
+                  "usr": "c:@S@CGPoint"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV6point2So7CGPointVvg",
+              "mangledName": "$s4anim0A4EaseV6point2So7CGPointVvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "custom",
+          "printedName": "custom(point1:point2:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "CGPoint",
+              "printedName": "CoreGraphics.CGPoint",
+              "usr": "c:@S@CGPoint"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "CGPoint",
+              "printedName": "CoreGraphics.CGPoint",
+              "usr": "c:@S@CGPoint"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim0A4EaseV6custom6point16point2ACSo7CGPointV_AHtFZ",
+          "mangledName": "$s4anim0A4EaseV6custom6point16point2ACSo7CGPointV_AHtFZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "caMediaTimingFunction",
+          "printedName": "caMediaTimingFunction",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CAMediaTimingFunction",
+              "printedName": "QuartzCore.CAMediaTimingFunction",
+              "usr": "c:objc(cs)CAMediaTimingFunction"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV21caMediaTimingFunctionSo07CAMediaeF0Cvp",
+          "mangledName": "$s4anim0A4EaseV21caMediaTimingFunctionSo07CAMediaeF0Cvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CAMediaTimingFunction",
+                  "printedName": "QuartzCore.CAMediaTimingFunction",
+                  "usr": "c:objc(cs)CAMediaTimingFunction"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV21caMediaTimingFunctionSo07CAMediaeF0Cvg",
+              "mangledName": "$s4anim0A4EaseV21caMediaTimingFunctionSo07CAMediaeF0Cvg",
+              "moduleName": "anim",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInSine",
+          "printedName": "easeInSine",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV10easeInSineACvpZ",
+          "mangledName": "$s4anim0A4EaseV10easeInSineACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV10easeInSineACvgZ",
+              "mangledName": "$s4anim0A4EaseV10easeInSineACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeOutSine",
+          "printedName": "easeOutSine",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV11easeOutSineACvpZ",
+          "mangledName": "$s4anim0A4EaseV11easeOutSineACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV11easeOutSineACvgZ",
+              "mangledName": "$s4anim0A4EaseV11easeOutSineACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInOutSine",
+          "printedName": "easeInOutSine",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV13easeInOutSineACvpZ",
+          "mangledName": "$s4anim0A4EaseV13easeInOutSineACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV13easeInOutSineACvgZ",
+              "mangledName": "$s4anim0A4EaseV13easeInOutSineACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInQuad",
+          "printedName": "easeInQuad",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV10easeInQuadACvpZ",
+          "mangledName": "$s4anim0A4EaseV10easeInQuadACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV10easeInQuadACvgZ",
+              "mangledName": "$s4anim0A4EaseV10easeInQuadACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeOutQuad",
+          "printedName": "easeOutQuad",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV11easeOutQuadACvpZ",
+          "mangledName": "$s4anim0A4EaseV11easeOutQuadACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV11easeOutQuadACvgZ",
+              "mangledName": "$s4anim0A4EaseV11easeOutQuadACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInOutQuad",
+          "printedName": "easeInOutQuad",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV13easeInOutQuadACvpZ",
+          "mangledName": "$s4anim0A4EaseV13easeInOutQuadACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV13easeInOutQuadACvgZ",
+              "mangledName": "$s4anim0A4EaseV13easeInOutQuadACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInCubic",
+          "printedName": "easeInCubic",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV11easeInCubicACvpZ",
+          "mangledName": "$s4anim0A4EaseV11easeInCubicACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV11easeInCubicACvgZ",
+              "mangledName": "$s4anim0A4EaseV11easeInCubicACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeOutCubic",
+          "printedName": "easeOutCubic",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV12easeOutCubicACvpZ",
+          "mangledName": "$s4anim0A4EaseV12easeOutCubicACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV12easeOutCubicACvgZ",
+              "mangledName": "$s4anim0A4EaseV12easeOutCubicACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInOutCubic",
+          "printedName": "easeInOutCubic",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV14easeInOutCubicACvpZ",
+          "mangledName": "$s4anim0A4EaseV14easeInOutCubicACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV14easeInOutCubicACvgZ",
+              "mangledName": "$s4anim0A4EaseV14easeInOutCubicACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInQuart",
+          "printedName": "easeInQuart",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV11easeInQuartACvpZ",
+          "mangledName": "$s4anim0A4EaseV11easeInQuartACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV11easeInQuartACvgZ",
+              "mangledName": "$s4anim0A4EaseV11easeInQuartACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeOutQuart",
+          "printedName": "easeOutQuart",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV12easeOutQuartACvpZ",
+          "mangledName": "$s4anim0A4EaseV12easeOutQuartACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV12easeOutQuartACvgZ",
+              "mangledName": "$s4anim0A4EaseV12easeOutQuartACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInOutQuart",
+          "printedName": "easeInOutQuart",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV14easeInOutQuartACvpZ",
+          "mangledName": "$s4anim0A4EaseV14easeInOutQuartACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV14easeInOutQuartACvgZ",
+              "mangledName": "$s4anim0A4EaseV14easeInOutQuartACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInQuint",
+          "printedName": "easeInQuint",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV11easeInQuintACvpZ",
+          "mangledName": "$s4anim0A4EaseV11easeInQuintACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV11easeInQuintACvgZ",
+              "mangledName": "$s4anim0A4EaseV11easeInQuintACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeOutQuint",
+          "printedName": "easeOutQuint",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV12easeOutQuintACvpZ",
+          "mangledName": "$s4anim0A4EaseV12easeOutQuintACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV12easeOutQuintACvgZ",
+              "mangledName": "$s4anim0A4EaseV12easeOutQuintACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInOutQuint",
+          "printedName": "easeInOutQuint",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV14easeInOutQuintACvpZ",
+          "mangledName": "$s4anim0A4EaseV14easeInOutQuintACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV14easeInOutQuintACvgZ",
+              "mangledName": "$s4anim0A4EaseV14easeInOutQuintACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInExpo",
+          "printedName": "easeInExpo",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV10easeInExpoACvpZ",
+          "mangledName": "$s4anim0A4EaseV10easeInExpoACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV10easeInExpoACvgZ",
+              "mangledName": "$s4anim0A4EaseV10easeInExpoACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeOutExpo",
+          "printedName": "easeOutExpo",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV11easeOutExpoACvpZ",
+          "mangledName": "$s4anim0A4EaseV11easeOutExpoACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV11easeOutExpoACvgZ",
+              "mangledName": "$s4anim0A4EaseV11easeOutExpoACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInOutExpo",
+          "printedName": "easeInOutExpo",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV13easeInOutExpoACvpZ",
+          "mangledName": "$s4anim0A4EaseV13easeInOutExpoACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV13easeInOutExpoACvgZ",
+              "mangledName": "$s4anim0A4EaseV13easeInOutExpoACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInCirc",
+          "printedName": "easeInCirc",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV10easeInCircACvpZ",
+          "mangledName": "$s4anim0A4EaseV10easeInCircACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV10easeInCircACvgZ",
+              "mangledName": "$s4anim0A4EaseV10easeInCircACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeOutCirc",
+          "printedName": "easeOutCirc",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV11easeOutCircACvpZ",
+          "mangledName": "$s4anim0A4EaseV11easeOutCircACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV11easeOutCircACvgZ",
+              "mangledName": "$s4anim0A4EaseV11easeOutCircACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInOutCirc",
+          "printedName": "easeInOutCirc",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV13easeInOutCircACvpZ",
+          "mangledName": "$s4anim0A4EaseV13easeInOutCircACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV13easeInOutCircACvgZ",
+              "mangledName": "$s4anim0A4EaseV13easeInOutCircACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInBack",
+          "printedName": "easeInBack",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV10easeInBackACvpZ",
+          "mangledName": "$s4anim0A4EaseV10easeInBackACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV10easeInBackACvgZ",
+              "mangledName": "$s4anim0A4EaseV10easeInBackACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeOutBack",
+          "printedName": "easeOutBack",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV11easeOutBackACvpZ",
+          "mangledName": "$s4anim0A4EaseV11easeOutBackACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV11easeOutBackACvgZ",
+              "mangledName": "$s4anim0A4EaseV11easeOutBackACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "easeInOutBack",
+          "printedName": "easeInOutBack",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A4EaseV13easeInOutBackACvpZ",
+          "mangledName": "$s4anim0A4EaseV13easeInOutBackACvpZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A4EaseV13easeInOutBackACvgZ",
+              "mangledName": "$s4anim0A4EaseV13easeInOutBackACvgZ",
+              "moduleName": "anim",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(point1:point2:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "CGPoint",
+              "printedName": "CoreGraphics.CGPoint",
+              "usr": "c:@S@CGPoint"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "CGPoint",
+              "printedName": "CoreGraphics.CGPoint",
+              "usr": "c:@S@CGPoint"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4anim0A4EaseV6point16point2ACSo7CGPointV_AGtcfc",
+          "mangledName": "$s4anim0A4EaseV6point16point2ACSo7CGPointV_AGtcfc",
+          "moduleName": "anim",
+          "implicit": true,
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "==",
+          "printedName": "==(_:_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:4anim0A4EaseV2eeoiySbAC_ACtFZ",
+          "mangledName": "$s4anim0A4EaseV2eeoiySbAC_ACtFZ",
+          "moduleName": "anim",
+          "static": true,
+          "declAttributes": [
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:4anim0A4EaseV",
+      "mangledName": "$s4anim0A4EaseV",
+      "moduleName": "anim",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "anim",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "animSettings",
+      "printedName": "animSettings",
+      "children": [
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(delay:duration:ease:completion:isUserInteractionsEnabled:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animSettings",
+              "printedName": "anim.animSettings",
+              "usr": "s:4anim0A8SettingsV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "hasDefaultArg": true,
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "hasDefaultArg": true,
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "hasDefaultArg": true,
+              "usr": "s:4anim0A4EaseV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "(() -> ())?",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "hasDefaultArg": true,
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:4anim0A8SettingsV5delay8duration4ease10completion25isUserInteractionsEnabledACSd_SdAA0A4EaseVyycSgSbtcfc",
+          "mangledName": "$s4anim0A8SettingsV5delay8duration4ease10completion25isUserInteractionsEnabledACSd_SdAA0A4EaseVyycSgSbtcfc",
+          "moduleName": "anim",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Var",
+          "name": "delay",
+          "printedName": "delay",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A8SettingsV5delaySdvp",
+          "mangledName": "$s4anim0A8SettingsV5delaySdvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV5delaySdvg",
+              "mangledName": "$s4anim0A8SettingsV5delaySdvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV5delaySdvs",
+              "mangledName": "$s4anim0A8SettingsV5delaySdvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV5delaySdvM",
+              "mangledName": "$s4anim0A8SettingsV5delaySdvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "duration",
+          "printedName": "duration",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A8SettingsV8durationSdvp",
+          "mangledName": "$s4anim0A8SettingsV8durationSdvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV8durationSdvg",
+              "mangledName": "$s4anim0A8SettingsV8durationSdvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV8durationSdvs",
+              "mangledName": "$s4anim0A8SettingsV8durationSdvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV8durationSdvM",
+              "mangledName": "$s4anim0A8SettingsV8durationSdvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "ease",
+          "printedName": "ease",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "animEase",
+              "printedName": "anim.animEase",
+              "usr": "s:4anim0A4EaseV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A8SettingsV4easeAA0A4EaseVvp",
+          "mangledName": "$s4anim0A8SettingsV4easeAA0A4EaseVvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV4easeAA0A4EaseVvg",
+              "mangledName": "$s4anim0A8SettingsV4easeAA0A4EaseVvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "animEase",
+                  "printedName": "anim.animEase",
+                  "usr": "s:4anim0A4EaseV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV4easeAA0A4EaseVvs",
+              "mangledName": "$s4anim0A8SettingsV4easeAA0A4EaseVvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV4easeAA0A4EaseVvM",
+              "mangledName": "$s4anim0A8SettingsV4easeAA0A4EaseVvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "completion",
+          "printedName": "completion",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "(() -> ())?",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "() -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A8SettingsV10completionyycSgvp",
+          "mangledName": "$s4anim0A8SettingsV10completionyycSgvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "(() -> ())?",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "() -> ()",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Void",
+                          "printedName": "()"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Void",
+                          "printedName": "()"
+                        }
+                      ]
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV10completionyycSgvg",
+              "mangledName": "$s4anim0A8SettingsV10completionyycSgvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "(() -> ())?",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "() -> ()",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Void",
+                          "printedName": "()"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Void",
+                          "printedName": "()"
+                        }
+                      ]
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV10completionyycSgvs",
+              "mangledName": "$s4anim0A8SettingsV10completionyycSgvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV10completionyycSgvM",
+              "mangledName": "$s4anim0A8SettingsV10completionyycSgvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "preferredAnimator",
+          "printedName": "preferredAnimator",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnimatorType",
+              "printedName": "anim.AnimatorType",
+              "usr": "s:4anim12AnimatorTypeO"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A8SettingsV17preferredAnimatorAA0D4TypeOvp",
+          "mangledName": "$s4anim0A8SettingsV17preferredAnimatorAA0D4TypeOvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "AccessControl",
+            "Lazy",
+            "RawDocComment"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnimatorType",
+                  "printedName": "anim.AnimatorType",
+                  "usr": "s:4anim12AnimatorTypeO"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV17preferredAnimatorAA0D4TypeOvg",
+              "mangledName": "$s4anim0A8SettingsV17preferredAnimatorAA0D4TypeOvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnimatorType",
+                  "printedName": "anim.AnimatorType",
+                  "usr": "s:4anim12AnimatorTypeO"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV17preferredAnimatorAA0D4TypeOvs",
+              "mangledName": "$s4anim0A8SettingsV17preferredAnimatorAA0D4TypeOvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV17preferredAnimatorAA0D4TypeOvM",
+              "mangledName": "$s4anim0A8SettingsV17preferredAnimatorAA0D4TypeOvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$__lazy_storage_$_preferredAnimator",
+          "printedName": "$__lazy_storage_$_preferredAnimator",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "anim.AnimatorType?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnimatorType",
+                  "printedName": "anim.AnimatorType",
+                  "usr": "s:4anim12AnimatorTypeO"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A8SettingsV35$__lazy_storage_$_preferredAnimator33_C91E811947BDF421BDF554967A4294A7LLAA0F4TypeOSgvp",
+          "mangledName": "$s4anim0A8SettingsV35$__lazy_storage_$_preferredAnimator33_C91E811947BDF421BDF554967A4294A7LLAA0F4TypeOSgvp",
+          "moduleName": "anim",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 4,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "isUserInteractionsEnabled",
+          "printedName": "isUserInteractionsEnabled",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:4anim0A8SettingsV25isUserInteractionsEnabledSbvp",
+          "mangledName": "$s4anim0A8SettingsV25isUserInteractionsEnabledSbvp",
+          "moduleName": "anim",
+          "declAttributes": [
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 5,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV25isUserInteractionsEnabledSbvg",
+              "mangledName": "$s4anim0A8SettingsV25isUserInteractionsEnabledSbvg",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV25isUserInteractionsEnabledSbvs",
+              "mangledName": "$s4anim0A8SettingsV25isUserInteractionsEnabledSbvs",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:4anim0A8SettingsV25isUserInteractionsEnabledSbvM",
+              "mangledName": "$s4anim0A8SettingsV25isUserInteractionsEnabledSbvM",
+              "moduleName": "anim",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:4anim0A8SettingsV",
+      "mangledName": "$s4anim0A8SettingsV",
+      "moduleName": "anim",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

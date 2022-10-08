@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		116DC7189D0D9E3E398199D1 /* Pods_CodeProduceSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61E01834C9DD2A6ECF0E03D /* Pods_CodeProduceSwiftTests.framework */; };
 		23DD780344D8F3899F371C51 /* Pods_CodeProduceSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0841DD09819CC06D564CC90 /* Pods_CodeProduceSwiftUITests.framework */; };
+		5C25831125D27AA3000CC7E3 /* ZMChineseConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C25830F25D27AA2000CC7E3 /* ZMChineseConvert.m */; };
+		5C25831725D27AF2000CC7E3 /* TraditionalCode.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C25831525D27AF2000CC7E3 /* TraditionalCode.txt */; };
+		5C25831825D27AF2000CC7E3 /* SimplifiedCode.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C25831625D27AF2000CC7E3 /* SimplifiedCode.txt */; };
 		5C660B682398ABEE0089B667 /* CreateOCCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C660B672398ABEE0089B667 /* CreateOCCode.swift */; };
 		5C660B6A2398AC020089B667 /* CreateOCCodeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C660B692398AC020089B667 /* CreateOCCodeVM.swift */; };
 		5C703C5324EB7F2A00ABBC6F /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C703C4C24EB7F2A00ABBC6F /* sm4.c */; };
@@ -78,6 +81,10 @@
 		2883AF0312511A12FE25AE09 /* Pods-CodeProduceSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftTests/Pods-CodeProduceSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		5179009A5908F3A2565E6FE5 /* Pods-CodeProduceSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftUITests/Pods-CodeProduceSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		554E85ADA7F31E343C08C6B8 /* Pods-CodeProduceSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwift.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwift/Pods-CodeProduceSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		5C25830F25D27AA2000CC7E3 /* ZMChineseConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMChineseConvert.m; sourceTree = "<group>"; };
+		5C25831025D27AA2000CC7E3 /* ZMChineseConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMChineseConvert.h; sourceTree = "<group>"; };
+		5C25831525D27AF2000CC7E3 /* TraditionalCode.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TraditionalCode.txt; sourceTree = "<group>"; };
+		5C25831625D27AF2000CC7E3 /* SimplifiedCode.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimplifiedCode.txt; sourceTree = "<group>"; };
 		5C660B672398ABEE0089B667 /* CreateOCCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCCode.swift; sourceTree = "<group>"; };
 		5C660B692398AC020089B667 /* CreateOCCodeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOCCodeVM.swift; sourceTree = "<group>"; };
 		5C703C4A24EB7F2A00ABBC6F /* hex2str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hex2str.h; sourceTree = "<group>"; };
@@ -185,6 +192,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5C25830E25D27AA2000CC7E3 /* ZMChineseConvert */ = {
+			isa = PBXGroup;
+			children = (
+				5C25831625D27AF2000CC7E3 /* SimplifiedCode.txt */,
+				5C25831525D27AF2000CC7E3 /* TraditionalCode.txt */,
+				5C25830F25D27AA2000CC7E3 /* ZMChineseConvert.m */,
+				5C25831025D27AA2000CC7E3 /* ZMChineseConvert.h */,
+			);
+			path = ZMChineseConvert;
+			sourceTree = "<group>";
+		};
 		5C660B662398ABB40089B667 /* CreateCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +268,7 @@
 		5C86D54C25B5655800314CEF /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				5C25830E25D27AA2000CC7E3 /* ZMChineseConvert */,
 				5CA659DA25C91BD300C6C12B /* Crypto */,
 				5C86D65525B56E0D00314CEF /* CommandKit */,
 			);
@@ -534,6 +553,8 @@
 				5CBCE1A72394DDD000ECBD43 /* Assets.xcassets in Resources */,
 				5CEC5AA425903F48004197BA /* TaskVC.xib in Resources */,
 				5CBCE1AA2394DDD000ECBD43 /* Main.storyboard in Resources */,
+				5C25831725D27AF2000CC7E3 /* TraditionalCode.txt in Resources */,
+				5C25831825D27AF2000CC7E3 /* SimplifiedCode.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +701,7 @@
 				5C86D66A25B56E0D00314CEF /* StringExtensions.swift in Sources */,
 				5CBCE1D02394DEFA00ECBD43 /* CreateOCFile.swift in Sources */,
 				5CCC913B257E0BEF00A69790 /* ModalWindow.swift in Sources */,
+				5C25831125D27AA3000CC7E3 /* ZMChineseConvert.m in Sources */,
 				5CBCE1D723964F1D00ECBD43 /* MyTransitionAnimator.swift in Sources */,
 				5C703C6424EB826600ABBC6F /* AESCryptVM.swift in Sources */,
 				5C86D66525B56E0D00314CEF /* Option.swift in Sources */,
