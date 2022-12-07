@@ -328,8 +328,11 @@ extension SignalProtocol {
 
     /// Emit elements until the given closure returns first `false`.
     ///
+    /// - parameter shouldContinue: A closure that tests whethere the given element should complete the signal.
+    /// - parameter inclusive: When `true`, the element that triggered the completion will also be sent along the signal. Defaults to `false`.
+    ///
     /// Check out interactive example at [https://rxmarbles.com/#takeWhile](https://rxmarbles.com/#takeWhile)
-    public func prefix(while shouldContinue: @escaping (Element) -> Bool) -> Signal<Element, Error> {
+    public func prefix(while shouldContinue: @escaping (Element) -> Bool, inclusive: Bool = false) -> Signal<Element, Error> {
         return Signal { observer in
             return self.observe { event in
                 switch event {
@@ -337,6 +340,9 @@ extension SignalProtocol {
                     if shouldContinue(element) {
                         observer.receive(element)
                     } else {
+                        if inclusive {
+                            observer.receive(element)
+                        }
                         observer.receive(completion: .finished)
                     }
                 default:
@@ -368,24 +374,72 @@ extension SignalProtocol {
         }
     }
 
-    /// Throttle the signal to emit at most one element per given `seconds` interval.
+    /// Throttle the signal to emit at most one element per given `seconds` interval. Emits either the most-recent or first element in the specified time interval.
+    ///
+    /// - parameter seconds:  The interval at which to find and emit either the most recent or the first element.
+    /// - parameter latest:  Defaults to `true`. A Bool value that indicates whether to publish the most recent element. If `false`, it emits the first element received during the interval. If `true` Signal will emit latest element from each interval.
     ///
     /// Check out interactive example at [https://rxmarbles.com/#throttle](https://rxmarbles.com/#throttle)
-    public func throttle(for seconds: Double) -> Signal<Element, Error> {
-        return Signal { observer in
-            let lock = NSRecursiveLock(name: "com.reactive_kit.signal.throttle")
-            var _lastEventTime: DispatchTime?
-            return self.observe { event in
-                switch event {
-                case .next(let element):
-                    lock.lock(); defer { lock.unlock() }
-                    let now = DispatchTime.now()
-                    if _lastEventTime == nil || now.rawValue > (_lastEventTime! + seconds).rawValue {
-                        _lastEventTime = now
-                        observer.receive(element)
+    public func throttle(
+        for seconds: Double,
+        queue: DispatchQueue = DispatchQueue(label: "com.reactive_kit.signal.throttle"),
+        latest: Bool = true
+    ) -> Signal<Element, Error> {
+        if latest {
+            return Signal { observer in
+                var isInitialElement = true
+                var throttledDisposable: Disposable? = nil
+                var lastElement: Element? = nil
+                var isFinished: Bool = false
+                return self.observe { event in
+                    queue.async {
+                        switch event {
+                        case .next(let element):
+                            if isInitialElement {
+                                isInitialElement = false
+                                observer.receive(element)
+                            } else {
+                                lastElement = element
+                            }
+                            guard throttledDisposable == nil else { return }
+                            throttledDisposable = queue.disposableAfter(when: seconds) {
+                                if let element = lastElement {
+                                    observer.receive(element)
+                                    lastElement = nil
+                                }
+                                if isFinished {
+                                    observer.receive(completion: .finished)
+                                }
+                                throttledDisposable = nil
+                            }
+                        case .failed(let error):
+                            observer.receive(completion: .failure(error))
+                        case .completed:
+                            guard throttledDisposable == nil else {
+                                isFinished = true
+                                return
+                            }
+                            observer.receive(completion: .finished)
+                        }
                     }
-                default:
-                    observer.on(event)
+                }
+            }
+        } else {
+            return Signal { observer in
+                let lock = NSRecursiveLock(name: "com.reactive_kit.signal.throttle")
+                var _lastEventTime: DispatchTime?
+                return self.observe { event in
+                    switch event {
+                    case .next(let element):
+                        lock.lock(); defer { lock.unlock() }
+                        let now = DispatchTime.now()
+                        if _lastEventTime == nil || now.rawValue > (_lastEventTime! + seconds).rawValue {
+                            _lastEventTime = now
+                            observer.receive(element)
+                        }
+                    default:
+                        observer.on(event)
+                    }
                 }
             }
         }

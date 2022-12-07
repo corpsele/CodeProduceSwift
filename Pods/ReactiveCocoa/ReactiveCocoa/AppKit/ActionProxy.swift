@@ -1,3 +1,4 @@
+#if canImport(AppKit) && !targetEnvironment(macCatalyst)
 import AppKit
 import ReactiveSwift
 
@@ -31,7 +32,7 @@ internal final class ActionProxy<Owner: AnyObject>: NSObject {
 
 private let hasSwizzledKey = AssociationKey<Bool>(default: false)
 
-@objc internal protocol ActionMessageSending: class {
+@objc internal protocol ActionMessageSending: AnyObject {
 	weak var target: AnyObject? { get set }
 	var action: Selector? { get set }
 }
@@ -91,3 +92,4 @@ extension Reactive where Base: NSObject, Base: ActionMessageSending {
 		}
 	}
 }
+#endif

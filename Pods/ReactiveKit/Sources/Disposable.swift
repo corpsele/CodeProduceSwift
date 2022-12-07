@@ -34,13 +34,21 @@ import Foundation
 /// fire any event after is has been disposed.
 ///
 ///     disposable.dispose()
-public protocol Disposable {
+public protocol Disposable: Cancellable {
     
     /// Dispose the signal observation or binding.
     func dispose()
     
     /// Returns `true` is already disposed.
     var isDisposed: Bool { get }
+}
+
+extension Disposable {
+
+    @inlinable
+    public func cancel() {
+        dispose()
+    }
 }
 
 /// A disposable that cannot be disposed.
@@ -359,9 +367,30 @@ public final class AnyCancellable: Disposable {
         lock.unlock()
         handler()
     }
+}
 
-    public func cancel() {
-        dispose()
+extension AnyCancellable: Hashable {
+  public static func == (lhs: AnyCancellable, rhs: AnyCancellable) -> Bool {
+    return lhs === rhs
+  }
+
+  public func hash(into hasher: inout Hasher) {
+    hasher.combine(ObjectIdentifier(self))
+  }
+}
+
+extension AnyCancellable {
+
+    public convenience init(_ disposable: Disposable) {
+        self.init(disposable.dispose)
+    }
+
+    final public func store<C>(in collection: inout C) where C: RangeReplaceableCollection, C.Element == AnyCancellable {
+        collection.append(self)
+    }
+
+    final public func store(in set: inout Set<AnyCancellable>) {
+        set.insert(self)
     }
 }
 
@@ -371,5 +400,17 @@ extension Disposable {
     /// the bag is either deallocated or disposed.
     public func dispose(in disposeBag: DisposeBagProtocol) {
         disposeBag.add(disposable: self)
+    }
+
+    public func store(in disposeBag: DisposeBagProtocol) {
+        disposeBag.add(disposable: self)
+    }
+
+    public func store<C>(in collection: inout C) where C: RangeReplaceableCollection, C.Element == AnyCancellable {
+        collection.append(AnyCancellable(self))
+    }
+
+    public func store(in set: inout Set<AnyCancellable>) {
+        set.insert(AnyCancellable(self))
     }
 }
