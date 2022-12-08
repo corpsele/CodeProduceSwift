@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.6.2)
+  - Alamofire (5.6.4)
   - anim (1.2.10)
   - Commander (0.9.2)
   - CryptoSwift (1.6.0)
@@ -8,7 +8,6 @@ PODS:
   - MMKVCore (1.2.14)
   - ReactiveCocoa (12.0.0):
     - ReactiveSwift (~> 7.0)
-  - ReactiveKit (3.19.1)
   - ReactiveSwift (7.0.0)
   - RxCombine (2.0.1):
     - RxRelay (~> 6)
@@ -17,9 +16,9 @@ PODS:
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - SnapKit (5.6.0)
-  - SQLite.swift (0.13.3):
-    - SQLite.swift/standard (= 0.13.3)
-  - SQLite.swift/standard (0.13.3)
+  - SQLite.swift (0.14.1):
+    - SQLite.swift/standard (= 0.14.1)
+  - SQLite.swift/standard (0.14.1)
   - SwifterSwift (5.2.0):
     - SwifterSwift/AppKit (= 5.2.0)
     - SwifterSwift/CoreAnimation (= 5.2.0)
@@ -54,9 +53,8 @@ DEPENDENCIES:
   - CryptoSwift
   - MMKV
   - ReactiveCocoa
-  - ReactiveKit
+  - ReactiveSwift
   - RxCombine
-  - RxSwift
   - SnapKit
   - SQLite.swift
   - SwifterSwift
@@ -71,7 +69,6 @@ SPEC REPOS:
     - MMKV
     - MMKVCore
     - ReactiveCocoa
-    - ReactiveKit
     - ReactiveSwift
     - RxCombine
     - RxRelay
@@ -82,23 +79,22 @@ SPEC REPOS:
     - SwiftShell
 
 SPEC CHECKSUMS:
-  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   anim: 8603b8aa9f20c26fb04bfc94967f0e942687938d
   Commander: 0cfeb9c2c518d04ba8fb7253e4718eb3f8dbf995
   CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
   MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
   MMKVCore: 89f5c8a66bba2dcd551779dea4d412eeec8ff5bb
   ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
-  ReactiveKit: a36ebeb959fe6852dd674cc423163bfffb7e0541
   ReactiveSwift: 48c4b9d3b497e8dd20b10300bb1a28ff93550f13
   RxCombine: 74cd98f7bb1d908eff3758d13651917fc296adb3
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  SQLite.swift: 903bfa3bc9ab06345fdfbb578e34f47cfcf417da
+  SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftShell: 0c2c6f2fcfc210e84a7b06390581923e2aab2ec7
 
-PODFILE CHECKSUM: ace82480d72bb5122a75f955096beca05883ba08
+PODFILE CHECKSUM: b37d5106ce2bc17199da83f3f176aac14a6f2b65
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
