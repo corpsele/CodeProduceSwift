@@ -995,7 +995,7 @@
 		27DE67B2EEE97C9EEE72085B9EA0305A /* Sink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sink.swift; path = RxSwift/Observables/Sink.swift; sourceTree = "<group>"; };
 		27E576A91BE4AA200C6BC1B436E5ED47 /* UnidirectionalBinding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnidirectionalBinding.swift; path = Sources/UnidirectionalBinding.swift; sourceTree = "<group>"; };
 		28AED03FD76B9EA39510E1AC6F5AA9F8 /* DateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtensions.swift; path = Sources/SwifterSwift/Foundation/DateExtensions.swift; sourceTree = "<group>"; };
-		28B6F8BEF5314EFA77A4843828DFB053 /* anim */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = anim; path = anim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B6F8BEF5314EFA77A4843828DFB053 /* anim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = anim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CDB610F33C9829E13DCEFEAADBA2DA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Sources/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		295550D9E3C50CDFED81E98FFCA11401 /* CalendarExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarExtensions.swift; path = Sources/SwifterSwift/Foundation/CalendarExtensions.swift; sourceTree = "<group>"; };
 		296C20F8BAADDCEAFEDDD1F97E94295E /* WithUnretained.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WithUnretained.swift; path = RxSwift/Observables/WithUnretained.swift; sourceTree = "<group>"; };
@@ -1059,7 +1059,7 @@
 		40542FF13E4EA0509E5BC56AE066F176 /* openssl_cfb128.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_cfb128.cpp; path = Core/aes/openssl/openssl_cfb128.cpp; sourceTree = "<group>"; };
 		4071F7B447861E04B4201413C3B99C6D /* FloatingPointExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPointExtensions.swift; path = Sources/SwifterSwift/SwiftStdlib/FloatingPointExtensions.swift; sourceTree = "<group>"; };
 		4078E9DC6B2D05DF1C17C2D7A37617E2 /* MMBuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMBuffer.cpp; path = Core/MMBuffer.cpp; sourceTree = "<group>"; };
-		40854917FEBD62953AEE138207D25262 /* RxCombine */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxCombine; path = RxCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40854917FEBD62953AEE138207D25262 /* RxCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		409F4560D136FE757A0892345C773534 /* ImmediateSchedulerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmediateSchedulerType.swift; path = RxSwift/ImmediateSchedulerType.swift; sourceTree = "<group>"; };
 		40B9BBE53CD039F167223A87E1E3DF2D /* ThreadLock.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadLock.cpp; path = Core/ThreadLock.cpp; sourceTree = "<group>"; };
 		40BA8E15EC88F2602DE8CEC43869B935 /* ConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMakerRelatable+Extensions.swift"; path = "Sources/ConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
@@ -1085,7 +1085,7 @@
 		47C3376F44A37BB4D9A75A44051EA500 /* TakeFirst.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TakeFirst.swift; path = Sources/Observers/TakeFirst.swift; sourceTree = "<group>"; };
 		483BF179DBE4E085CF3ADC0B249A63FC /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Sources/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		486BE858EB0791D5C9C5839D022A3FA9 /* MMKVCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKVCore-umbrella.h"; sourceTree = "<group>"; };
-		490AC753C5C289D7B70E73B4E7512560 /* ReactiveCocoa */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveCocoa; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490AC753C5C289D7B70E73B4E7512560 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		492A17984B38C015CA2DC3303E2D0FEA /* Connection+Aggregation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Connection+Aggregation.swift"; path = "Sources/SQLite/Core/Connection+Aggregation.swift"; sourceTree = "<group>"; };
 		4946C765F7E797DABECAAB35A09072B6 /* WithLatestFrom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WithLatestFrom.swift; path = RxSwift/Observables/WithLatestFrom.swift; sourceTree = "<group>"; };
 		49ED0C9D6352CD74F43451CBA324FA5B /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = RxSwift/Observables/Timer.swift; sourceTree = "<group>"; };
@@ -1244,7 +1244,7 @@
 		800D5632C9C5CF2E8F6D7D71DA248179 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		801E18CC87E9C35E30FB450B915AA5D3 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
 		808955AA3654695B869D640477D87E9A /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
-		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxSwift; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C33B319796D0AC15F64CD5D3439AF3 /* Pods-CodeProduceSwiftTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CodeProduceSwiftTests"; path = Pods_CodeProduceSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CB58DD9904842557BEFFD0DDBDD072 /* SwifterSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwifterSwift.debug.xcconfig; sourceTree = "<group>"; };
 		80FC47892DE9CA4673EC6AB45D443316 /* NSObject+ReactiveExtensionsProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+ReactiveExtensionsProvider.swift"; path = "ReactiveCocoa/NSObject+ReactiveExtensionsProvider.swift"; sourceTree = "<group>"; };
@@ -1359,7 +1359,7 @@
 		9C542701AEA31AB6622B7C1EF5603AF5 /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
 		9D19F1BC9B367EA685C3527CB174373E /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Sources/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		9D485BBA9A08B0A5C57FFFD89A7E24A7 /* Pods-CodeProduceSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodeProduceSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA8CFD1B0E841540280C9769C52B7D8 /* Pods-CodeProduceSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CodeProduceSwift"; path = Pods_CodeProduceSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC96463009747E84D223030659DC904 /* MaterializeAsResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterializeAsResult.swift; path = Sources/Observers/MaterializeAsResult.swift; sourceTree = "<group>"; };
 		9E2DA4F2E8F919B00EEB76422B21925A /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
@@ -1383,7 +1383,7 @@
 		A2AE0A36F1D6F8ABEE33A5C067EF4C37 /* SwiftShell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftShell.release.xcconfig; sourceTree = "<group>"; };
 		A2D67C05B0FFC72C15D4B5CBFB3995A5 /* CombineLatest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombineLatest.swift; path = RxSwift/Observables/CombineLatest.swift; sourceTree = "<group>"; };
 		A3E003EB90F9FDEE64DED0753E5944FD /* Producer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Producer.swift; path = RxSwift/Observables/Producer.swift; sourceTree = "<group>"; };
-		A4165AAAB1A08CD2141199FF49FB559E /* Commander */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Commander; path = Commander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4165AAAB1A08CD2141199FF49FB559E /* Commander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Commander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4216CD207576DE9D5FB0EADA0533DC0 /* AnyObject+Lifetime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AnyObject+Lifetime.swift"; path = "ReactiveCocoa/AnyObject+Lifetime.swift"; sourceTree = "<group>"; };
 		A4419AF22841EDAC61FB4D48943501F1 /* Lock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lock.swift; path = RxSwift/Concurrency/Lock.swift; sourceTree = "<group>"; };
 		A4BED6CD2FBB936AADFE878D2F6E9BA3 /* Connection+Attach.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Connection+Attach.swift"; path = "Sources/SQLite/Core/Connection+Attach.swift"; sourceTree = "<group>"; };
@@ -1394,7 +1394,7 @@
 		A6175F2F1E10101719643E5FC0C8C284 /* RecursiveLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecursiveLock.swift; path = Platform/RecursiveLock.swift; sourceTree = "<group>"; };
 		A67B723AC91C3996ED49D455D3F17207 /* CombinePrevious.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinePrevious.swift; path = Sources/Observers/CombinePrevious.swift; sourceTree = "<group>"; };
 		A6ACDEA61F24DFE84B085FBA2F134ADA /* NSCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSCollectionView.swift; path = ReactiveCocoa/AppKit/NSCollectionView.swift; sourceTree = "<group>"; };
-		A6BCB9D7C4348130B4FE553C3E938F74 /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
+		A6BCB9D7C4348130B4FE553C3E938F74 /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
 		A75504555DDDA2A11EAD3383CD859E23 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
 		A75BAD5E0BA977166D21954FF4918E18 /* RxMutableBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxMutableBox.swift; path = RxSwift/RxMutableBox.swift; sourceTree = "<group>"; };
 		A7A81C4F776A00EC0F528267A27ECCA0 /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
@@ -1445,7 +1445,7 @@
 		B7FE8D2358428C6B53BDEC1EE05EE2FD /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
 		B805993897C1B96BF04B1182EF2B7244 /* MemoryFile.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile.cpp; path = Core/MemoryFile.cpp; sourceTree = "<group>"; };
 		B82FA6686FEDBB792142DFEFA2183B21 /* CompositeDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompositeDisposable.swift; path = RxSwift/Disposables/CompositeDisposable.swift; sourceTree = "<group>"; };
-		B88A54159B245E727A6D16DEFE105A09 /* MMKV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMKV; path = MMKV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88A54159B245E727A6D16DEFE105A09 /* MMKV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMKV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EA04177DF8FFA3383AF7D20AD061D4 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/LayoutConstraint.swift; sourceTree = "<group>"; };
 		B9106CFEBC9B1C44337915A220A9CBB0 /* Pods-CodeProduceSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodeProduceSwift-frameworks.sh"; sourceTree = "<group>"; };
 		B929A92EDC97E1A12FA63D7FF723CF03 /* ObservableConvertibleType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableConvertibleType.swift; path = RxSwift/ObservableConvertibleType.swift; sourceTree = "<group>"; };
@@ -1562,14 +1562,14 @@
 		D53F4E848E496E376EC765A66397486D /* RxSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxSwift-prefix.pch"; sourceTree = "<group>"; };
 		D5845218C72430EF5E32B13733BC5BBE /* RxSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxSwift-dummy.m"; sourceTree = "<group>"; };
 		D60C9B9CAD0F2F1BE2B55539AC35055D /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
-		D62096039C4DB3F8EB8A20693E4EAEBC /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
+		D62096039C4DB3F8EB8A20693E4EAEBC /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
 		D662DF8609880BE619EDE338CEE9BCD7 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		D6739183D3704EF101524939AC4FE0E3 /* NSObject+ObjCRuntime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+ObjCRuntime.swift"; path = "ReactiveCocoa/NSObject+ObjCRuntime.swift"; sourceTree = "<group>"; };
 		D78732D1321BD9BF0E175DEBBFCBD1F9 /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UINavigationControllerExtensions.swift; path = Sources/SwifterSwift/UIKit/UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
 		D78A9F1831DD5BC63476A62857996A1B /* AnyObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyObserver.swift; path = RxSwift/AnyObserver.swift; sourceTree = "<group>"; };
 		D7A72682809DDBD55B5F2150F78800DF /* HMAC+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HMAC+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/HMAC+Foundation.swift"; sourceTree = "<group>"; };
 		D802A21D4421B40D6FC724673AAC3E85 /* Backup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Backup.swift; path = Sources/SQLite/Core/Backup.swift; sourceTree = "<group>"; };
-		D808871A2412BFFBEA3EB6F5B0D52C4C /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
+		D808871A2412BFFBEA3EB6F5B0D52C4C /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
 		D86128AA24C74AD66D47935A043B9663 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
 		D8B92AA434FD76A5C3B1C67E534F5F70 /* Commander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Commander.release.xcconfig; sourceTree = "<group>"; };
 		D977F083C71F7487524AA85F41DC431E /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = Sources/Observers/Reduce.swift; sourceTree = "<group>"; };
@@ -1592,7 +1592,7 @@
 		DE2B18F23BB213700EF25B63B05A88F9 /* RxRelay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxRelay-prefix.pch"; sourceTree = "<group>"; };
 		DE8DD8B1513FD0C51A0FC0566576FAD1 /* Cryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptor.swift; path = Sources/CryptoSwift/Cryptor.swift; sourceTree = "<group>"; };
 		DE93A285C8D891CF7F9AA18B45CDD25A /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
-		E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMKVCore; path = MMKVCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMKVCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B72C057456BD6DC10A303E1D4EB52F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		E0F103F4E0E8A7C4EA496CF374550DCC /* Integer Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Integer Conversion.swift"; path = "Sources/CryptoSwift/CS_BigInt/Integer Conversion.swift"; sourceTree = "<group>"; };
 		E165C3312BD5E0749D7A924411668AE0 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/SwiftShell/General/Array.swift; sourceTree = "<group>"; };
@@ -1665,7 +1665,7 @@
 		F836320A624EAE0F2E0BABFF8603C4A2 /* ScheduledItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledItem.swift; path = RxSwift/Schedulers/Internal/ScheduledItem.swift; sourceTree = "<group>"; };
 		F83D8846B7FDE5717D67382AA662F955 /* ObjC+Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObjC+Constants.swift"; path = "ReactiveCocoa/ObjC+Constants.swift"; sourceTree = "<group>"; };
 		F847A9245F1CC9BD44252B6B0572678E /* PBUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBUtility.h; path = Core/PBUtility.h; sourceTree = "<group>"; };
-		F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveSwift; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FE5CD8C652634FAE40AED5DBC21E83 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraint.swift; path = ReactiveCocoa/Shared/NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		F9913B664A9628BDB4429AC2EF109E50 /* anim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = anim.swift; path = src/anim.swift; sourceTree = "<group>"; };
 		F997347BAF383AAE7F6D55734E871082 /* Platform.Linux.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Linux.swift; path = Platform/Platform.Linux.swift; sourceTree = "<group>"; };
@@ -1682,7 +1682,7 @@
 		FDBF702999EDAFC2CF6CB98790C19D76 /* DematerializeResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DematerializeResults.swift; path = Sources/Observers/DematerializeResults.swift; sourceTree = "<group>"; };
 		FE18CF9EBEAD99E0103CCDD6FDF7B81A /* ArgumentDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentDescription.swift; path = Sources/Commander/ArgumentDescription.swift; sourceTree = "<group>"; };
 		FE7E85E63CCFD7D8A8193A4BDBB9DF2C /* Maybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Maybe.swift; path = RxSwift/Traits/PrimitiveSequence/Maybe.swift; sourceTree = "<group>"; };
-		FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxRelay; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBC34F591080F98309D32C8436009EC /* Signature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signature.swift; path = Sources/CryptoSwift/Signature.swift; sourceTree = "<group>"; };
 		FFCBDCEE5F2B73290E07213E9E6B6439 /* MMKVLog_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKVLog_Android.cpp; path = Core/MMKVLog_Android.cpp; sourceTree = "<group>"; };
 		FFD7FC9AA5367CB319772DE8FA82D5E7 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = RxSwift/Event.swift; sourceTree = "<group>"; };
@@ -1873,19 +1873,19 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				28B6F8BEF5314EFA77A4843828DFB053 /* anim */,
-				A4165AAAB1A08CD2141199FF49FB559E /* Commander */,
+				28B6F8BEF5314EFA77A4843828DFB053 /* anim.framework */,
+				A4165AAAB1A08CD2141199FF49FB559E /* Commander.framework */,
 				F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */,
-				B88A54159B245E727A6D16DEFE105A09 /* MMKV */,
-				E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */,
+				B88A54159B245E727A6D16DEFE105A09 /* MMKV.framework */,
+				E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore.framework */,
 				9DA8CFD1B0E841540280C9769C52B7D8 /* Pods-CodeProduceSwift */,
 				80C33B319796D0AC15F64CD5D3439AF3 /* Pods-CodeProduceSwiftTests */,
 				C5EB49FC832DEC243EE0C035521BDB0C /* Pods-CodeProduceSwiftUITests */,
-				490AC753C5C289D7B70E73B4E7512560 /* ReactiveCocoa */,
-				F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift */,
-				40854917FEBD62953AEE138207D25262 /* RxCombine */,
-				FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay */,
-				809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */,
+				490AC753C5C289D7B70E73B4E7512560 /* ReactiveCocoa.framework */,
+				F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift.framework */,
+				40854917FEBD62953AEE138207D25262 /* RxCombine.framework */,
+				FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */,
+				809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */,
 				979486118B3E90C08386079D57962701 /* SnapKit */,
 				F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */,
 				8C81A3F6D6E88BB13C101D6462262715 /* SwifterSwift */,
@@ -1923,7 +1923,6 @@
 				D28EB9F9349808F8185047DFF576D991 /* Group.swift */,
 				F13D894880BEB2D88A1A6B6EF1E1DEFC /* Support Files */,
 			);
-			name = Commander;
 			path = Commander;
 			sourceTree = "<group>";
 		};
@@ -1968,7 +1967,6 @@
 				441E894F1BB4CCC8D0047996A219CFD4 /* Validation.swift */,
 				71DF3D71BB5F08CFEDADE2F09A47CCC7 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -2113,7 +2111,6 @@
 				A7A81C4F776A00EC0F528267A27ECCA0 /* ZeroPadding.swift */,
 				FCE06B4785F47FC022838632967AE03E /* Support Files */,
 			);
-			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -2171,7 +2168,6 @@
 				470EC0E33C32515FC250A3B94DF7703D /* Subject+Rx.swift */,
 				D1906E874FDFFA18D19A0B524B9DF979 /* Support Files */,
 			);
-			name = RxCombine;
 			path = RxCombine;
 			sourceTree = "<group>";
 		};
@@ -2196,7 +2192,6 @@
 				E8942AAD6C95B438BA05C1933BACD790 /* standard */,
 				370D2CB09C0679537CDE556952A674B4 /* Support Files */,
 			);
-			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
@@ -2232,7 +2227,6 @@
 				703AFADE05D7B45E055E6ACF9B54A744 /* Utils.swift */,
 				1F97A2537CBC1B3B8B0246FCB25FDE31 /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -2309,7 +2303,6 @@
 				483BF179DBE4E085CF3ADC0B249A63FC /* UILayoutSupport+Extensions.swift */,
 				4B74F8D0BF044632DD971CDB65FF95CC /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -2327,7 +2320,6 @@
 				814D067258270FCB8627FED7E877FBA0 /* Settings.swift */,
 				12BD808820873C87DF74C5689A4B09A7 /* Support Files */,
 			);
-			name = anim;
 			path = anim;
 			sourceTree = "<group>";
 		};
@@ -2438,7 +2430,6 @@
 				CD400BF75E581B6E8BCDA3816495345E /* SwiftStdlib */,
 				D3CA2938589D2F8FB03EF1E9AF675057 /* UIKit */,
 			);
-			name = SwifterSwift;
 			path = SwifterSwift;
 			sourceTree = "<group>";
 		};
@@ -2483,7 +2474,6 @@
 				AF5572EB5FB2F00829BE756068099E1E /* Synchronizing.swift */,
 				C58939B8DDB34B38BF1B3BD2764B1BA4 /* Support Files */,
 			);
-			name = ReactiveCocoa;
 			path = ReactiveCocoa;
 			sourceTree = "<group>";
 		};
@@ -2501,7 +2491,6 @@
 				D088B10D8E6F983705F8B8EA2EE00706 /* String.swift */,
 				D6A70FEA486B9AD610E1249FE9CFB2A2 /* Support Files */,
 			);
-			name = SwiftShell;
 			path = SwiftShell;
 			sourceTree = "<group>";
 		};
@@ -2628,7 +2617,6 @@
 				0CCE06D4AE99277C4DB108DD43A319A5 /* ThreadLock_Win32.cpp */,
 				F52932C32CBFCD0305E7F31B4762B000 /* Support Files */,
 			);
-			name = MMKVCore;
 			path = MMKVCore;
 			sourceTree = "<group>";
 		};
@@ -2741,7 +2729,6 @@
 				64C436D6806DD2094235E0575149618E /* MMKVHandler.h */,
 				DB3746A0706908E4EE4AFDF7606D1C07 /* Support Files */,
 			);
-			name = MMKV;
 			path = MMKV;
 			sourceTree = "<group>";
 		};
@@ -2883,7 +2870,6 @@
 				61BEB0D74CF798817ABA91340523B290 /* ValidatingProperty.swift */,
 				3ABB38E1B539A76C49AEFCD0DC089217 /* Support Files */,
 			);
-			name = ReactiveSwift;
 			path = ReactiveSwift;
 			sourceTree = "<group>";
 		};
@@ -3067,7 +3053,6 @@
 				ECBF58624D7804315BD0D6C4A810AB72 /* Zip+Collection.swift */,
 				9E18A30E62E271DF42E7913111A9C2EF /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -3284,7 +3269,7 @@
 			);
 			name = ReactiveCocoa;
 			productName = ReactiveCocoa;
-			productReference = 490AC753C5C289D7B70E73B4E7512560 /* ReactiveCocoa */;
+			productReference = 490AC753C5C289D7B70E73B4E7512560 /* ReactiveCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		08B8EF1A02DE30CBEFB370FFE1C123C0 /* ReactiveSwift */ = {
@@ -3302,7 +3287,7 @@
 			);
 			name = ReactiveSwift;
 			productName = ReactiveSwift;
-			productReference = F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift */;
+			productReference = F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		15F30C24DEBE7E9EAC4155B12186A251 /* Pods-CodeProduceSwift */ = {
@@ -3409,7 +3394,7 @@
 			);
 			name = RxRelay;
 			productName = RxRelay;
-			productReference = FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay */;
+			productReference = FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5D8BB851D938AE8F1A461F95C1ABD69B /* SwifterSwift */ = {
@@ -3445,7 +3430,7 @@
 			);
 			name = Commander;
 			productName = Commander;
-			productReference = A4165AAAB1A08CD2141199FF49FB559E /* Commander */;
+			productReference = A4165AAAB1A08CD2141199FF49FB559E /* Commander.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		91A6826828CB9FCD0169A7547E8A79EA /* MMKV */ = {
@@ -3464,7 +3449,7 @@
 			);
 			name = MMKV;
 			productName = MMKV;
-			productReference = B88A54159B245E727A6D16DEFE105A09 /* MMKV */;
+			productReference = B88A54159B245E727A6D16DEFE105A09 /* MMKV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		99313990C1D76A6D1D017868B6975CC8 /* CryptoSwift */ = {
@@ -3500,7 +3485,7 @@
 			);
 			name = MMKVCore;
 			productName = MMKVCore;
-			productReference = E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */;
+			productReference = E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BAB24F2876B4624AD212ECA5087FAE8C /* SwiftShell */ = {
@@ -3555,7 +3540,7 @@
 			);
 			name = RxSwift;
 			productName = RxSwift;
-			productReference = 809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */;
+			productReference = 809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
@@ -3593,7 +3578,7 @@
 			);
 			name = RxCombine;
 			productName = RxCombine;
-			productReference = 40854917FEBD62953AEE138207D25262 /* RxCombine */;
+			productReference = 40854917FEBD62953AEE138207D25262 /* RxCombine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F460F5AD274507E8E883139ADBEC46D5 /* anim */ = {
@@ -3611,7 +3596,7 @@
 			);
 			name = anim;
 			productName = anim;
-			productReference = 28B6F8BEF5314EFA77A4843828DFB053 /* anim */;
+			productReference = 28B6F8BEF5314EFA77A4843828DFB053 /* anim.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -3620,8 +3605,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -4934,7 +4919,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/Commander/Commander.modulemap";
 				PRODUCT_MODULE_NAME = Commander;
 				PRODUCT_NAME = Commander;
@@ -5041,7 +5026,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/ReactiveSwift/ReactiveSwift.modulemap";
 				PRODUCT_MODULE_NAME = ReactiveSwift;
 				PRODUCT_NAME = ReactiveSwift;
@@ -5076,7 +5061,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/anim/anim.modulemap";
 				PRODUCT_MODULE_NAME = anim;
 				PRODUCT_NAME = anim;
@@ -5111,7 +5096,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/Commander/Commander.modulemap";
 				PRODUCT_MODULE_NAME = Commander;
 				PRODUCT_NAME = Commander;
@@ -5184,7 +5169,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
 				PRODUCT_MODULE_NAME = MMKVCore;
 				PRODUCT_NAME = MMKVCore;
@@ -5219,7 +5204,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/RxRelay/RxRelay.modulemap";
 				PRODUCT_MODULE_NAME = RxRelay;
 				PRODUCT_NAME = RxRelay;
@@ -5326,7 +5311,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/RxCombine/RxCombine.modulemap";
 				PRODUCT_MODULE_NAME = RxCombine;
 				PRODUCT_NAME = RxCombine;
@@ -5399,7 +5384,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/ReactiveCocoa/ReactiveCocoa.modulemap";
 				PRODUCT_MODULE_NAME = ReactiveCocoa;
 				PRODUCT_NAME = ReactiveCocoa;
@@ -5434,7 +5419,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/MMKV/MMKV.modulemap";
 				PRODUCT_MODULE_NAME = MMKV;
 				PRODUCT_NAME = MMKV;
@@ -5505,7 +5490,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/ReactiveSwift/ReactiveSwift.modulemap";
 				PRODUCT_MODULE_NAME = ReactiveSwift;
 				PRODUCT_NAME = ReactiveSwift;
@@ -5578,7 +5563,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/RxSwift/RxSwift.modulemap";
 				PRODUCT_MODULE_NAME = RxSwift;
 				PRODUCT_NAME = RxSwift;
@@ -5649,7 +5634,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/MMKV/MMKV.modulemap";
 				PRODUCT_MODULE_NAME = MMKV;
 				PRODUCT_NAME = MMKV;
@@ -5684,7 +5669,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/RxCombine/RxCombine.modulemap";
 				PRODUCT_MODULE_NAME = RxCombine;
 				PRODUCT_NAME = RxCombine;
@@ -5895,7 +5880,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
 				PRODUCT_MODULE_NAME = MMKVCore;
 				PRODUCT_NAME = MMKVCore;
@@ -5930,7 +5915,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/RxRelay/RxRelay.modulemap";
 				PRODUCT_MODULE_NAME = RxRelay;
 				PRODUCT_NAME = RxRelay;
@@ -5965,7 +5950,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/ReactiveCocoa/ReactiveCocoa.modulemap";
 				PRODUCT_MODULE_NAME = ReactiveCocoa;
 				PRODUCT_NAME = ReactiveCocoa;
@@ -6062,7 +6047,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/RxSwift/RxSwift.modulemap";
 				PRODUCT_MODULE_NAME = RxSwift;
 				PRODUCT_NAME = RxSwift;
@@ -6097,7 +6082,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = "Target Support Files/anim/anim.modulemap";
 				PRODUCT_MODULE_NAME = anim;
 				PRODUCT_NAME = anim;

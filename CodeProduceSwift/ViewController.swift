@@ -200,6 +200,8 @@ class ViewController: NSViewController {
         let menuItem5 = NSMenuItem(title: "En/Des Crypoto", action: #selector(menuItem5Action(sender:)), keyEquivalent: "")
         
         let menuItem6 = NSMenuItem(title: "Date Convert", action: #selector(menuItem6Action(sender:)), keyEquivalent: "")
+        
+        let menuItem7 = NSMenuItem(title: "Do Record By iPhone", action: #selector(menuItem7Action(sender:)), keyEquivalent: "")
 
         taskMenu?.addItem(menuItem1)
         taskMenu?.addItem(menuItem2)
@@ -207,12 +209,28 @@ class ViewController: NSViewController {
         taskMenu?.addItem(menuItem4)
         taskMenu?.addItem(menuItem5)
         taskMenu?.addItem(menuItem6)
+        taskMenu?.addItem(menuItem7)
         
         vm.btnTaskMenuAction.values.observeValues { [unowned self] _ in
             if let event = NSApp.currentEvent {
                 NSMenu.popUpContextMenu(self.taskMenu!, with: event, for: self.btnTaskMenu!)
             }
             
+        }
+        
+        /*
+            Privacy_AllFiles 完全磁盘访问权限
+            Privacy_Assistive 文件和文件夹
+        */
+        requestAuthorization()
+    }
+    
+    
+    func requestAuthorization() {
+        if #available(macOS 10.14, *) {
+            if let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles") {
+                NSWorkspace.shared.open(url)
+            }
         }
     }
     
@@ -247,6 +265,37 @@ class ViewController: NSViewController {
 //            make.height.equalTo(500.0)
 //        }
         self.presentAsSheet(vc)
+    }
+    
+    @objc func menuItem7Action(sender: NSMenuItem) {
+        runShell(withCommand: "echo eport | sudo -s bash /Volumes/Seagate015_4T/projects/recordrtsp.sh >> /Volumes/Seagate015_4T/downloads/recordrtsp.log") {
+            
+        }
+        
+        runShell(withCommand: "echo eport | sudo -s source /Volumes/Seagate015_4T/projects/PythonUniversal/venv/bin/activate & python /Volumes/Seagate015_4T/projects/PythonUniversal/src/openrtsp.py >> /Volumes/Seagate015_4T/downloads/recordrtsp.log") {
+            
+        }
+    }
+    
+    private func doShell(){
+        
+    }
+    
+    private func runShell(withCommand command: String?, completeBlock: (() -> ())?) {
+        DispatchQueue.global(qos: .default).async(execute: {
+            let task = Process()
+            task.launchPath = "/bin/sh"
+            var arguments: [AnyHashable]?
+            arguments = ["-c", command]
+            task.arguments = arguments as? [String]
+            task.launch()
+            task.waitUntilExit()
+            DispatchQueue.main.async(execute: {
+                if completeBlock != nil {
+                    completeBlock!()
+                }
+            })
+        })
     }
 
     // MARK: layout

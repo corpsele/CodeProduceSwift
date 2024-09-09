@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -57,6 +57,11 @@
 		5CEC5AA425903F48004197BA /* TaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CEC5AA325903F48004197BA /* TaskVC.xib */; };
 		5CEC5AA925906F5A004197BA /* TaskVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC5AA825906F5A004197BA /* TaskVM.swift */; };
 		5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF07D0F242A0AC900688E99 /* CPSApplication.swift */; };
+		647C4E57296FE1C800E15CAF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647C4E56296FE1C800E15CAF /* Cocoa.framework */; };
+		647C4E59296FE1C800E15CAF /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647C4E58296FE1C800E15CAF /* XcodeKit.framework */; };
+		647C4E5C296FE1C800E15CAF /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C4E5B296FE1C800E15CAF /* SourceEditorExtension.swift */; };
+		647C4E5E296FE1C800E15CAF /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C4E5D296FE1C800E15CAF /* SourceEditorCommand.swift */; };
+		64DADA37296FF16E008DF01D /* EditPlugin.appex in Resources */ = {isa = PBXBuildFile; fileRef = 647C4E55296FE1C800E15CAF /* EditPlugin.appex */; };
 		A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676FC9FB7EB1D92C339E086 /* Pods_CodeProduceSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +80,27 @@
 			remoteGlobalIDString = 5CBCE19C2394DDD000ECBD43;
 			remoteInfo = CodeProduceSwift;
 		};
+		647C4E61296FE1C800E15CAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CBCE1952394DDD000ECBD43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 647C4E54296FE1C800E15CAF;
+			remoteInfo = EditPlugin;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		647C4E64296FE1C900E15CAF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1895B86C72F9009C7D15645E /* Pods-CodeProduceSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwift.release.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwift/Pods-CodeProduceSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +171,13 @@
 		5CEC5AA325903F48004197BA /* TaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskVC.xib; sourceTree = "<group>"; };
 		5CEC5AA825906F5A004197BA /* TaskVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVM.swift; sourceTree = "<group>"; };
 		5CF07D0F242A0AC900688E99 /* CPSApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSApplication.swift; sourceTree = "<group>"; };
+		647C4E55296FE1C800E15CAF /* EditPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EditPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		647C4E56296FE1C800E15CAF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		647C4E58296FE1C800E15CAF /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		647C4E5B296FE1C800E15CAF /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		647C4E5D296FE1C800E15CAF /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		647C4E5F296FE1C800E15CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		647C4E60296FE1C800E15CAF /* EditPlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EditPlugin.entitlements; sourceTree = "<group>"; };
 		80EB26791B5F3F2BD1F74547 /* Pods-CodeProduceSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftTests/Pods-CodeProduceSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93E9DB8627402104BF4A2929 /* Pods-CodeProduceSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProduceSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeProduceSwiftUITests/Pods-CodeProduceSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B61E01834C9DD2A6ECF0E03D /* Pods_CodeProduceSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeProduceSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +207,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DD780344D8F3899F371C51 /* Pods_CodeProduceSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647C4E52296FE1C800E15CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647C4E57296FE1C800E15CAF /* Cocoa.framework in Frameworks */,
+				647C4E59296FE1C800E15CAF /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +376,7 @@
 				5CBCE19F2394DDD000ECBD43 /* CodeProduceSwift */,
 				5CBCE1B42394DDD100ECBD43 /* CodeProduceSwiftTests */,
 				5CBCE1BF2394DDD100ECBD43 /* CodeProduceSwiftUITests */,
+				647C4E5A296FE1C800E15CAF /* EditPlugin */,
 				5CBCE19E2394DDD000ECBD43 /* Products */,
 				3460A1F6D72B56F8E9BD6FF4 /* Pods */,
 				D936E4B3C52CDFD36240E697 /* Frameworks */,
@@ -347,6 +389,7 @@
 				5CBCE19D2394DDD000ECBD43 /* CodeProduceSwift.app */,
 				5CBCE1B12394DDD100ECBD43 /* CodeProduceSwiftTests.xctest */,
 				5CBCE1BC2394DDD100ECBD43 /* CodeProduceSwiftUITests.xctest */,
+				647C4E55296FE1C800E15CAF /* EditPlugin.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -434,12 +477,25 @@
 			path = TaskSchedule;
 			sourceTree = "<group>";
 		};
+		647C4E5A296FE1C800E15CAF /* EditPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				647C4E5B296FE1C800E15CAF /* SourceEditorExtension.swift */,
+				647C4E5D296FE1C800E15CAF /* SourceEditorCommand.swift */,
+				647C4E5F296FE1C800E15CAF /* Info.plist */,
+				647C4E60296FE1C800E15CAF /* EditPlugin.entitlements */,
+			);
+			path = EditPlugin;
+			sourceTree = "<group>";
+		};
 		D936E4B3C52CDFD36240E697 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B676FC9FB7EB1D92C339E086 /* Pods_CodeProduceSwift.framework */,
 				B61E01834C9DD2A6ECF0E03D /* Pods_CodeProduceSwiftTests.framework */,
 				D0841DD09819CC06D564CC90 /* Pods_CodeProduceSwiftUITests.framework */,
+				647C4E56296FE1C800E15CAF /* Cocoa.framework */,
+				647C4E58296FE1C800E15CAF /* XcodeKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -456,10 +512,12 @@
 				5CBCE19A2394DDD000ECBD43 /* Frameworks */,
 				5CBCE19B2394DDD000ECBD43 /* Resources */,
 				ED1E8CD4EA2999F9DACEE237 /* [CP] Embed Pods Frameworks */,
+				647C4E64296FE1C900E15CAF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				647C4E62296FE1C800E15CAF /* PBXTargetDependency */,
 			);
 			name = CodeProduceSwift;
 			productName = CodeProduceSwift;
@@ -504,13 +562,30 @@
 			productReference = 5CBCE1BC2394DDD100ECBD43 /* CodeProduceSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		647C4E54296FE1C800E15CAF /* EditPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647C4E67296FE1C900E15CAF /* Build configuration list for PBXNativeTarget "EditPlugin" */;
+			buildPhases = (
+				647C4E51296FE1C800E15CAF /* Sources */,
+				647C4E52296FE1C800E15CAF /* Frameworks */,
+				647C4E53296FE1C800E15CAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EditPlugin;
+			productName = EditPlugin;
+			productReference = 647C4E55296FE1C800E15CAF /* EditPlugin.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5CBCE1952394DDD000ECBD43 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = eport2;
 				TargetAttributes = {
@@ -525,6 +600,9 @@
 					5CBCE1BB2394DDD100ECBD43 = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = 5CBCE19C2394DDD000ECBD43;
+					};
+					647C4E54296FE1C800E15CAF = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -544,6 +622,7 @@
 				5CBCE19C2394DDD000ECBD43 /* CodeProduceSwift */,
 				5CBCE1B02394DDD100ECBD43 /* CodeProduceSwiftTests */,
 				5CBCE1BB2394DDD100ECBD43 /* CodeProduceSwiftUITests */,
+				647C4E54296FE1C800E15CAF /* EditPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -558,6 +637,7 @@
 				5CBCE1AA2394DDD000ECBD43 /* Main.storyboard in Resources */,
 				5C25831725D27AF2000CC7E3 /* TraditionalCode.txt in Resources */,
 				5C25831825D27AF2000CC7E3 /* SimplifiedCode.txt in Resources */,
+				64DADA37296FF16E008DF01D /* EditPlugin.appex in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +649,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5CBCE1BA2394DDD100ECBD43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647C4E53296FE1C800E15CAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -728,6 +815,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		647C4E51296FE1C800E15CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647C4E5C296FE1C800E15CAF /* SourceEditorExtension.swift in Sources */,
+				647C4E5E296FE1C800E15CAF /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -740,6 +836,11 @@
 			isa = PBXTargetDependency;
 			target = 5CBCE19C2394DDD000ECBD43 /* CodeProduceSwift */;
 			targetProxy = 5CBCE1BD2394DDD100ECBD43 /* PBXContainerItemProxy */;
+		};
+		647C4E62296FE1C800E15CAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 647C4E54296FE1C800E15CAF /* EditPlugin */;
+			targetProxy = 647C4E61296FE1C800E15CAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -874,10 +975,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 554E85ADA7F31E343C08C6B8 /* Pods-CodeProduceSwift.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeProduceSwift/CodeProduceSwift.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -890,6 +993,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CodeProduceSwift/SM3Util",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eport.CodeProduceSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -903,10 +1007,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1895B86C72F9009C7D15645E /* Pods-CodeProduceSwift.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeProduceSwift/CodeProduceSwift.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -919,6 +1025,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CodeProduceSwift/SM3Util",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eport.CodeProduceSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1011,6 +1118,68 @@
 			};
 			name = Release;
 		};
+		647C4E65296FE1C900E15CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = EditPlugin/EditPlugin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EditPlugin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EditPlugin;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 eport2. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eport.CodeProduceSwift.EditPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		647C4E66296FE1C900E15CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = EditPlugin/EditPlugin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EditPlugin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EditPlugin;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 eport2. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eport.CodeProduceSwift.EditPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1046,6 +1215,15 @@
 			buildConfigurations = (
 				5CBCE1CC2394DDD100ECBD43 /* Debug */,
 				5CBCE1CD2394DDD100ECBD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		647C4E67296FE1C900E15CAF /* Build configuration list for PBXNativeTarget "EditPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647C4E65296FE1C900E15CAF /* Debug */,
+				647C4E66296FE1C900E15CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
