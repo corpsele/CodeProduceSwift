@@ -1,3 +1,6 @@
 Pods
 .DS_Store
 CodeProduceSwift.xcworkspace/xcuserdata
+DerivedData
+.DS_Store
+*.DS_Store
