@@ -57,6 +57,12 @@
 		5CEC5AA425903F48004197BA /* TaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CEC5AA325903F48004197BA /* TaskVC.xib */; };
 		5CEC5AA925906F5A004197BA /* TaskVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC5AA825906F5A004197BA /* TaskVM.swift */; };
 		5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF07D0F242A0AC900688E99 /* CPSApplication.swift */; };
+		6457762D2C8EDF0F00C4558E /* AccessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645776262C8EDF0F00C4558E /* AccessInfo.swift */; };
+		6457762E2C8EDF0F00C4558E /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645776272C8EDF0F00C4558E /* Permissions.swift */; };
+		6457762F2C8EDF0F00C4558E /* PowerboxAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645776282C8EDF0F00C4558E /* PowerboxAccess.swift */; };
+		645776302C8EDF0F00C4558E /* SandboxFileAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645776292C8EDF0F00C4558E /* SandboxFileAccess.swift */; };
+		645776312C8EDF0F00C4558E /* SandboxFileAccessOpenSavePanelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457762A2C8EDF0F00C4558E /* SandboxFileAccessOpenSavePanelDelegate.swift */; };
+		645776322C8EDF0F00C4558E /* SandboxFileAccessPersist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457762B2C8EDF0F00C4558E /* SandboxFileAccessPersist.swift */; };
 		647C4E57296FE1C800E15CAF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647C4E56296FE1C800E15CAF /* Cocoa.framework */; };
 		647C4E59296FE1C800E15CAF /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647C4E58296FE1C800E15CAF /* XcodeKit.framework */; };
 		647C4E5C296FE1C800E15CAF /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C4E5B296FE1C800E15CAF /* SourceEditorExtension.swift */; };
@@ -171,6 +177,12 @@
 		5CEC5AA325903F48004197BA /* TaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskVC.xib; sourceTree = "<group>"; };
 		5CEC5AA825906F5A004197BA /* TaskVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVM.swift; sourceTree = "<group>"; };
 		5CF07D0F242A0AC900688E99 /* CPSApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSApplication.swift; sourceTree = "<group>"; };
+		645776262C8EDF0F00C4558E /* AccessInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessInfo.swift; sourceTree = "<group>"; };
+		645776272C8EDF0F00C4558E /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		645776282C8EDF0F00C4558E /* PowerboxAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerboxAccess.swift; sourceTree = "<group>"; };
+		645776292C8EDF0F00C4558E /* SandboxFileAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxFileAccess.swift; sourceTree = "<group>"; };
+		6457762A2C8EDF0F00C4558E /* SandboxFileAccessOpenSavePanelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxFileAccessOpenSavePanelDelegate.swift; sourceTree = "<group>"; };
+		6457762B2C8EDF0F00C4558E /* SandboxFileAccessPersist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxFileAccessPersist.swift; sourceTree = "<group>"; };
 		647C4E55296FE1C800E15CAF /* EditPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EditPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		647C4E56296FE1C800E15CAF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		647C4E58296FE1C800E15CAF /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -311,6 +323,7 @@
 		5C86D54C25B5655800314CEF /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				6457762C2C8EDF0F00C4558E /* SwiftySandboxFileAccess */,
 				5C25830E25D27AA2000CC7E3 /* ZMChineseConvert */,
 				5CA659DA25C91BD300C6C12B /* Crypto */,
 				5C86D65525B56E0D00314CEF /* CommandKit */,
@@ -475,6 +488,19 @@
 				5CEC5AA825906F5A004197BA /* TaskVM.swift */,
 			);
 			path = TaskSchedule;
+			sourceTree = "<group>";
+		};
+		6457762C2C8EDF0F00C4558E /* SwiftySandboxFileAccess */ = {
+			isa = PBXGroup;
+			children = (
+				645776262C8EDF0F00C4558E /* AccessInfo.swift */,
+				645776272C8EDF0F00C4558E /* Permissions.swift */,
+				645776282C8EDF0F00C4558E /* PowerboxAccess.swift */,
+				645776292C8EDF0F00C4558E /* SandboxFileAccess.swift */,
+				6457762A2C8EDF0F00C4558E /* SandboxFileAccessOpenSavePanelDelegate.swift */,
+				6457762B2C8EDF0F00C4558E /* SandboxFileAccessPersist.swift */,
+			);
+			path = SwiftySandboxFileAccess;
 			sourceTree = "<group>";
 		};
 		647C4E5A296FE1C800E15CAF /* EditPlugin */ = {
@@ -758,10 +784,13 @@
 				5C86D66425B56E0D00314CEF /* Argument.swift in Sources */,
 				5C86D66825B56E0D00314CEF /* ArrayExtensions.swift in Sources */,
 				5CBCE1D923965C0100ECBD43 /* CreateOCFileVM.swift in Sources */,
+				6457762D2C8EDF0F00C4558E /* AccessInfo.swift in Sources */,
 				5C660B6A2398AC020089B667 /* CreateOCCodeVM.swift in Sources */,
 				5C86D66625B56E0D00314CEF /* Tool.swift in Sources */,
 				5CF07D10242A0AC900688E99 /* CPSApplication.swift in Sources */,
+				645776322C8EDF0F00C4558E /* SandboxFileAccessPersist.swift in Sources */,
 				5CA659D325C917A700C6C12B /* CryptoVM.swift in Sources */,
+				645776312C8EDF0F00C4558E /* SandboxFileAccessOpenSavePanelDelegate.swift in Sources */,
 				5CEC5A9C25903EE4004197BA /* TaskVC.swift in Sources */,
 				5CA288E128F1504600485C1D /* SystemControl.swift in Sources */,
 				5CBCE1A32394DDD000ECBD43 /* ViewController.swift in Sources */,
@@ -773,6 +802,7 @@
 				5C86D66F25B56E0D00314CEF /* Runnable.swift in Sources */,
 				5C703C5524EB7F2A00ABBC6F /* SM4Util.m in Sources */,
 				5CA659CE25C914D600C6C12B /* CryptoVC.swift in Sources */,
+				6457762F2C8EDF0F00C4558E /* PowerboxAccess.swift in Sources */,
 				5CBCE1A52394DDD000ECBD43 /* Document.swift in Sources */,
 				5C86D66D25B56E0D00314CEF /* Parameters.swift in Sources */,
 				5C86D4FA25B55B5900314CEF /* CommandWork.swift in Sources */,
@@ -792,6 +822,8 @@
 				5C86D66A25B56E0D00314CEF /* StringExtensions.swift in Sources */,
 				5CBCE1D02394DEFA00ECBD43 /* CreateOCFile.swift in Sources */,
 				5CCC913B257E0BEF00A69790 /* ModalWindow.swift in Sources */,
+				6457762E2C8EDF0F00C4558E /* Permissions.swift in Sources */,
+				645776302C8EDF0F00C4558E /* SandboxFileAccess.swift in Sources */,
 				5C25831125D27AA3000CC7E3 /* ZMChineseConvert.m in Sources */,
 				5CBCE1D723964F1D00ECBD43 /* MyTransitionAnimator.swift in Sources */,
 				5C703C6424EB826600ABBC6F /* AESCryptVM.swift in Sources */,

@@ -268,11 +268,35 @@ class ViewController: NSViewController {
     }
     
     @objc func menuItem7Action(sender: NSMenuItem) {
-        runShell(withCommand: "echo eport | sudo -s bash /Volumes/Seagate015_4T/projects/recordrtsp.sh >> /Volumes/Seagate015_4T/downloads/recordrtsp.log") {
+        let window = NSApplication.shared.windows.first
+        let shFile = URL(string: "/Volumes/Seagate015_4T/projects/recordrtsp.sh")!
+        let logFile = URL(string: "/Users/eport/Downloads/recordrtsp.log")!
+        let sandboxFileAccess = SandboxFileAccess()
+        sandboxFileAccess.access(fileURL: shFile, askIfNecessary: true, fromWindow: window) { result in
+            do {
+                var flag = try result.get().permissions.canRead
+                if flag {
+                    sandboxFileAccess.access(fileURL: logFile, askIfNecessary: true, fromWindow: window) { [unowned self] result in
+                        do {
+                            flag = try result.get().permissions.canWrite
+                            if flag {
+                                self.runShell(withCommand: "bash /Volumes/Seagate015_4T/projects/recordrtsp.sh >> /Users/eport/Downloads/recordrtsp.log") {
+                                    
+                                }
+                            }
+                        } catch let err {
+                            print(err.localizedDescription)
+                        }
+                    }
+                }
+            } catch let err {
+                print(err.localizedDescription)
+            }
             
         }
         
-        runShell(withCommand: "echo eport | sudo -s source /Volumes/Seagate015_4T/projects/PythonUniversal/venv/bin/activate & python /Volumes/Seagate015_4T/projects/PythonUniversal/src/openrtsp.py >> /Volumes/Seagate015_4T/downloads/recordrtsp.log") {
+        
+        runShell(withCommand: "source /Volumes/Seagate015_4T/projects/PythonUniversal/venv/bin/activate & python /Volumes/Seagate015_4T/projects/PythonUniversal/src/openrtsp.py >> /Users/eport/Downloads/recordrtsp.log") {
             
         }
     }
