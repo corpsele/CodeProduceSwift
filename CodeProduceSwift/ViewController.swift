@@ -222,7 +222,7 @@ class ViewController: NSViewController {
             Privacy_AllFiles 完全磁盘访问权限
             Privacy_Assistive 文件和文件夹
         */
-        requestAuthorization()
+//        requestAuthorization()
     }
     
     
@@ -364,7 +364,8 @@ class ViewController: NSViewController {
         if let btn = btnWindow {
             btn.snp.makeConstraints { make in
                 make.right.top.equalToSuperview()
-                make.width.height.equalTo(50.0)
+                make.width.equalTo(100.0)
+                make.height.equalTo(50.0)
             }
         }
         

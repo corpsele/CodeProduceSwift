@@ -12,6 +12,7 @@ import ReactiveCocoa
 
 class ModalWindow: NSWindow, NSWindowDelegate {
     var screenFrame: CGRect? = .zero
+    var windowX, windowY: CGFloat?
     
     init() {
         let rect = NSRect(x: 980.0, y: 0.0, width: 640.0, height: 480.0)
@@ -62,6 +63,12 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         let menuItem2 = NSMenuItem(title: "Exit App", action: #selector(menuItem2Event(any:)), keyEquivalent: "")
         menuMouse?.addItem(menuItem2)
         
+        let menuItem3 = NSMenuItem(title: "Show Full Date", action: #selector(menuItem3Event(any:)), keyEquivalent: "")
+        // 设置菜单项为复选框类型
+        menuItem3.state = NSControl.StateValue.off // 默认状态为未选中
+//        menuItem.onStateImage = NSImage(named: NSImage.c) // 选中时的图像
+//       menuItem.offStateImage = nil  // 未选中时没有图像，也可以设置一个图像
+        menuMouse?.addItem(menuItem3)
 
     }
     
@@ -107,6 +114,21 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     
     func windowWillClose(_ notification: Notification) {
         
+    }
+    
+    @objc func menuItem3Event(any: Any){
+        let menuItem = any as? NSMenuItem
+        if menuItem?.state == NSControl.StateValue.off {
+            menuItem?.state = NSControl.StateValue.on
+            txtBackView?.isFull = true
+            let rect = NSRect(x: windowX ?? 300.0 - 300.0, y: windowY ?? 300.0 / 300.0, width: 450.0, height: 50.0)
+            self.setFrame(rect, display: true, animate: true)
+        }else{
+            menuItem?.state = NSControl.StateValue.off
+            txtBackView?.isFull = false
+            let rect = NSRect(x: windowX ?? 300.0 - 300.0, y: windowY ?? 300.0 / 300.0, width: 300.0, height: 50.0)
+            self.setFrame(rect, display: true, animate: true)
+        }
     }
     
     @objc func menuItem1Event(any: Any){
@@ -220,6 +242,8 @@ class ModalWindow: NSWindow, NSWindowDelegate {
 //            ePoint = event.locationInWindow
 //        }
         setFrame(NSRect(x: ePoint.x, y: ePoint.y, width: self.frame.width, height: self.frame.height), display: true, animate: true)
+        windowX = ePoint.x
+        windowY = ePoint.y
         
     }
     
@@ -256,11 +280,30 @@ extension NSImage.Name {
 }
 
 class ClockView: NSView {
+    public var isFull = false
+    
     override func draw(_ dirtyRect: NSRect) {
         let date = Date()
-        let ss: NSString = date.string(withFormat: "HH:mm:ss") as NSString
+        var ss: NSString = date.string(withFormat: "HH:mm:ss") as NSString
+        if isFull {
+            ss = date.string(withFormat: "yyyy-MM-dd HH:mm:ss") as NSString
+            let weekdayName = getWeekdayName(from: date)
+            ss = ss.appendingFormat("%@", weekdayName)
+        }
         let textRect = ss.boundingRect(with: frame.size, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.foregroundColor: NSColor.white, NSAttributedString.Key.font: NSFont.systemFont(ofSize: 32.0)])
         ss.draw(in: NSOffsetRect(self.frame, self.frame.width / 2 - textRect.width / 2, -(self.frame.height / 2 - textRect.height / 2)), withAttributes: [NSAttributedString.Key.foregroundColor: NSColor.white, NSAttributedString.Key.font: NSFont.systemFont(ofSize: 32.0)])
+    }
+    
+    func getWeekdayName(from date: Date) -> NSString {
+        let calendar = Calendar.current
+        let weekday = calendar.component(.weekday, from: date)
+        
+        let weekdays = [
+            "星期日", "星期一", "星期二", "星期三",
+            "星期四", "星期五", "星期六"
+        ]
+        
+        return weekdays[weekday - 1] as NSString // weekday是从1（星期日）开始的
     }
 }
 
