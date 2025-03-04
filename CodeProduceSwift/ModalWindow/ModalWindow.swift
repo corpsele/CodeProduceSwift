@@ -9,6 +9,10 @@
 import Cocoa
 import ReactiveSwift
 import ReactiveCocoa
+import MediaPlayer
+import AVFoundation
+import AVKit
+import Foundation
 
 class ModalWindow: NSWindow, NSWindowDelegate {
     var screenFrame: CGRect? = .zero
@@ -69,6 +73,9 @@ class ModalWindow: NSWindow, NSWindowDelegate {
 //        menuItem.onStateImage = NSImage(named: NSImage.c) // 选中时的图像
 //       menuItem.offStateImage = nil  // 未选中时没有图像，也可以设置一个图像
         menuMouse?.addItem(menuItem3)
+        
+        let menuItem4 = NSMenuItem(title: "Player", action: #selector(menuItem4Event(any:)), keyEquivalent: "")
+        menuMouse?.addItem(menuItem4)
 
     }
     
@@ -114,6 +121,10 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     
     func windowWillClose(_ notification: Notification) {
         
+    }
+    
+    @objc func menuItem4Event(any: Any){
+        openSelectDialog()
     }
     
     @objc func menuItem3Event(any: Any){
@@ -165,6 +176,45 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     
     @objc func menuItem2Event(any: Any){
         exit(0)
+    }
+    
+    private func playMedia(url: URL){
+//        let mediaURL = NSURL(fileURLWithPath: "")
+        do {
+            
+            let player = AVPlayer(url: url)
+            
+            
+            try player.play()
+        } catch let e {
+            NSLog("e = ", e.localizedDescription)
+        }
+
+    }
+    
+    private func openSelectDialog(){
+        let openPanel = NSOpenPanel()
+                
+                // 设置可接受的文件类型（例如，视频文件）
+                openPanel.allowedFileTypes = ["mpeg", "mp4", "com.apple.quicktime.movie", "mkv", "flv"]
+        if #available(macOS 11.0, *) {
+            openPanel.allowedContentTypes = [UTType.movie]
+        } else {
+            // Fallback on earlier versions
+        }
+                
+                // 显示面板并获取选择的文件
+                if openPanel.runModal() == .OK {
+//                    let selectedFiles = openPanel.urls
+                    if let selectedFiles = openPanel.url {
+//                        for fileURL in selectedFiles {
+                            // 处理所选文件（例如，播放视频）
+//                            processVideoFile(at: fileURL)
+//                        }
+                        print("selectedFiles = ", selectedFiles)
+                        playMedia(url: selectedFiles)
+                    }
+                }
     }
     
     var timer: DispatchSourceTimer?
@@ -318,3 +368,4 @@ func resize(image: NSImage, w: Int, h: Int) -> NSImage {
     newImage.size = destSize
     return NSImage(data: newImage.tiffRepresentation!)!
 }
+

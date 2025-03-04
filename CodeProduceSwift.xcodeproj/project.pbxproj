@@ -63,6 +63,7 @@
 		645776302C8EDF0F00C4558E /* SandboxFileAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645776292C8EDF0F00C4558E /* SandboxFileAccess.swift */; };
 		645776312C8EDF0F00C4558E /* SandboxFileAccessOpenSavePanelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457762A2C8EDF0F00C4558E /* SandboxFileAccessOpenSavePanelDelegate.swift */; };
 		645776322C8EDF0F00C4558E /* SandboxFileAccessPersist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457762B2C8EDF0F00C4558E /* SandboxFileAccessPersist.swift */; };
+		647676C72D7542BC00CA699D /* PlayListWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647676C62D7542B400CA699D /* PlayListWindow.swift */; };
 		647C4E57296FE1C800E15CAF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647C4E56296FE1C800E15CAF /* Cocoa.framework */; };
 		647C4E59296FE1C800E15CAF /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647C4E58296FE1C800E15CAF /* XcodeKit.framework */; };
 		647C4E5C296FE1C800E15CAF /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C4E5B296FE1C800E15CAF /* SourceEditorExtension.swift */; };
@@ -183,6 +184,7 @@
 		645776292C8EDF0F00C4558E /* SandboxFileAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxFileAccess.swift; sourceTree = "<group>"; };
 		6457762A2C8EDF0F00C4558E /* SandboxFileAccessOpenSavePanelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxFileAccessOpenSavePanelDelegate.swift; sourceTree = "<group>"; };
 		6457762B2C8EDF0F00C4558E /* SandboxFileAccessPersist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxFileAccessPersist.swift; sourceTree = "<group>"; };
+		647676C62D7542B400CA699D /* PlayListWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListWindow.swift; sourceTree = "<group>"; };
 		647C4E55296FE1C800E15CAF /* EditPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EditPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		647C4E56296FE1C800E15CAF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		647C4E58296FE1C800E15CAF /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -475,6 +477,7 @@
 		5CCC9139257E0BA400A69790 /* ModalWindow */ = {
 			isa = PBXGroup;
 			children = (
+				647676C62D7542B400CA699D /* PlayListWindow.swift */,
 				5CCC913A257E0BEF00A69790 /* ModalWindow.swift */,
 			);
 			path = ModalWindow;
@@ -822,6 +825,7 @@
 				5C86D66A25B56E0D00314CEF /* StringExtensions.swift in Sources */,
 				5CBCE1D02394DEFA00ECBD43 /* CreateOCFile.swift in Sources */,
 				5CCC913B257E0BEF00A69790 /* ModalWindow.swift in Sources */,
+				647676C72D7542BC00CA699D /* PlayListWindow.swift in Sources */,
 				6457762E2C8EDF0F00C4558E /* Permissions.swift in Sources */,
 				645776302C8EDF0F00C4558E /* SandboxFileAccess.swift in Sources */,
 				5C25831125D27AA3000CC7E3 /* ZMChineseConvert.m in Sources */,
