@@ -17,6 +17,7 @@ import Foundation
 class ModalWindow: NSWindow, NSWindowDelegate {
     var screenFrame: CGRect? = .zero
     var windowX, windowY: CGFloat?
+    var mainVC: NSViewController?
     
     init() {
         let rect = NSRect(x: 980.0, y: 0.0, width: 640.0, height: 480.0)
@@ -25,6 +26,17 @@ class ModalWindow: NSWindow, NSWindowDelegate {
 //        setFrame(NSRect(x: screen?.frame.width ?? 22 / 2, y: screen?.frame.height ?? 22 / 2 + 50.0, width: 50.0, height: 50.0), display: true, animate: true)
         
         initViews()
+    }
+    
+    init(_ vc: NSViewController) {
+        let rect = NSRect(x: 980.0, y: 0.0, width: 640.0, height: 480.0)
+        super.init(contentRect: rect, styleMask: .docModalWindow, backing: .buffered, defer: false)
+        mainVC = vc
+//        setFrame(NSRect(x: screen?.frame.width ?? 22 / 2, y: screen?.frame.height ?? 22 / 2 + 50.0, width: 50.0, height: 50.0), display: true, animate: true)
+        
+        initViews()
+        
+        
     }
     
     func initViews(){
@@ -76,6 +88,16 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
         let menuItem4 = NSMenuItem(title: "Player", action: #selector(menuItem4Event(any:)), keyEquivalent: "")
         menuMouse?.addItem(menuItem4)
+        
+        let menuItem5 = NSMenuItem(title: "En/Des Crypoto", action: #selector(menuItem5Action(sender:)), keyEquivalent: "")
+        
+        menuMouse?.addItem(menuItem5)
+        
+        let menuItem6 = NSMenuItem(title: "SM4", action: #selector(menuItem6Action(sender:)), keyEquivalent: "")
+        menuMouse?.addItem(menuItem6)
+        
+        let menuItem7 = NSMenuItem(title: "Quit", action: #selector(menuItem7Action(sender:)), keyEquivalent: "")
+//        menuMouse?.addItem(menuItem7)
 
     }
     
@@ -121,6 +143,47 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     
     func windowWillClose(_ notification: Notification) {
         
+    }
+    
+    @objc func menuItem7Action(sender: NSMenuItem) {
+        exit(0)
+    }
+    
+    @objc func menuItem6Action(sender: NSMenuItem) {
+//        DispatchQueue.main.async {
+//            for window in NSApplication.shared.windows {
+//                if !window.isKind(of: ModalWindow.self) {
+//    //                window.makeKeyAndOrderFront(nil)
+//                    window.orderFront(nil)
+//                    
+//                    break
+//                }
+//            }
+//    //        if let window = NSApplication.shared.windows.first {
+//    //            NSApp.runModal(for: window)
+//                
+//    //            shared?.mainSession = NSApp.beginModalSession(for: window)
+//    //            delegate.vc?.view.window?.setIsVisible(true)
+//    //        }
+//            self.orderOut(nil)
+//
+//        }
+        
+        let vc = mainVC?.storyboard?.instantiateController(withIdentifier: "aesCryptVC") as! AESCryptVC
+        vc.view.snp.makeConstraints { make in
+            make.height.equalTo(500)
+        }
+        mainVC?.presentAsModalWindow(vc)
+//        mainVC?.presentAsSheet(vc)
+    }
+    
+    @objc func menuItem5Action(sender: NSMenuItem) {
+        let vc = mainVC?.storyboard?.instantiateController(withIdentifier: "CryptoVC") as! CryptoVC
+//        vc.view.snp.makeConstraints { (make) in
+//            make.height.equalTo(500.0)
+//        }
+//        mainVC?.presentAsSheet(vc)
+        mainVC?.presentAsModalWindow(vc)
     }
     
     @objc func menuItem4Event(any: Any){

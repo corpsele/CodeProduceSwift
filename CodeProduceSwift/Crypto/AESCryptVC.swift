@@ -30,6 +30,8 @@ class AESCryptVC: NSViewController {
     @IBOutlet weak var btnPasteBottom: NSButton!
     @IBOutlet weak var btnCleanAbove: NSButton!
     @IBOutlet weak var btnCleanBottom: NSButton!
+    public var mainVC: NSViewController?
+    
     
     let vm = AESCryptVM()
     let board = NSPasteboard.general
@@ -74,6 +76,11 @@ class AESCryptVC: NSViewController {
         
         btnClose.reactive.pressed = CocoaAction<NSButton>(vm.btnCloseAction) { [weak self] (sender) in
             self?.dismiss(self)
+
+            if self?.mainVC != nil {
+                let appDelegate = NSApplication.shared.delegate as? AppDelegate
+                
+            }
         }
         
         btnPasteAbove.reactive.pressed = CocoaAction<NSButton>(vm.btnPasteAbove) { [weak self] (sender) in

@@ -385,7 +385,7 @@ class ViewController: NSViewController {
     }()
 
     lazy var modalWindow: ModalWindow? = {
-        let window = ModalWindow()
+        let window = ModalWindow(self)
         return window
     }()
 
