@@ -98,7 +98,9 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
         let menuItem7 = NSMenuItem(title: "Quit", action: #selector(menuItem7Action(sender:)), keyEquivalent: "")
 //        menuMouse?.addItem(menuItem7)
-
+        
+        let menuItem8 = NSMenuItem(title: "load plist", action: #selector(menuItem8Action(sender:)), keyEquivalent: "")
+        menuMouse?.addItem(menuItem8)
     }
     
     func setClock(){
@@ -143,6 +145,46 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     
     func windowWillClose(_ notification: Notification) {
         
+    }
+    
+    func presentOpenPanel() {
+        let openPanel = NSOpenPanel()
+        openPanel.allowsMultipleSelection = false
+        openPanel.canChooseDirectories = false
+        openPanel.canChooseFiles = true
+        openPanel.title = "请选择文件"
+        openPanel.allowedFileTypes = ["plist"]
+        
+        openPanel.begin { [unowned self] (result) in
+            if result == .OK, let selectedURL = openPanel.url {
+                print("选中的文件路径: \(selectedURL)")
+                // 处理文件内容
+                do {
+                    let data = try Data(contentsOf: selectedURL)
+                    print("文件内容大小: \(data.count) bytes")
+                    let dic = try Utils.dataToDictionary(from: data)
+                    print("dic = \(dic)")
+                    showPlist(dic ?? [:])
+                } catch {
+                    print("读取文件失败: \(error)")
+                }
+            }
+        }
+    }
+    
+    private func showPlist(_ dic: Dictionary<String, Any>){
+        let parsePlist = ParsePlist()
+        parsePlist.view.snp.makeConstraints { make in
+            make.width.equalTo(500)
+            make.height.equalTo(800)
+        }
+        parsePlist.setData(dic)
+        mainVC?.presentAsModalWindow(parsePlist)
+        
+    }
+    
+    @objc func menuItem8Action(sender: NSMenuItem) {
+        presentOpenPanel()
     }
     
     @objc func menuItem7Action(sender: NSMenuItem) {

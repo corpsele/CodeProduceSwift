@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -198,6 +198,14 @@
 		B676FC9FB7EB1D92C339E086 /* Pods_CodeProduceSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeProduceSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0841DD09819CC06D564CC90 /* Pods_CodeProduceSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeProduceSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6425900D2E32065D005AB5AA /* ParsePlist */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ParsePlist;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5CBCE19A2394DDD000ECBD43 /* Frameworks */ = {
@@ -412,6 +420,7 @@
 		5CBCE19F2394DDD000ECBD43 /* CodeProduceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6425900D2E32065D005AB5AA /* ParsePlist */,
 				5C9ABAA625CCD28D00A11D2F /* DateConvert */,
 				5C86D54C25B5655800314CEF /* Third */,
 				5C86D4F825B55B4700314CEF /* CommandWork */,
@@ -548,6 +557,9 @@
 			dependencies = (
 				647C4E62296FE1C800E15CAF /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				6425900D2E32065D005AB5AA /* ParsePlist */,
+			);
 			name = CodeProduceSwift;
 			productName = CodeProduceSwift;
 			productReference = 5CBCE19D2394DDD000ECBD43 /* CodeProduceSwift.app */;
@@ -636,7 +648,6 @@
 				};
 			};
 			buildConfigurationList = 5CBCE1982394DDD000ECBD43 /* Build configuration list for PBXProject "CodeProduceSwift" */;
-			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -644,6 +655,7 @@
 				Base,
 			);
 			mainGroup = 5CBCE1942394DDD000ECBD43;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 5CBCE19E2394DDD000ECBD43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

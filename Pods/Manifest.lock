@@ -9,6 +9,9 @@ PODS:
   - ReactiveCocoa (12.0.0):
     - ReactiveSwift (~> 7.0)
   - ReactiveSwift (7.0.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
   - RxCombine (2.0.1):
     - RxRelay (~> 6)
     - RxSwift (~> 6)
@@ -54,13 +57,17 @@ DEPENDENCIES:
   - MMKV
   - ReactiveCocoa
   - ReactiveSwift
+  - RxCocoa
   - RxCombine
+  - RxSwift
   - SnapKit
   - SQLite.swift
   - SwifterSwift
   - SwiftShell
 
 SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - RxCocoa
   trunk:
     - Alamofire
     - anim
@@ -87,6 +94,7 @@ SPEC CHECKSUMS:
   MMKVCore: 89f5c8a66bba2dcd551779dea4d412eeec8ff5bb
   ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
   ReactiveSwift: 48c4b9d3b497e8dd20b10300bb1a28ff93550f13
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxCombine: 74cd98f7bb1d908eff3758d13651917fc296adb3
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
@@ -95,6 +103,6 @@ SPEC CHECKSUMS:
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftShell: 0c2c6f2fcfc210e84a7b06390581923e2aab2ec7
 
-PODFILE CHECKSUM: b37d5106ce2bc17199da83f3f176aac14a6f2b65
+PODFILE CHECKSUM: 807bd380a19bfe45f296812c3351ee14ca78e4aa
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

@@ -33,6 +33,22 @@ struct Alert {
     }
 }
 
+struct Utils {
+
+    static func dataToDictionary(from data: Data) -> [String: Any]? {
+        do {
+            let jsonObject = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+            if let dictionary = jsonObject as? [String: Any] {
+                print("utils datatodictionary = \(dictionary)")
+                return dictionary
+            }
+        } catch {
+            print("JSON conversion failed: \(error)")
+        }
+        return nil
+    }
+}
+
 
 //@objc protocol HelpDelegate {
 //    func changeTitle(title: String)
