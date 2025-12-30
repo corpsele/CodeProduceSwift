@@ -15,6 +15,8 @@ struct  AppInfo {
     static let appVersion:String = Bundle.main.infoDictionary! ["CFBundleShortVersionString"] as! String// App 版本号
     
     static let buildVersion : String = Bundle.main.infoDictionary! ["CFBundleVersion"] as! String //Bulid 版本号
+    
+    static var mainWindowRect : NSRect = .zero
 
 }
 

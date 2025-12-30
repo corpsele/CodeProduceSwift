@@ -119,7 +119,11 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
         txtBackView?.isHidden = false
         imgClock?.isHidden = true
-        let rect = NSRect(x: screenFrame?.width ?? 300.0 - 300.0, y: screenFrame?.height ?? 300.0 / 300.0, width: 300.0, height: 50.0)
+//        let rect = NSRect(x: screenFrame?.width ?? 300.0 - 300.0, y: screenFrame?.height ?? 300.0 / 300.0, width: 150.0, height: 50.0)
+        var sX = 0
+        var sY = 0
+        
+        let rect = NSRect(x: AppInfo.mainWindowRect.origin.x, y: AppInfo.mainWindowRect.origin.y, width: 150.0, height: 50.0)
         self.setFrame(rect, display: true, animate: true)
         txtBackView?.snp.makeConstraints({ (make) in
             make.edges.equalToSuperview()
@@ -242,7 +246,7 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         }else{
             menuItem?.state = NSControl.StateValue.off
             txtBackView?.isFull = false
-            let rect = NSRect(x: windowX ?? 300.0 - 300.0, y: windowY ?? 300.0 / 300.0, width: 300.0, height: 50.0)
+            let rect = NSRect(x: windowX ?? 300.0 - 300.0, y: windowY ?? 300.0 / 300.0, width: 150.0, height: 50.0)
             self.setFrame(rect, display: true, animate: true)
         }
     }

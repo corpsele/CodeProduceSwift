@@ -151,7 +151,7 @@ class ViewController: NSViewController {
                 DispatchQueue.main.async {
 //                    self?.modalWindow?.makeKeyAndOrderFront(nil)
                     self?.modalWindow?.orderFront(nil)
-
+                    AppInfo.mainWindowRect = self?.view.frame ?? NSRect(x: 0, y: 0, width: 640, height: 480)
                     for window in NSApplication.shared.windows {
                         if !window.isKind(of: ModalWindow.self) {
                             window.orderOut(nil)
