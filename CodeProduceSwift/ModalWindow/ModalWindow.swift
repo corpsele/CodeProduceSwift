@@ -107,6 +107,9 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
         let menuItem9 = NSMenuItem(title: "Show Disk Capacity", action: #selector(menuItem9Action(sender:)), keyEquivalent: "")
         menuMouse?.addItem(menuItem9)
+        
+        let menuItem10 = NSMenuItem(title: "Show B Web", action: #selector(menuItem10Action(sender:)), keyEquivalent: "")
+        menuMouse?.addItem(menuItem10)
     }
     
     
@@ -302,6 +305,18 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     
     @objc func menuItem2Event(any: Any){
         exit(0)
+    }
+    
+    @objc func menuItem10Action(sender: NSMenuItem){
+        DispatchQueue.main.async {
+            let bWebController = BWebController()
+            let rect = NSRect(x: 0, y: 0, width: 640, height: 480)
+            bWebController.view.frame = rect
+//            let bWebSB = NSStoryboard(name: "Main", bundle: Bundle(for: BWebController.self))
+//            let vc = bWebSB.instantiateController(withIdentifier: "BWebController") as? BWebController
+            self.mainVC?.presentAsModalWindow(bWebController)
+
+        }
     }
     
     private func playMedia(url: URL){
