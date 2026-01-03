@@ -101,6 +101,9 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
         let menuItem8 = NSMenuItem(title: "load plist", action: #selector(menuItem8Action(sender:)), keyEquivalent: "")
         menuMouse?.addItem(menuItem8)
+        
+        let menuItem9 = NSMenuItem(title: "Show Disk Capacity", action: #selector(menuItem9Action(sender:)), keyEquivalent: "")
+        menuMouse?.addItem(menuItem9)
     }
     
     func setClock(){
@@ -185,6 +188,12 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         parsePlist.setData(dic)
         mainVC?.presentAsModalWindow(parsePlist)
         
+    }
+    
+    @objc func menuItem9Action(sender: NSMenuItem) {
+        Alert.show(title: Utils.getDiskFreeCapacityFormatted(), window: self) {
+            
+        }
     }
     
     @objc func menuItem8Action(sender: NSMenuItem) {

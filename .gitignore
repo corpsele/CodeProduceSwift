@@ -6,3 +6,4 @@ DerivedData
 *.DS_Store
 CodeProduceSwift.xcodeproj/xcuserdata/
 Build
+CodeProduceSwift.xcworkspace/xcshareddata

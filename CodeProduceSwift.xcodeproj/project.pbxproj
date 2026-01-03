@@ -69,6 +69,7 @@
 		647C4E5C296FE1C800E15CAF /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C4E5B296FE1C800E15CAF /* SourceEditorExtension.swift */; };
 		647C4E5E296FE1C800E15CAF /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C4E5D296FE1C800E15CAF /* SourceEditorCommand.swift */; };
 		64DADA37296FF16E008DF01D /* EditPlugin.appex in Resources */ = {isa = PBXBuildFile; fileRef = 647C4E55296FE1C800E15CAF /* EditPlugin.appex */; };
+		75E57BA92F08ABF100192C92 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 75E57BA82F08ABF100192C92 /* SwinjectStoryboard */; };
 		A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676FC9FB7EB1D92C339E086 /* Pods_CodeProduceSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -212,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E57BA92F08ABF100192C92 /* SwinjectStoryboard in Frameworks */,
 				A2A286810441263DFDDC3505 /* Pods_CodeProduceSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +657,9 @@
 				Base,
 			);
 			mainGroup = 5CBCE1942394DDD000ECBD43;
+			packageReferences = (
+				75E57BA72F08ABF100192C92 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5CBCE19E2394DDD000ECBD43 /* Products */;
 			projectDirPath = "";
@@ -736,9 +741,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CodeProduceSwift/Pods-CodeProduceSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CodeProduceSwift/Pods-CodeProduceSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1277,6 +1286,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75E57BA72F08ABF100192C92 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectStoryboard";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75E57BA82F08ABF100192C92 /* SwinjectStoryboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E57BA72F08ABF100192C92 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
+			productName = SwinjectStoryboard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CBCE1952394DDD000ECBD43 /* Project object */;
 }
