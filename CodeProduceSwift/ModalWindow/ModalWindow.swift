@@ -20,7 +20,7 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     var mainVC: NSViewController?
     
     init() {
-        let rect = NSRect(x: 980.0, y: 0.0, width: 640.0, height: 480.0)
+        let rect = NSRect(x: 0, y: 0.0, width: 640.0, height: 480.0)
         super.init(contentRect: rect, styleMask: .docModalWindow, backing: .buffered, defer: false)
         
 //        setFrame(NSRect(x: screen?.frame.width ?? 22 / 2, y: screen?.frame.height ?? 22 / 2 + 50.0, width: 50.0, height: 50.0), display: true, animate: true)
@@ -29,7 +29,7 @@ class ModalWindow: NSWindow, NSWindowDelegate {
     }
     
     init(_ vc: NSViewController) {
-        let rect = NSRect(x: 980.0, y: 0.0, width: 640.0, height: 480.0)
+        let rect = NSRect(x: 0, y: 0.0, width: 640.0, height: 480.0)
         super.init(contentRect: rect, styleMask: .docModalWindow, backing: .buffered, defer: false)
         mainVC = vc
 //        setFrame(NSRect(x: screen?.frame.width ?? 22 / 2, y: screen?.frame.height ?? 22 / 2 + 50.0, width: 50.0, height: 50.0), display: true, animate: true)
@@ -51,6 +51,9 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         
         screenFrame = screen?.frame ?? .zero
         print("contentView?.subviews = \(contentView?.subviews)")
+        
+        windowX = AppInfo.mainWindowRect.origin.x
+        windowY = AppInfo.mainWindowRect.origin.y
         contentView?.addSubview(imgClock!)
         imgClock?.isHidden = true
         
@@ -106,10 +109,11 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         menuMouse?.addItem(menuItem9)
     }
     
+    
     func setClock(){
         imgClock?.isHidden = false
         txtBackView?.isHidden = true
-        let rect = NSRect(x: screenFrame?.width ?? 50.0 - 50.0, y: screenFrame?.height ?? 50.0 / 50.0, width: 50.0, height: 50.0)
+        let rect = NSRect(x: AppInfo.mainWindowRect.origin.x, y: AppInfo.mainWindowRect.origin.y, width: 50.0, height: 50.0)
         self.setFrame(rect, display: true, animate: true)
         
         imgClock?.snp.makeConstraints({ (make) in
@@ -250,12 +254,12 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         if menuItem?.state == NSControl.StateValue.off {
             menuItem?.state = NSControl.StateValue.on
             txtBackView?.isFull = true
-            let rect = NSRect(x: windowX ?? 300.0 - 300.0, y: windowY ?? 300.0 / 300.0, width: 450.0, height: 50.0)
+            let rect = NSRect(x: windowX ?? 0, y: windowY ?? 0, width: 450.0, height: 50.0)
             self.setFrame(rect, display: true, animate: true)
         }else{
             menuItem?.state = NSControl.StateValue.off
             txtBackView?.isFull = false
-            let rect = NSRect(x: windowX ?? 300.0 - 300.0, y: windowY ?? 300.0 / 300.0, width: 150.0, height: 50.0)
+            let rect = NSRect(x: windowX ?? 0, y: windowY ?? 0, width: 150.0, height: 50.0)
             self.setFrame(rect, display: true, animate: true)
         }
     }
@@ -277,6 +281,10 @@ class ModalWindow: NSWindow, NSWindowDelegate {
             for window in NSApplication.shared.windows {
                 if !window.isKind(of: ModalWindow.self) {
     //                window.makeKeyAndOrderFront(nil)
+                    var rect = window.frame
+                    rect.origin.x = self.windowX ?? 0
+                    rect.origin.y = self.windowY ?? 0
+                    window.setFrame(rect, display: true)
                     window.orderFront(nil)
                     break
                 }

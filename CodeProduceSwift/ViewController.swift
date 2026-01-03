@@ -151,7 +151,24 @@ class ViewController: NSViewController {
                 DispatchQueue.main.async {
 //                    self?.modalWindow?.makeKeyAndOrderFront(nil)
                     self?.modalWindow?.orderFront(nil)
-                    AppInfo.mainWindowRect = self?.view.frame ?? NSRect(x: 0, y: 0, width: 640, height: 480)
+
+                    
+                    let screen = NSScreen.main
+                    let scale = screen?.backingScaleFactor // 缩放因子，通常是 2.0 或 1.0
+                    let frame = screen?.visibleFrame
+
+                    let physicalWidth = (frame?.width ?? 0) * (scale ?? 0)
+                    let physicalHeight = (frame?.height ?? 0) * (scale ?? 0)
+                    
+                    var rect = self?.view.window?.frame
+                    rect?.size.width = 150
+                    rect?.size.height = 50
+//                    rect?.origin.x = 0
+//                    rect?.origin.y = physicalHeight - 150
+                    AppInfo.mainWindowRect = rect ?? NSRect(x: 0, y: 0, width: 640, height: 480)
+                    self?.modalWindow?.windowX = rect?.origin.x
+                    self?.modalWindow?.windowY = rect?.origin.y
+                    self?.modalWindow?.setFrame(rect ?? NSRect(x: 0, y: 0, width: 640, height: 480), display: true)
                     for window in NSApplication.shared.windows {
                         if !window.isKind(of: ModalWindow.self) {
                             window.orderOut(nil)
