@@ -24,20 +24,20 @@ class BGWebView: GWebView {
     override func initViews() {
         super.initViews()
         
-//        webConfig.userContentController = userContentController
-//        webConfig.allowsAirPlayForMediaPlayback = true
-//        webConfig.defaultWebpagePreferences = webPagePreferences
-//        if #available(macOS 11.0, *) {
-//            webPagePreferences.allowsContentJavaScript = true
-//        } else {
-//            // Fallback on earlier versions
-//        }
+        webConfig.userContentController = userContentController
+        webConfig.allowsAirPlayForMediaPlayback = true
+        webConfig.defaultWebpagePreferences = webPagePreferences
+        if #available(macOS 11.0, *) {
+            webPagePreferences.allowsContentJavaScript = true
+        } else {
+            // Fallback on earlier versions
+        }
         
         
     }
     
     public func startLoad(){
-        let urlRequest = URLRequest(urlString: "https://www.baidu.com")
+        let urlRequest = URLRequest(urlString: self.strUrl ?? "")
         if let r = urlRequest {
             self.load(r)
         }

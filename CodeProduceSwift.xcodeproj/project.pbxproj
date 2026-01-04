@@ -196,6 +196,7 @@
 		647C4E5D296FE1C800E15CAF /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		647C4E5F296FE1C800E15CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		647C4E60296FE1C800E15CAF /* EditPlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EditPlugin.entitlements; sourceTree = "<group>"; };
+		75D85C602F0A044B003ADF47 /* CodeProduceSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeProduceSwift.entitlements; sourceTree = "<group>"; };
 		75E57BAB2F08CC6B00192C92 /* GWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWebView.swift; sourceTree = "<group>"; };
 		75E57BAD2F08D04900192C92 /* BGWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGWebView.swift; sourceTree = "<group>"; };
 		75E57BAF2F08D19200192C92 /* BWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWebController.swift; sourceTree = "<group>"; };
@@ -404,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				5CF07D0F242A0AC900688E99 /* CPSApplication.swift */,
+				75D85C602F0A044B003ADF47 /* CodeProduceSwift.entitlements */,
 				5CBCE19F2394DDD000ECBD43 /* CodeProduceSwift */,
 				5CBCE1B42394DDD100ECBD43 /* CodeProduceSwiftTests */,
 				5CBCE1BF2394DDD100ECBD43 /* CodeProduceSwiftUITests */,
@@ -1065,10 +1067,21 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeProduceSwift/CodeProduceSwift.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SL6B57AC84;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				INFOPLIST_FILE = CodeProduceSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1097,10 +1110,21 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeProduceSwift/CodeProduceSwift.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SL6B57AC84;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				INFOPLIST_FILE = CodeProduceSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
