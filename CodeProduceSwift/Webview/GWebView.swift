@@ -21,6 +21,17 @@ class GWebView: WKWebView, WKNavigationDelegate, WKUIDelegate {
         super.init(frame: frame, configuration: configuration)
     }
     
+    init(_ webModel: WebModel, _ webViewConfiguration: WKWebViewConfiguration){
+        super.init(frame: .zero, configuration: webViewConfiguration)
+        
+        self.strUrl = webModel.strUrl
+        self.webViewConfiguration = webViewConfiguration
+        self.navigationDelegate = self
+        self.uiDelegate = self
+        
+        initViews()
+    }
+    
     init(_ strUrl: String, _ webViewConfiguration: WKWebViewConfiguration){
         super.init(frame: .zero, configuration: webViewConfiguration)
         

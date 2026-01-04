@@ -1,6 +1,29 @@
 import Cocoa
+import Swinject
+import SwinjectStoryboard
 
 let shared = NSApplication.shared.delegate as? AppDelegate
+
+var container: Container = {
+    let container = Container()
+    
+    container.register(WebModel.self) { r in
+        WebModel("https://www.baidu.com")
+    }
+    
+    container.register(BGWebView.self) { r in
+        let webView = BGWebView(r.resolve(WebModel.self)!)
+        return webView
+    }
+    
+    container.register(BWebController.self) { r in
+        let vc = BWebController()
+        vc.webView = r.resolve(BGWebView.self)
+        return vc
+    }
+    
+    return container
+}()
 
 struct  AppInfo {
     

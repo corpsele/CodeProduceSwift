@@ -17,6 +17,10 @@ class BGWebView: GWebView {
         super.init(strUrl, self.webConfig)
     }
     
+    init(_ webModel: WebModel) {
+        super.init(webModel, self.webConfig)
+    }
+    
     @MainActor required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
