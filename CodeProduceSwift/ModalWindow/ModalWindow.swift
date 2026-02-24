@@ -13,11 +13,13 @@ import Foundation
 import MediaPlayer
 import ReactiveCocoa
 import ReactiveSwift
+import SwiftUI
 
 class ModalWindow: NSWindow, NSWindowDelegate {
     var screenFrame: CGRect? = .zero
     var windowX, windowY: CGFloat?
     var mainVC: NSViewController?
+    private let vm = ModalWindowVM()
 
     init() {
         let rect = NSRect(x: 0, y: 0.0, width: 640.0, height: 480.0)
@@ -106,6 +108,10 @@ class ModalWindow: NSWindow, NSWindowDelegate {
 
         let menuItem10 = NSMenuItem(title: "Show B Web", action: #selector(menuItem10Action(sender:)), keyEquivalent: "")
         menuMouse?.addItem(menuItem10)
+        
+        let menuItem11 = NSMenuItem(title: "Show SwiftUI", action: #selector(menuItem11Action(sender:)), keyEquivalent: "")
+        menuMouse?.addItem(menuItem11)
+        
     }
 
     func setClock() {
@@ -184,6 +190,15 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         }
         parsePlist.setData(dic)
         mainVC?.presentAsModalWindow(parsePlist)
+    }
+    
+    @objc func menuItem11Action(sender: NSMenuItem) {
+        let epicFree = EpicFreeView()
+        let presentController = SwiftUIPresenter(rootView: epicFree)
+//        presentController.presentAsPopover(on: mainVC!, from: self.contentView!)
+        presentController.presentAsModal(on: mainVC!)
+//        let epicController = EpicFreeController(epicFree, CGRect(x: 0, y: 0, width: 500, height: 300))
+//        mainVC?.presentAsModalWindow(epicController)
     }
 
     @objc func menuItem9Action(sender: NSMenuItem) {
