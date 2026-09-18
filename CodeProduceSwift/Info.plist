@@ -110,5 +110,7 @@
 	</array>
 	<key>kTCCServiceMediaLibrary</key>
 	<string>use music</string>
+	<key>LSUIElement</key>
+	<true/>
 </dict>
 </plist>

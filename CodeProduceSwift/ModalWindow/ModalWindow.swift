@@ -112,6 +112,9 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         let menuItem11 = NSMenuItem(title: "Show SwiftUI", action: #selector(menuItem11Action(sender:)), keyEquivalent: "")
         menuMouse?.addItem(menuItem11)
         
+        let menuItem12 = NSMenuItem(title: "最小化", action: #selector(menuItem12Action(sender:)), keyEquivalent: "")
+        menuMouse?.addItem(menuItem12)
+        
     }
 
     func setClock() {
@@ -190,6 +193,10 @@ class ModalWindow: NSWindow, NSWindowDelegate {
         }
         parsePlist.setData(dic)
         mainVC?.presentAsModalWindow(parsePlist)
+    }
+    
+    @objc func menuItem12Action(sender: NSMenuItem) {
+        NSApp.hide(nil)
     }
     
     @objc func menuItem11Action(sender: NSMenuItem) {

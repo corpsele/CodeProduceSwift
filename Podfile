@@ -19,7 +19,7 @@ target 'CodeProduceSwift' do
   pod 'Commander'
   pod 'SwiftShell'
   pod 'CryptoSwift'
-  pod 'ReactiveSwift'
+#  pod 'ReactiveSwift'
 #  pod 'ZMChineseConvert'
   pod 'RxSwift'
   pod 'RxCocoa'

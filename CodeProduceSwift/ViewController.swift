@@ -19,6 +19,7 @@ class ViewController: NSViewController {
     private var vm: ViewModel!
 //    @IBOutlet weak var mainWindow: NSWindow!
 //    var modalWindow: ModalWindow?
+    let delegate = NSApp.delegate as? AppDelegate
 
     lazy var btnWindow: NSButton? = {
         let btn = NSButton()
@@ -88,7 +89,15 @@ class ViewController: NSViewController {
             shared?.window1 = modalWindow
         }
         
+        initPopover()
         
+        print("NSApp.windows.count = \(NSApp.windows.count)")
+        
+        print("self.view.window = \(self.view.window)")
+        
+        print("NSApplication.shared.windows.first = \(NSApplication.shared.windows.first)")
+        
+        print("shared?.window1 = \(shared?.window1)")
     }
 
     override var representedObject: Any? {
@@ -393,6 +402,104 @@ class ViewController: NSViewController {
                 make.width.height.equalTo(50.0)
             }
         }
+    }
+    
+    private func initPopover() {
+        // 创建状态栏item
+        let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+        if let app = delegate {
+            app.statusItem = item
+        }
+        
+        guard let button = item.button else { return }
+        
+        // SF Symbol 模版图，自动适配明暗
+        if #available(macOS 11.0, *) {
+            if let img = NSImage.init(systemSymbolName: "tray.full.fill", accessibilityDescription: "Tray") {
+                img.isTemplate = true
+                button.image = img
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        button.imagePosition = .imageLeft
+        button.toolTip = "TrayDemo"
+        
+        // 方法A: 下拉菜单 （取消注释可代替popover）
+        setupMenu(for: button)
+        
+        // 方法B: Popover + SwiftUI
+//        setupPopover()
+//        button.action = #selector(togglePopover(_:))
+//        button.target = self
+    }
+    
+    private func setupMenu(for button:NSStatusBarButton) {
+        let menu = NSMenu()
+        let item1 = NSMenuItem(title: "打开CodeProduceSwift", action: #selector(openPanel), keyEquivalent: "o")
+        item1.target = self
+        menu.addItem(item1)
+        
+        menu.addItem(.separator())
+        
+        let item2 = NSMenuItem(title: "最小化", action: #selector(doMinimumSize), keyEquivalent: "m")
+        item2.target = self
+        menu.addItem(item2)
+        
+        menu.addItem(.separator())
+        
+        let quit = NSMenuItem(title: "退出", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+        menu.addItem(quit)
+        
+        if let app = delegate {
+            app.statusItem?.menu = menu
+        }
+        
+        // 用menu模式时不需要action；避免和popover同时绑
+        button.action = nil
+    }
+    
+    @objc private func openPanel() {
+//        showPopover(nil)
+        print("打开CodeProduceSwift")
+        guard let w = delegate?.window ?? NSApp.windows.first else { return }
+
+
+//            NSApplication.shared.windows.first?.makeKeyAndOrderFront(nil)
+        NSApp.unhide(nil)
+        
+    }
+    
+    @objc private func doMinimumSize(sender: Any) {
+        print("doMinimumSize")
+        
+        guard let w = delegate?.window ?? NSApp.windows.first else { return }
+//        self.view.window?.miniaturize(sender)
+//        shared?.window1?.orderOut(nil)
+//        NSApplication.shared.windows.first?.orderOut(nil)
+
+//            NSApplication.shared.windows.first?.miniaturize(nil)
+        NSApp.hide(nil)
+        
+        
+//
+//                if w.isMiniaturized {
+//                    w.deminiaturize(nil)             // 从 Dock 缩略图还原 [1](@ref)
+//                } else if !w.isVisible {
+//                    w.makeKeyAndOrderFront(self)     // 被关掉后重新显示
+//                } else {
+//                    w.orderFront(self)
+//                }
+    }
+    
+    // MARK: - Popover模式
+    private func setupPopover() {
+        let pop = NSPopover()
+        pop.contentSize = NSSize(width: 320, height: 360)
+        // 点外部自动关闭
+        pop.behavior = .transient
+        pop.animates = true
+        
     }
     
     lazy var taskMenu: NSMenu? = {

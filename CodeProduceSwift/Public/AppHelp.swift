@@ -165,7 +165,29 @@ struct Utils {
         return "Unknown"
     }
 
+}
 
+extension NSView {
+    func setHiddenAnimated(_ hidden: Bool, duration: TimeInterval = 0.18) {
+        if hidden {
+            NSAnimationContext.runAnimationGroup({ ctx in
+                ctx.duration = duration
+                ctx.timingFunction = CAMediaTimingFunction(name: .easeOut)
+                self.animator().alphaValue = 0
+                self.animator().isHidden = true
+            })
+        } else {
+            self.isHidden = false            // 先取消隐藏再淡入，否则 animator 没东西可动画
+            NSAnimationContext.runAnimationGroup({ ctx in
+                ctx.duration = duration
+                ctx.timingFunction = CAMediaTimingFunction(name: .easeOut)
+                self.animator().alphaValue = 1
+            })
+        }
+    }
+
+    /// 安全取：自己或任意祖先隐藏都算不可见
+    var isVisibleInHierarchy: Bool { !isHiddenOrHasHiddenAncestor }
 }
 
 

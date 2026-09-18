@@ -221,11 +221,15 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6425900D2E32065D005AB5AA /* ParsePlist */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = ParsePlist;
 			sourceTree = "<group>";
 		};
 		75ECFB352F4C2ACF00C50F67 /* EpicFree */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = EpicFree;
 			sourceTree = "<group>";
 		};
@@ -800,13 +804,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CodeProduceSwift/Pods-CodeProduceSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CodeProduceSwift/Pods-CodeProduceSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

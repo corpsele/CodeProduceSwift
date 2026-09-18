@@ -16,9 +16,16 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     var window1: NSWindow?
     var mainSession: NSApplication.ModalSession?
     var window1Session: NSApplication.ModalSession?
+    // 状态
+    var statusItem: NSStatusItem?
+    // 弹出菜单
+    var popover: NSPopover?
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // 仅菜单栏，无Dock
+//        NSApp.setActivationPolicy(.accessory)
+        NSApp.setActivationPolicy(.regular)
         // Insert code here to initialize your application
         let sb = NSStoryboard(name: "Main", bundle: Bundle.main)
         vc = sb.instantiateController(withIdentifier: "ViewController") as? ViewController
@@ -37,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 //        for window in sender.windows {
 //            NSApp.terminate(window)
 //        }
-        CommandWork.setVolumeMute()
+//        CommandWork.setVolumeMute()
         return true;
     }
     
